@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/Users/SILVER/Downloads/MidiMusic-master-AS/app/src/main/res/values/arrays.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613%20CSD/FYP/MidiMusic-master-AS/app/src/main/res/values/arrays.xml -->
     <eat-comment/>
     <string-array name="combine_interval_entries">
         <item>20 milliseconds</item>
@@ -46,7 +46,7 @@
         <item>10</item>
         <item>11</item>
     </string-array>
-    <!-- From: file:/Users/SILVER/Downloads/MidiMusic-master-AS/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613%20CSD/FYP/MidiMusic-master-AS/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string-array name="planets_array">
         <!--0:-->>
@@ -58,7 +58,7 @@
         <!--3:-->>
         <item>Goto Website</item>
     </string-array>
-    <!-- From: file:/Users/SILVER/Downloads/MidiMusic-master-AS/app/src/main/res/values/arrays.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613%20CSD/FYP/MidiMusic-master-AS/app/src/main/res/values/arrays.xml -->
     <eat-comment/>
     <string-array name="show_note_letter_entries">
         <item>None</item>
@@ -130,7 +130,7 @@
         <item>-11</item>
         <item>-12</item>
     </string-array>
-    <!-- From: file:/Users/SILVER/Downloads/MidiMusic-master-AS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.2/res/values/values.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613%20CSD/FYP/MidiMusic-master-AS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.2/res/values/values.xml -->
     <eat-comment/>
     <attr format="reference" name="drawerArrowStyle"/>
     <attr format="dimension" name="height"/>
@@ -152,16 +152,16 @@
     <color name="background_floating_material_light">#ffeeeeee</color>
     <color name="background_material_dark">#ff303030</color>
     <color name="background_material_light">#ffeeeeee</color>
-    <!-- From: file:/Users/SILVER/Downloads/MidiMusic-master-AS/app/src/main/res/values/color.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613%20CSD/FYP/MidiMusic-master-AS/app/src/main/res/values/color.xml -->
     <eat-comment/>
     <color name="bg_login">#26ae90</color>
     <color name="bg_main">#428bca</color>
     <color name="bg_register">#2e3237</color>
-    <!-- From: file:/Users/SILVER/Downloads/MidiMusic-master-AS/app/src/main/res/values/activitycards-colors.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613%20CSD/FYP/MidiMusic-master-AS/app/src/main/res/values/activitycards-colors.xml -->
     <eat-comment/>
     <color name="black_54">#89000000</color>
     <color name="black_87">#DD000000</color>
-    <!-- From: file:/Users/SILVER/Downloads/MidiMusic-master-AS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.2/res/values/values.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613%20CSD/FYP/MidiMusic-master-AS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.2/res/values/values.xml -->
     <eat-comment/>
     <color name="bright_foreground_disabled_material_dark">#80ffffff</color>
     <color name="bright_foreground_disabled_material_light">#80000000</color>
@@ -169,37 +169,37 @@
     <color name="bright_foreground_inverse_material_light">@color/bright_foreground_material_dark</color>
     <color name="bright_foreground_material_dark">@android:color/white</color>
     <color name="bright_foreground_material_light">@android:color/black</color>
-    <!-- From: file:/Users/SILVER/Downloads/MidiMusic-master-AS/app/src/main/res/values/color.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613%20CSD/FYP/MidiMusic-master-AS/app/src/main/res/values/color.xml -->
     <eat-comment/>
     <color name="btn_login">#26ae90</color>
     <color name="btn_login_bg">#eceef1</color>
     <color name="btn_logut_bg">#ff6861</color>
-    <!-- From: file:/Users/SILVER/Downloads/MidiMusic-master-AS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.2/res/values/values.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613%20CSD/FYP/MidiMusic-master-AS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.2/res/values/values.xml -->
     <eat-comment/>
     <color name="button_material_dark">#ff5a595b</color>
     <color name="button_material_light">#ffd6d7d7</color>
-    <!-- From: file:/Users/SILVER/Downloads/MidiMusic-master-AS/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/21.0.2/res/values/values.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613%20CSD/FYP/MidiMusic-master-AS/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/21.0.2/res/values/values.xml -->
     <eat-comment/>
     <color name="cardview_dark_background">#FF202020</color>
     <color name="cardview_light_background">#FFFAFAFA</color>
     <color name="cardview_shadow_end_color">#03000000</color>
     <color name="cardview_shadow_start_color">#37000000</color>
-    <!-- From: file:/Users/SILVER/Downloads/MidiMusic-master-AS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.2/res/values/values.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613%20CSD/FYP/MidiMusic-master-AS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.2/res/values/values.xml -->
     <eat-comment/>
     <color name="dim_foreground_disabled_material_dark">#80bebebe</color>
     <color name="dim_foreground_disabled_material_light">#80323232</color>
     <color name="dim_foreground_material_dark">#ffbebebe</color>
     <color name="dim_foreground_material_light">#ff323232</color>
-    <!-- From: file:/Users/SILVER/Downloads/MidiMusic-master-AS/app/src/main/res/values/color.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613%20CSD/FYP/MidiMusic-master-AS/app/src/main/res/values/color.xml -->
     <eat-comment/>
     <color name="grey">#ffdddddd</color>
-    <!-- From: file:/Users/SILVER/Downloads/MidiMusic-master-AS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.2/res/values/values.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613%20CSD/FYP/MidiMusic-master-AS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.2/res/values/values.xml -->
     <eat-comment/>
     <color name="highlighted_text_material_dark">#6680cbc4</color>
     <color name="highlighted_text_material_light">#66009688</color>
     <color name="hint_foreground_material_dark">@color/bright_foreground_disabled_material_dark</color>
     <color name="hint_foreground_material_light">@color/bright_foreground_disabled_material_light</color>
-    <!-- From: file:/Users/SILVER/Downloads/MidiMusic-master-AS/app/src/main/res/values/color.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613%20CSD/FYP/MidiMusic-master-AS/app/src/main/res/values/color.xml -->
     <eat-comment/>
     <color name="input_login">#222222</color>
     <color name="input_login_hint">#999999</color>
@@ -207,7 +207,7 @@
     <color name="input_register_bg">#3b4148</color>
     <color name="input_register_hint">#5e6266</color>
     <color name="lbl_name">#333333</color>
-    <!-- From: file:/Users/SILVER/Downloads/MidiMusic-master-AS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.2/res/values/values.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613%20CSD/FYP/MidiMusic-master-AS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.2/res/values/values.xml -->
     <eat-comment/>
     <color name="link_text_material_dark">@color/material_deep_teal_200</color>
     <color name="link_text_material_light">@color/material_deep_teal_500</color>
@@ -230,17 +230,17 @@
     <color name="secondary_text_default_material_light">#8a000000</color>
     <color name="secondary_text_disabled_material_dark">#36ffffff</color>
     <color name="secondary_text_disabled_material_light">#24000000</color>
-    <!-- From: file:/Users/SILVER/Downloads/MidiMusic-master-AS/app/src/main/res/values/color.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613%20CSD/FYP/MidiMusic-master-AS/app/src/main/res/values/color.xml -->
     <eat-comment/>
     <color name="semitransparent">#55ffffff</color>
-    <!-- From: file:/Users/SILVER/Downloads/MidiMusic-master-AS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.2/res/values/values.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613%20CSD/FYP/MidiMusic-master-AS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.2/res/values/values.xml -->
     <eat-comment/>
     <color name="switch_thumb_normal_material_dark">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_light">#fff1f1f1</color>
-    <!-- From: file:/Users/SILVER/Downloads/MidiMusic-master-AS/app/src/main/res/values/activitycards-colors.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613%20CSD/FYP/MidiMusic-master-AS/app/src/main/res/values/activitycards-colors.xml -->
     <eat-comment/>
     <color name="teal">#009688</color>
-    <!-- From: file:/Users/SILVER/Downloads/MidiMusic-master-AS/app/src/main/res/values/color.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613%20CSD/FYP/MidiMusic-master-AS/app/src/main/res/values/color.xml -->
     <eat-comment/>
     <color name="type_bkgnd_ringtone">#88008888</color>
     <color name="white">#ffffffff</color>
@@ -271,7 +271,7 @@
     <declare-styleable name="Toolbar"><attr format="reference" name="titleTextAppearance"/><attr format="reference" name="subtitleTextAppearance"/><attr name="title"/><attr name="subtitle"/><attr name="android:gravity"/><attr format="dimension" name="titleMargins"/><attr format="dimension" name="titleMarginStart"/><attr format="dimension" name="titleMarginEnd"/><attr format="dimension" name="titleMarginTop"/><attr format="dimension" name="titleMarginBottom"/><attr name="contentInsetStart"/><attr name="contentInsetEnd"/><attr name="contentInsetLeft"/><attr name="contentInsetRight"/><attr format="dimension" name="maxButtonHeight"/><attr format="reference" name="theme"/><attr format="reference" name="collapseIcon"/><attr format="string" name="collapseContentDescription"/><attr name="popupTheme"/><attr format="reference" name="navigationIcon"/><attr format="string" name="navigationContentDescription"/><attr name="android:minHeight"/></declare-styleable>
     <declare-styleable name="View"><attr format="dimension" name="paddingStart"/><attr format="dimension" name="paddingEnd"/><attr name="android:focusable"/></declare-styleable>
     <declare-styleable name="ViewStubCompat"><attr name="android:layout"/><attr name="android:inflatedId"/><attr name="android:id"/></declare-styleable>
-    <!-- From: file:/Users/SILVER/Downloads/MidiMusic-master-AS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.2/res/values/values.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613%20CSD/FYP/MidiMusic-master-AS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.2/res/values/values.xml -->
     <eat-comment/>
     <dimen name="abc_action_bar_default_height_material">56dp</dimen>
     <dimen name="abc_action_bar_default_padding_material">4dp</dimen>
@@ -310,26 +310,26 @@
     <dimen name="abc_text_size_subtitle_material_toolbar">16dp</dimen>
     <dimen name="abc_text_size_title_material">20sp</dimen>
     <dimen name="abc_text_size_title_material_toolbar">20dp</dimen>
-    <!-- From: file:/Users/SILVER/Downloads/MidiMusic-master-AS/app/src/main/res/values/dimens.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613%20CSD/FYP/MidiMusic-master-AS/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="activity_bottom_margin">5dp</dimen>
     <dimen name="activity_horizontal_margin">5dp</dimen>
     <dimen name="activity_top_margin">0dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-    <!-- From: file:/Users/SILVER/Downloads/MidiMusic-master-AS/app/src/main/res/values/activitycards-dimens.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613%20CSD/FYP/MidiMusic-master-AS/app/src/main/res/values/activitycards-dimens.xml -->
     <eat-comment/>
     <dimen name="card_margin">8dp</dimen>
     <dimen name="card_padding">16dp</dimen>
-    <!-- From: file:/Users/SILVER/Downloads/MidiMusic-master-AS/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/21.0.2/res/values/values.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613%20CSD/FYP/MidiMusic-master-AS/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/21.0.2/res/values/values.xml -->
     <eat-comment/>
     <dimen name="cardview_compat_inset_shadow">1dp</dimen>
     <dimen name="cardview_default_elevation">2dp</dimen>
     <dimen name="cardview_default_radius">2dp</dimen>
-    <!-- From: file:/Users/SILVER/Downloads/MidiMusic-master-AS/app/src/main/res/values/dimens.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613%20CSD/FYP/MidiMusic-master-AS/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="console_indent">0dp</dimen>
     <dimen name="default_font">12sp</dimen>
-    <!-- From: file:/Users/SILVER/Downloads/MidiMusic-master-AS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.2/res/values/values.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613%20CSD/FYP/MidiMusic-master-AS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.2/res/values/values.xml -->
     <eat-comment/>
     <item name="dialog_fixed_height_major" type="dimen">80%</item>
     <item name="dialog_fixed_height_minor" type="dimen">100%</item>
@@ -337,7 +337,7 @@
     <item name="dialog_fixed_width_minor" type="dimen">320dp</item>
     <item format="float" name="disabled_alpha_material_dark" type="dimen">0.30</item>
     <item format="float" name="disabled_alpha_material_light" type="dimen">0.26</item>
-    <!-- From: file:/Users/SILVER/Downloads/MidiMusic-master-AS/app/src/main/res/values/dimens.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613%20CSD/FYP/MidiMusic-master-AS/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="drum_header_indent">60dp</dimen>
     <dimen name="drum_pad_height">50dp</dimen>
@@ -347,10 +347,10 @@
     <dimen name="font_title">16sp</dimen>
     <dimen name="grid_element_height">52dp</dimen>
     <dimen name="grid_element_width">35dp</dimen>
-    <!-- From: file:/Users/SILVER/Downloads/MidiMusic-master-AS/app/src/main/res/values/template-dimens.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613%20CSD/FYP/MidiMusic-master-AS/app/src/main/res/values/template-dimens.xml -->
     <eat-comment/>
     <dimen name="horizontal_page_margin">@dimen/margin_medium</dimen>
-    <!-- From: file:/Users/SILVER/Downloads/MidiMusic-master-AS/app/src/main/res/values/dimens.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613%20CSD/FYP/MidiMusic-master-AS/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="init_height">220dp</dimen>
     <dimen name="init_width">490dp</dimen>
@@ -362,7 +362,7 @@
     <dimen name="keyboard_black_key_width_1">36dp</dimen>
     <dimen name="keyboard_black_key_width_2">35dp</dimen>
     <dimen name="keyboard_key_width">58dp</dimen>
-    <!-- From: file:/Users/SILVER/Downloads/MidiMusic-master-AS/app/src/main/res/values/template-dimens.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613%20CSD/FYP/MidiMusic-master-AS/app/src/main/res/values/template-dimens.xml -->
     <eat-comment/>
     <dimen name="margin_huge">64dp</dimen>
     <dimen name="margin_large">32dp</dimen>
@@ -370,7 +370,7 @@
     <dimen name="margin_small">8dp</dimen>
     <dimen name="margin_tiny">4dp</dimen>
     <dimen name="vertical_page_margin">@dimen/margin_medium</dimen>
-    <!-- From: file:/Users/SILVER/Downloads/MidiMusic-master-AS/app/src/main/res/values/color.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613%20CSD/FYP/MidiMusic-master-AS/app/src/main/res/values/color.xml -->
     <eat-comment/>
     <drawable name="grid_line">#ee01a9a9</drawable>
     <drawable name="playback_indicator">#ffff66</drawable>
@@ -384,7 +384,7 @@
     <drawable name="waveform_selected">#8dffff</drawable>
     <drawable name="waveform_unselected">#106072</drawable>
     <drawable name="waveform_unselected_bkgnd_overlay">#33000000</drawable>
-    <!-- From: file:/Users/SILVER/Downloads/MidiMusic-master-AS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.2/res/values/values.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613%20CSD/FYP/MidiMusic-master-AS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.2/res/values/values.xml -->
     <eat-comment/>
     <item name="action_bar_activity_content" type="id"/>
     <item name="action_bar_spinner" type="id"/>
@@ -412,7 +412,7 @@
     <string name="abc_shareactionprovider_share_with">Share with</string>
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
-    <!-- From: file:/Users/SILVER/Downloads/MidiMusic-master-AS/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613%20CSD/FYP/MidiMusic-master-AS/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="about_text"><![CDATA[Use Ringdroid to edit MP3, WAV, AAC, and AMR audio files and create ringtones, alarms, and notifications from them.\n\nTip: copy audio files to your SD card using a USB cable, or get MP3s using the Amazon MP3 application.\n\nTip: long-press on an audio file from the main screen to delete it.  More below...\n\nTip: tap anywhere on the waveform to start playing at that position.\n\nTip: while playing, tap the word Start or End to quickly set the start and end markers to the current playback time.\n\nTip: Use the jog wheel for more precise adjustments.\n\nVersion 2.3\n\nDeveloper: Dominic Mazzoni\nGraphics: Joseph Wain\nSupport and evangelizing: Eugene Koh\nEnhancements: Dan Klufas\n\nRingdroid is free software, distributed under the Apache 2.0 license.  Source code is on code.google.com\n]]></string>
     <string name="about_title">About Ringdroid</string>
@@ -534,10 +534,10 @@
     <string name="four">Four</string>
     <string name="hello_world">Hello world!</string>
     <string name="help_str">Help</string>
-    <!-- From: file:/Users/SILVER/Downloads/MidiMusic-master-AS/app/src/main/res/values/dimens.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613%20CSD/FYP/MidiMusic-master-AS/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <string name="hidden">2</string>
-    <!-- From: file:/Users/SILVER/Downloads/MidiMusic-master-AS/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613%20CSD/FYP/MidiMusic-master-AS/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="highlighted_scale">Highlighted Scale:</string>
     <string name="hint_account">Account</string>
@@ -559,13 +559,13 @@
     <string name="metronome">Metronome</string>
     <string name="mod_usb">Modulate USB:</string>
     <string name="name">Fullname</string>
-    <!-- From: file:/Users/SILVER/Downloads/MidiMusic-master-AS/app/src/main/res/values/activitycards-strings.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613%20CSD/FYP/MidiMusic-master-AS/app/src/main/res/values/activitycards-strings.xml -->
     <eat-comment/>
     <string name="navigationdraweractivity_description">The purpose of the app is that customize your ringtone in the Android.
             Which is the ringtone that created by your OWN!!!
             \nClick the dialog to start create your new ring tone !!!.</string>
     <string name="navigationdraweractivity_title">TrueTone APP</string>
-    <!-- From: file:/Users/SILVER/Downloads/MidiMusic-master-AS/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613%20CSD/FYP/MidiMusic-master-AS/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="new_sequence">New sequence</string>
     <string name="no_extension_error">Sorry, Ringdroid can\'t edit a file if it doesn\'t have an extension like .mp3 or .wav</string>
@@ -684,7 +684,7 @@
     <string name="write_error">Error writing file</string>
     <string name="zoom_in">Zoom In</string>
     <string name="zoom_out">Zoom Out</string>
-    <!-- From: file:/Users/SILVER/Downloads/MidiMusic-master-AS/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613%20CSD/FYP/MidiMusic-master-AS/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="AppBaseTheme" parent="android:Theme.Holo.Light.NoActionBar.Fullscreen">
         <!-- Theme customizations available in newer API levels can go in res/values-vXX/styles.xml,
@@ -709,7 +709,7 @@
         <item name="android:shadowRadius">1</item>
         <item name="android:focusable">true</item>
     </style>
-    <!-- From: file:/Users/SILVER/Downloads/MidiMusic-master-AS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.2/res/values/values.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613%20CSD/FYP/MidiMusic-master-AS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.2/res/values/values.xml -->
     <eat-comment/>
     <style name="Base.TextAppearance.AppCompat" parent="android:TextAppearance">
         <item name="android:textColor">?android:textColorPrimary</item>
@@ -1463,13 +1463,13 @@
         <item name="android:scaleType">center</item>
         <item name="android:background">?attr/selectableItemBackground</item>
     </style>
-    <!-- From: file:/Users/SILVER/Downloads/MidiMusic-master-AS/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613%20CSD/FYP/MidiMusic-master-AS/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="BtnStyle">
         <item name="android:background">@drawable/button</item>
         <item name="android:gravity">center</item>
     </style>
-    <!-- From: file:/Users/SILVER/Downloads/MidiMusic-master-AS/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/21.0.2/res/values/values.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613%20CSD/FYP/MidiMusic-master-AS/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/21.0.2/res/values/values.xml -->
     <eat-comment/>
     <style name="CardView">
         <item name="cardBackgroundColor">@color/cardview_light_background</item>
@@ -1485,7 +1485,7 @@
     <style name="CardView.Light">
         <item name="cardBackgroundColor">@color/cardview_light_background</item>
     </style>
-    <!-- From: file:/Users/SILVER/Downloads/MidiMusic-master-AS/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613%20CSD/FYP/MidiMusic-master-AS/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="ChooseContactBackground">
         <item name="android:background">#cc9933</item>
@@ -1504,7 +1504,7 @@
         <item name="android:background">@drawable/img_button</item>
         <item name="android:padding">10dp</item>
     </style>
-    <!-- From: file:/Users/SILVER/Downloads/MidiMusic-master-AS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.2/res/values/values.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613%20CSD/FYP/MidiMusic-master-AS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.2/res/values/values.xml -->
     <eat-comment/>
     <style name="Platform.AppCompat" parent="android:Theme">
         <item name="android:windowNoTitle">true</item>
@@ -1732,18 +1732,18 @@
         <item name="windowActionBar">false</item>
         <item name="android:windowNoTitle">true</item>
     </style>
-    <!-- From: file:/Users/SILVER/Downloads/MidiMusic-master-AS/app/src/main/res/values/template-styles.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613%20CSD/FYP/MidiMusic-master-AS/app/src/main/res/values/template-styles.xml -->
     <eat-comment/>
     <style name="Theme.Base" parent="android:Theme.Holo.Light"/>
     <style name="Theme.Sample" parent="Theme.Base"/>
-    <!-- From: file:/Users/SILVER/Downloads/MidiMusic-master-AS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.2/res/values/values.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613%20CSD/FYP/MidiMusic-master-AS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.2/res/values/values.xml -->
     <eat-comment/>
     <style name="ThemeOverlay.AppCompat" parent="Base.ThemeOverlay.AppCompat"/>
     <style name="ThemeOverlay.AppCompat.ActionBar" parent="Base.ThemeOverlay.AppCompat.ActionBar"/>
     <style name="ThemeOverlay.AppCompat.Dark" parent="Base.ThemeOverlay.AppCompat.Dark"/>
     <style name="ThemeOverlay.AppCompat.Dark.ActionBar" parent="Base.ThemeOverlay.AppCompat.Dark.ActionBar"/>
     <style name="ThemeOverlay.AppCompat.Light" parent="Base.ThemeOverlay.AppCompat.Light"/>
-    <!-- From: file:/Users/SILVER/Downloads/MidiMusic-master-AS/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613%20CSD/FYP/MidiMusic-master-AS/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="ToolbarBackground">
         <item name="android:background">#222233</item>
@@ -1766,10 +1766,10 @@
         <item name="android:layout_marginRight">4px</item>
         <item name="android:background">#000022</item>
     </style>
-    <!-- From: file:/Users/SILVER/Downloads/MidiMusic-master-AS/app/src/main/res/values/template-styles.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613%20CSD/FYP/MidiMusic-master-AS/app/src/main/res/values/template-styles.xml -->
     <eat-comment/>
     <style name="Widget"/>
-    <!-- From: file:/Users/SILVER/Downloads/MidiMusic-master-AS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.2/res/values/values.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613%20CSD/FYP/MidiMusic-master-AS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.2/res/values/values.xml -->
     <eat-comment/>
     <style name="Widget.AppCompat.ActionBar" parent="Base.Widget.AppCompat.ActionBar"/>
     <style name="Widget.AppCompat.ActionBar.Solid" parent="Base.Widget.AppCompat.ActionBar.Solid"/>
@@ -1824,7 +1824,7 @@
     <style name="Widget.AppCompat.Spinner.DropDown.ActionBar" parent="Base.Widget.AppCompat.Spinner.DropDown.ActionBar"/>
     <style name="Widget.AppCompat.Toolbar" parent="Base.Widget.AppCompat.Toolbar"/>
     <style name="Widget.AppCompat.Toolbar.Button.Navigation" parent="Base.Widget.AppCompat.Toolbar.Button.Navigation"/>
-    <!-- From: file:/Users/SILVER/Downloads/MidiMusic-master-AS/app/src/main/res/values/template-styles.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613%20CSD/FYP/MidiMusic-master-AS/app/src/main/res/values/template-styles.xml -->
     <eat-comment/>
     <style name="Widget.SampleContentContainer">
         <item name="android:paddingTop">@dimen/vertical_page_margin</item>

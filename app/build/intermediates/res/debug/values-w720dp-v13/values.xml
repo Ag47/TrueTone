@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/Users/SILVER/Downloads/MidiMusic-master-AS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.2/res/values-w720dp/values.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613%20CSD/FYP/MidiMusic-master-AS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.2/res/values-w720dp/values.xml -->
     <eat-comment/>
     <bool name="abc_action_bar_expanded_action_views_exclusive">false</bool>
 </resources>

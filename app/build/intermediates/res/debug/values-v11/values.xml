@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/Users/SILVER/Downloads/MidiMusic-master-AS/app/src/main/res/values-v11/styles.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613%20CSD/FYP/MidiMusic-master-AS/app/src/main/res/values-v11/styles.xml -->
     <eat-comment/>
     <style name="AppBaseTheme" parent="android:Theme.Holo.Light.NoActionBar.Fullscreen"/>
     <style name="AppTheme" parent="android:Theme.Material.Light">
     </style>
-    <!-- From: file:/Users/SILVER/Downloads/MidiMusic-master-AS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.2/res/values-v11/values.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613%20CSD/FYP/MidiMusic-master-AS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.2/res/values-v11/values.xml -->
     <eat-comment/>
     <style name="Base.TextAppearance.AppCompat.Inverse">
         <item name="android:textColor">?android:attr/textColorPrimaryInverse</item>
@@ -359,7 +359,7 @@
         <item name="android:listChoiceIndicatorSingle">@drawable/abc_btn_radio_material</item>
         <item name="android:listChoiceIndicatorMultiple">@drawable/abc_btn_check_material</item>
     </style>
-    <!-- From: file:/Users/SILVER/Downloads/MidiMusic-master-AS/app/src/main/res/values-v11/template-styles.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613%20CSD/FYP/MidiMusic-master-AS/app/src/main/res/values-v11/template-styles.xml -->
     <eat-comment/>
     <style name="Theme.Base" parent="android:Theme.Holo.Light"/>
 </resources>
