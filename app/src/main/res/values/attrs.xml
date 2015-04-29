@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PianoView">
+        <attr name="blackKeyDrawable" format="reference" />
+        <attr name="whiteKeyDrawable" format="reference" />
+        <attr name="keyCount" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="CoverFlow">
+        <attr name="orientation" format="enum">
+            <enum name="vertical" value="0" />
+            <enum name="semicircle" value="1" />
+        </attr>
+    </declare-styleable>
+</resources>

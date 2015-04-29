@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_bottom_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_top_margin">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_corners_panel_shape"
+        >
+
+        <ImageButton
+            android:id="@+id/pianoBackToHome"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/leftarrow"
+            android:adjustViewBounds="false" />
+
+        <ImageButton
+            android:id="@+id/empty"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_toRightOf="@id/pianoBackToHome"
+            android:visibility="invisible"
+            />
+        <ImageButton
+            android:id="@+id/va8"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:scaleType="fitCenter"
+            android:layout_toRightOf="@id/empty"
+            android:src="@drawable/va8"
+            android:visibility="gone"/>
+
+        <ImageButton
+            android:id="@+id/vb8"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:scaleType="fitCenter"
+            android:layout_toRightOf="@id/va8"
+            android:src="@drawable/vb8"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="@string/hidden">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/instrument"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/note"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/note"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/dash"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <include layout="@layout/usb_connection" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true">
+
+            <include layout="@layout/recording_pane" />
+
+            <ImageButton
+                android:id="@+id/instrument_change_btn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:contentDescription="@string/descp_change_instr"
+                android:scaleType="fitCenter"
+                android:src="@drawable/grid2"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/sequence_btn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:contentDescription="@string/descp_sequence_screen"
+                android:scaleType="fitCenter"
+                android:src="@drawable/wave"
+                android:visibility="@string/hidden" />
+
+            <ImageButton
+                android:id="@+id/drum_btn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:contentDescription="@string/descp_drum_screen"
+                android:scaleType="fitCenter"
+                android:src="@drawable/drum"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/note_btn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:contentDescription="@string/descp_chord_screen"
+                android:scaleType="fitCenter"
+                android:src="@drawable/notes"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/console_btn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="30dp"
+                android:contentDescription="@string/descp_console_screen"
+                android:scaleType="fitCenter"
+                android:src="@drawable/console" />
+
+            <ImageButton
+                android:id="@+id/close_btn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:contentDescription="@string/descp_close"
+                android:scaleType="fitCenter"
+                android:src="@drawable/close" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/instrument_fragment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/rounded_corners_bg_shape"
+        android:padding="3dp" />
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+	<solid android:color="@android:color/transparent" />
+</shape>
+<!-- From: file:/Users/SILVER/Downloads/MidiMusic-master-AS/app/src/main/res/drawable-mdpi/transparent_bg.xml -->

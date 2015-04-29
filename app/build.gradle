@@ -1,0 +1,35 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "21.1.2"
+
+    defaultConfig {
+        applicationId "com.comp4905.jasonfleischer.midimusic"
+        minSdkVersion 17
+        targetSdkVersion 21
+
+        ndk {
+            moduleName "com_comp4905_jasonfleischer_midimusic_audio_NDKFunct"
+            cFlags "-std=c++11 -fexceptions" // Add provisions to allow C++11 functionality
+            stl "gnustl_shared" // Which STL library to use: gnustl or stlport
+            ldLibs "log" // Link with these libraries
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    //    compile 'com.android.support:support-v4:19.1.0'
+    compile 'com.android.support:support-v13:21.0.2'
+    compile 'com.android.support:appcompat-v7:21.0.2'
+    compile 'com.android.support:recyclerview-v7:21.0.2'
+    compile 'com.android.support:cardview-v7:21.0.2'
+    compile files('libs/volley.jar')
+}

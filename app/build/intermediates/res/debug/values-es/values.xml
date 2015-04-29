@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/Users/SILVER/Downloads/MidiMusic-master-AS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.2/res/values-es/values.xml -->
+    <eat-comment/>
+    <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Ir a la pantalla de inicio"</string>
+    <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s, %2$s"</string>
+    <string msgid="6623331958280229229" name="abc_action_bar_home_subtitle_description_format">"%1$s, %2$s, %3$s"</string>
+    <string msgid="1594238315039666878" name="abc_action_bar_up_description">"Desplazarse hacia arriba"</string>
+    <string msgid="3588849162933574182" name="abc_action_menu_overflow_description">"Más opciones"</string>
+    <string msgid="4076576682505996667" name="abc_action_mode_done">"Listo"</string>
+    <string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"Ver todo"</string>
+    <string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"Seleccionar una aplicación"</string>
+    <string msgid="3691816814315814921" name="abc_searchview_description_clear">"Borrar consulta"</string>
+    <string msgid="2550479030709304392" name="abc_searchview_description_query">"Consulta"</string>
+    <string msgid="8264924765203268293" name="abc_searchview_description_search">"Buscar"</string>
+    <string msgid="8928215447528550784" name="abc_searchview_description_submit">"Enviar consulta"</string>
+    <string msgid="893419373245838918" name="abc_searchview_description_voice">"Búsqueda por voz"</string>
+    <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Compartir con"</string>
+    <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Compartir con %s"</string>
+    <!-- From: file:/Users/SILVER/Downloads/MidiMusic-master-AS/app/src/main/res/values-es/strings.xml -->
+    <eat-comment/>
+    <string name="accent">"Acento:"</string>
+    <string name="app_name">"Midi Música"</string>
+    <string name="attach_chord">"Mediodía de dispositivos y teclado virtual es ahora unidos a los sonidos de acordes
+	"</string>
+    <string name="attach_drum">"Dispositivo MIDI y teclado virtual es ahora unidos al tambor sonidos
+	"</string>
+    <string name="attach_sequence">"Mediodía de dispositivos y teclado virtual es ahora unidos a los sonidos de secuencias
+	"</string>
+    <string name="beats">latidos</string>
+    <string name="cannot_delete_last_sequence">"No se puede borrar la última secuencia"</string>
+    <string name="cannot_loop_uncomplete">"No se puede bucle de grabación vacío o incompleto"</string>
+    <string name="cannot_record_while_looping">"No se puede grabar mientras que la pista es un bucle"</string>
+    <string name="chord">"Acorde:"</string>
+    <string name="chord_player">"Acorde jugador"</string>
+    <string name="clear_recording">"Grabación Borrado"</string>
+    <string name="columns">"Columnas:"</string>
+    <string name="conn_usb">"Conecte el dispositivo USB"</string>
+    <string name="console">"Consola"</string>
+    <string name="create_sequence_limit">"No se puede crear más de 30 secuencias"</string>
+    <string name="dash">"-"</string>
+    <string name="dash_and_dash">"- Y -"</string>
+    <string name="dash_dash_dash">"- - -"</string>
+    <string name="descp_add_sequence">"añadir secuencia"</string>
+    <string name="descp_change_drum">"vista del cambio de tambor"</string>
+    <string name="descp_change_instr">"vista cambio de instrumento"</string>
+    <string name="descp_chord_screen">"navegar a acorde pantalla"</string>
+    <string name="descp_close">"cerca aplicación"</string>
+    <string name="descp_connect_keyboard">"conectar teclado"</string>
+    <string name="descp_console_screen">"navegar a la consola de pantalla"</string>
+    <string name="descp_delete_track">"Eliminar pista"</string>
+    <string name="descp_drum_screen">"navegar a tamborilear pantalla"</string>
+    <string name="descp_edit_drum">"editar tambores dentro y fuera"</string>
+    <string name="descp_expand">"expandir o colapsar menú"</string>
+    <string name="descp_intrument_screen">"navegar a la pantalla de instrumento"</string>
+    <string name="descp_loop">"secuencia de bucle o parada"</string>
+    <string name="descp_loop_track">"pista de bucle o parada"</string>
+    <string name="descp_metronome">"reproducir o detener el metrónomo"</string>
+    <string name="descp_play">"reproducir o detener la secuencia"</string>
+    <string name="descp_record_track">"grabar o detener historial"</string>
+    <string name="descp_rem_sequence">"eliminar secuencia"</string>
+    <string name="descp_sequence_screen">"navegar a la pantalla de secuencia"</string>
+    <string name="detach_chords">"Dispositivo MIDI y teclado virtual es ahora separados de los sonidos de acordes
+	"</string>
+    <string name="detach_drum">"Dispositivo MIDI y teclado virtual es ahora separados de sonidos de batería
+	"</string>
+    <string name="detach_sequence">"Dispositivo MIDI y teclado virtual es ahora separados de sonidos de secuencias
+	"</string>
+    <string name="drum_machine">"Drum Machine"</string>
+    <string name="dubbing_started">"Doblaje empezó"</string>
+    <string name="dubbing_stopped">Doblaje detuvo</string>
+    <string name="dubbing_track">Pista de doblaje</string>
+    <string name="duration">"Duración:"</string>
+    <string name="e_and_a">"e Y a"</string>
+    <string name="empty_track">Pista vacía</string>
+    <string name="four">Cuatro años</string>
+    <string name="highlighted_scale">"Escala destacado:"</string>
+    <string name="instrument">"Instrumento:"</string>
+    <string name="key">"Clave:"</string>
+    <string name="loading">"Resortes"</string>
+    <string name="metronome">"Metrónomo"</string>
+    <string name="mod_usb">"Modular USB:"</string>
+    <string name="new_sequence">"Nueva secuencia"</string>
+    <string name="no_usb_dectected">"No hay ningún dispositivo USB detectado"</string>
+    <string name="none">Ninguno</string>
+    <string name="note">"Nota:"</string>
+    <string name="note_long">"Larga"</string>
+    <string name="note_med">"Mediana"</string>
+    <string name="note_short">"Corto"</string>
+    <string name="note_too_large">" nota no caben en el espacio seleccionado"</string>
+    <string name="note_very_long">"Muy Larga"</string>
+    <string name="note_very_short">"Muy corto"</string>
+    <string name="octave">"Octava:"</string>
+    <string name="out_of_range">"Nota está fuera del rango del instrumento"</string>
+    <string name="permission_denied_for_usb">"Permiso denegado para el dispositivo USB"</string>
+    <string name="playing_mode">"Modo de Reproducción"</string>
+    <string name="playing_mode_chord">Acorde</string>
+    <string name="playing_mode_drums">Tambores</string>
+    <string name="playing_mode_sequence">Secuencia"</string>
+    <string name="playing_mode_single_note">Sola nota</string>
+    <string name="recording_started">"La grabación comenzó"</string>
+    <string name="recording_stopped">La grabación se detuvo</string>
+    <string name="recording_track">Pista de grabación</string>
+    <string name="seq_fast">"Rápido"</string>
+    <string name="seq_med">"Mediana"</string>
+    <string name="seq_slow">"Lento"</string>
+    <string name="seq_very_fast">"Muy rápido"</string>
+    <string name="seq_very_slow">"Muy lento"</string>
+    <string name="sequence">"Secuencia:"</string>
+    <string name="sequence_deleted">"Secuencia suprimida"</string>
+    <string name="sequencer">"Sequencer"</string>
+    <string name="spoken">"Voz:"</string>
+    <string name="sustain">"Sustentar:"</string>
+    <string name="tempo">"Tempo:"</string>
+    <string name="three">Tres</string>
+    <string name="track_cleared">Despejado pista</string>
+    <string name="track_playing">Juego de pista</string>
+    <string name="track_ready">Seguimiento de listo</string>
+    <string name="track_stopped">Detuvo pista</string>
+    <string name="transpose_key">"Transposición clave:"</string>
+    <string name="try_smaller_tempo">"Por favor, intente un ritmo menor. Opción hablado incoherente más de 110 BPM
+	"</string>
+    <string name="two">Dos</string>
+    <string name="type">"Tipo: "</string>
+    <string name="updating_midi">"Actualización Midi Files"</string>
+    <string name="usb_already_connected">"Dispositivo USB ya conectado"</string>
+    <string name="usb_conn">"Dispositivo USB conectado"</string>
+    <string name="usb_connected">"Dispositivo USB conectado"</string>
+    <string name="usb_disconn">"Dispositivo USB desconectado"</string>
+    <string name="usb_not_supported">"Dispositivo USB no es compatible"</string>
+    <string name="usb_settings">"Ajustes USB"</string>
+    <string name="virtual_keyboard">"Teclado Virtual"</string>
+</resources>

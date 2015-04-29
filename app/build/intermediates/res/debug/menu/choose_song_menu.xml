@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/scan_qr"
+        android:icon="@drawable/menu_refresh"
+        android:title="Scan by QR" />
+    <item android:id="@+id/scan_files"
+          android:icon="@drawable/menu_refresh"
+          android:title="@string/scan_files_str" />
+    <item android:id="@+id/browse_files"
+          android:icon="@android:drawable/ic_menu_search"
+          android:title="@string/browse_files_str" />
+    <item android:id="@+id/ringtone_manage"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="Manage Ringtone" />
+</menu>
+
+<!-- From: file:/Users/SILVER/Downloads/MidiMusic-master-AS/app/src/main/res/menu/choose_song_menu.xml -->

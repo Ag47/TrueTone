@@ -1,0 +1,10 @@
+/Users/SILVER/Downloads/MidiMusic-master-AS/app/build/intermediates/classes/debug
+/Users/SILVER/Downloads/MidiMusic-master-AS/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.2-441a81c761945c7a9156dede0e2d6dd42fd2a37e.jar
+/Users/SILVER/Downloads/MidiMusic-master-AS/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.2-d125bebaf59a47cbdd2750301bec6a6b1a38fe0b.jar
+/Users/SILVER/Downloads/MidiMusic-master-AS/app/build/intermediates/pre-dexed/debug/classes-df40aeab07f86ed4f914444cc7e3d96baa1c7957.jar
+/Users/SILVER/Downloads/MidiMusic-master-AS/app/build/intermediates/pre-dexed/debug/classes-930e89c7c7964a40a8cf9aeddf3ca41cbe17cf10.jar
+/Users/SILVER/Downloads/MidiMusic-master-AS/app/build/intermediates/pre-dexed/debug/volley-74a9466404ba5584e43ed97e42ffb3d1790647ac.jar
+/Users/SILVER/Downloads/MidiMusic-master-AS/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.2-662a238eea486bdf97741be3922314c6f78d53a2.jar
+/Users/SILVER/Downloads/MidiMusic-master-AS/app/build/intermediates/pre-dexed/debug/classes-0dcda795e7552284c0634d2e6d55a893b60cfdd4.jar
+/Users/SILVER/Downloads/MidiMusic-master-AS/app/build/intermediates/pre-dexed/debug/classes-e59255dab3f0c477808097b1a4f53c35f4c6fa4a.jar
+/Users/SILVER/Downloads/MidiMusic-master-AS/app/build/intermediates/pre-dexed/debug/classes-1579668c64a5f5b0228ed6f29d886b9408dcf527.jar

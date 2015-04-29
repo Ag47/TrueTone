@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/SILVER/Downloads/MidiMusic-master-AS/app/libs/volley.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d4aaa36e04ee71a83444f8367c97a46fda662d2c">
+        <dex dex="/Users/SILVER/Downloads/MidiMusic-master-AS/app/build/intermediates/pre-dexed/debug/volley-74a9466404ba5584e43ed97e42ffb3d1790647ac.jar" />
+    </item>
+    <item
+        jar="/Users/SILVER/Downloads/MidiMusic-master-AS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.2/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="7ae2d38807a43b2f2185ff4089a92c790b579e54">
+        <dex dex="/Users/SILVER/Downloads/MidiMusic-master-AS/app/build/intermediates/pre-dexed/debug/classes-e59255dab3f0c477808097b1a4f53c35f4c6fa4a.jar" />
+    </item>
+    <item
+        jar="/Users/SILVER/Downloads/MidiMusic-master-AS/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.2/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d1bf02de1c56d942e7a9d093b8610ba1ef4128e3">
+        <dex dex="/Users/SILVER/Downloads/MidiMusic-master-AS/app/build/intermediates/pre-dexed/debug/classes-1579668c64a5f5b0228ed6f29d886b9408dcf527.jar" />
+    </item>
+    <item
+        jar="/Users/SILVER/Downloads/MidiMusic-master-AS/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/21.0.2/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="b017100da14f9c158c9f5f2f508333c224b24a7c">
+        <dex dex="/Users/SILVER/Downloads/MidiMusic-master-AS/app/build/intermediates/pre-dexed/debug/classes-930e89c7c7964a40a8cf9aeddf3ca41cbe17cf10.jar" />
+    </item>
+    <item
+        jar="/Users/SILVER/Downloads/MidiMusic-master-AS/app/build/intermediates/exploded-aar/com.android.support/support-v13/21.0.2/libs/internal_impl-21.0.2.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="9346da9fb778af9e451211bbc3541daced174ba7">
+        <dex dex="/Users/SILVER/Downloads/MidiMusic-master-AS/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.2-441a81c761945c7a9156dede0e2d6dd42fd2a37e.jar" />
+    </item>
+    <item
+        jar="/Applications/eclipse/android-sdk-macosx/extras/android/m2repository/com/android/support/support-annotations/21.0.2/support-annotations-21.0.2.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="99373741f99a0556ee293c41e8faa1ca3ae8a4e6">
+        <dex dex="/Users/SILVER/Downloads/MidiMusic-master-AS/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.2-d125bebaf59a47cbdd2750301bec6a6b1a38fe0b.jar" />
+    </item>
+    <item
+        jar="/Users/SILVER/Downloads/MidiMusic-master-AS/app/build/intermediates/exploded-aar/com.android.support/support-v13/21.0.2/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="61965ae058916e6a57950dd61b0164dc866af19a">
+        <dex dex="/Users/SILVER/Downloads/MidiMusic-master-AS/app/build/intermediates/pre-dexed/debug/classes-df40aeab07f86ed4f914444cc7e3d96baa1c7957.jar" />
+    </item>
+    <item
+        jar="/Users/SILVER/Downloads/MidiMusic-master-AS/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.2/libs/internal_impl-21.0.2.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="962e8b12569c56dbdcf8367eb4eac8bb129cd18f">
+        <dex dex="/Users/SILVER/Downloads/MidiMusic-master-AS/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.2-662a238eea486bdf97741be3922314c6f78d53a2.jar" />
+    </item>
+    <item
+        jar="/Users/SILVER/Downloads/MidiMusic-master-AS/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/21.0.2/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4796f18d3750bf2bfa078407a94a7f9db35b440d">
+        <dex dex="/Users/SILVER/Downloads/MidiMusic-master-AS/app/build/intermediates/pre-dexed/debug/classes-0dcda795e7552284c0634d2e6d55a893b60cfdd4.jar" />
+    </item>
+
+</items>

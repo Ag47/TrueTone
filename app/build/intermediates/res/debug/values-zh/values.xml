@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/Users/SILVER/Downloads/MidiMusic-master-AS/app/src/main/res/values-zh/strings.xml -->
+    <eat-comment/>
+    <string-array name="planets_array">
+        <!--0:-->><item>TrueStudio</item>
+        <!--1:-->><item>Library</item>
+        <!--2:-->><item>About Us</item>
+        <!--3:-->><item>Goto Website</item>
+        <!--&lt;!&ndash;3:&ndash;&gt;><item>CominG SonN</item>-->
+        <!--&lt;!&ndash;4:&ndash;&gt;><item>About Us</item>-->
+    </string-array>
+    <string name="accent">Accent:</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_websearch">Web search</string>
+    <string name="app_name">TrueTone</string>
+    <string name="app_not_available">Sorry, there\'s no web browser available</string>
+    <string name="attach_chord">Midi Device and virtual keyboard is now attached to
+		chord sounds
+	</string>
+    <string name="attach_drum">Midi Device and virtual keyboard is now attached to
+		drum sounds
+	</string>
+    <string name="attach_sequence">Midi Device and virtual keyboard is now attached to
+		sequence sounds
+	</string>
+    <string name="beats">beats</string>
+    <string name="browse_files_str">Browse for MIDI Files</string>
+    <string name="cannot_delete_last_sequence">Cannot deleted last sequence</string>
+    <string name="cannot_loop_uncomplete">Cannot loop empty or uncomplete recording</string>
+    <string name="cannot_record_while_looping">Cannot record while track is looping</string>
+    <string name="choose_song">Choose Song</string>
+    <string name="chord">Chord:</string>
+    <string name="chord_player">Chord Player</string>
+    <string name="clear_recording">Cleared recording</string>
+    <string name="columns">Columns:</string>
+    <string name="combine_interval">Combine Interval</string>
+    <string name="combine_interval_summary">Notes within the given interval (in milliseconds) are combined into a single chord</string>
+    <string name="combine_to_two_staffs">Combine To Two Staffs</string>
+    <string name="combine_to_two_staffs_summary">Combine all the tracks into two staffs (left hand and right hand staffs). </string>
+    <string name="conn_usb">Connect USB Device</string>
+    <string name="console">Console</string>
+    <string name="create_sequence_limit">Cannot create more than 30 sequences</string>
+    <string name="dash">-</string>
+    <string name="dash_and_dash">- And -</string>
+    <string name="dash_dash_dash">- - -</string>
+    <string name="descp_add_sequence">add sequence</string>
+    <string name="descp_change_drum">change drum view</string>
+    <string name="descp_change_instr">change instrument view</string>
+    <string name="descp_chord_screen">navigate to chord screen</string>
+    <string name="descp_close">close application</string>
+    <string name="descp_connect_keyboard">connect keyboard</string>
+    <string name="descp_console_screen">navigate to console screen</string>
+    <string name="descp_delete_track">delete track</string>
+    <string name="descp_drum_screen">navigate to drum screen</string>
+    <string name="descp_edit_drum">edit drums on and off</string>
+    <string name="descp_expand">expand or collapse menu</string>
+    <string name="descp_intrument_screen">navigate to instrument screen</string>
+    <string name="descp_loop">loop or stop sequence</string>
+    <string name="descp_loop_track">loop or stop track</string>
+    <string name="descp_metronome">play or stop metronome</string>
+    <string name="descp_play">play or stop sequence</string>
+    <string name="descp_record_track">record or stop record track</string>
+    <string name="descp_rem_sequence">remove sequence</string>
+    <string name="descp_sequence_screen">navigate to sequence screen</string>
+    <string name="detach_chords">Midi Device and virtual keyboard is now detached
+		from chord sounds
+	</string>
+    <string name="detach_drum">Midi Device and virtual keyboard is now detached
+		from drum sounds
+	</string>
+    <string name="detach_sequence">Midi Device and virtual keyboard is now detached
+		from sequence sounds
+	</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drum_machine">Drum Machine</string>
+    <string name="dubbing_started">Dubbing started</string>
+    <string name="dubbing_stopped">Dubbing stopped</string>
+    <string name="dubbing_track">Dubbing track</string>
+    <string name="duration">Duration:</string>
+    <string name="e_and_a">e And a</string>
+    <string name="empty_track">Empty track</string>
+    <string name="four">Four</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="help_str">Help</string>
+    <string name="highlighted_scale">Highlighted Scale:</string>
+    <string name="instrument">Instrument:</string>
+    <string name="key">Key:</string>
+    <string name="key_signature">Key Signature</string>
+    <string name="left_hand_color">Left Hand Color</string>
+    <string name="loading">Loading</string>
+    <string name="metronome">Metronome</string>
+    <string name="mod_usb">Modulate USB:</string>
+    <string name="new_sequence">New sequence</string>
+    <string name="no_usb_dectected">No USB device detected</string>
+    <string name="none">None</string>
+    <string name="note">Note:</string>
+    <string name="note_long">Long</string>
+    <string name="note_med">Medium</string>
+    <string name="note_short">Short</string>
+    <string name="note_too_large"> note will not fit in selected space</string>
+    <string name="note_very_long">Very Long</string>
+    <string name="note_very_short">Very Short</string>
+    <string name="octave">Octave:</string>
+    <string name="out_of_range">Note is out of instrument range</string>
+    <string name="permission_denied_for_usb">Permission denied for USB device</string>
+    <string name="play_measures_in_loop">Play Measures in a Loop</string>
+    <string name="play_measures_in_loop_end">End Measure</string>
+    <string name="play_measures_in_loop_start">Start Measure</string>
+    <string name="play_measures_in_loop_title">Settings for Play Measures in a Loop</string>
+    <string name="playing_mode">Playing Mode</string>
+    <string name="playing_mode_chord">Chord</string>
+    <string name="playing_mode_drums">Drums</string>
+    <string name="playing_mode_sequence">Sequence</string>
+    <string name="playing_mode_single_note">Single Note</string>
+    <string name="recording_started">Recording started</string>
+    <string name="recording_stopped">Recording stopped</string>
+    <string name="recording_track">Recording track</string>
+    <string name="restore_defaults">Restore Default Settings</string>
+    <string name="right_hand_color">Right Hand Color</string>
+    <string name="save_images_descr_str">Save the sheet music as images, in the directory /Pictures/MidiSheetMusic, with the following filename</string>
+    <string name="save_images_str">Save As Images</string>
+    <string name="scan_button_title">Scan SD Card for MIDI files</string>
+    <string name="scan_files_str">Scan for MIDI Files</string>
+    <string name="scroll_vertically">Scroll Vertically</string>
+    <string name="select_instruments_per_track">Select Instruments For Each Track</string>
+    <string name="select_tracks_to_display">Select Tracks to Display</string>
+    <string name="select_tracks_to_mute">Select Tracks to Mute</string>
+    <string name="seq_fast">Fast</string>
+    <string name="seq_med">Medium</string>
+    <string name="seq_slow">Slow</string>
+    <string name="seq_very_fast">Very Fast</string>
+    <string name="seq_very_slow">Very Slow</string>
+    <string name="sequence">Sequence:</string>
+    <string name="sequence_deleted">Sequence deleted</string>
+    <string name="sequencer">Sequencer</string>
+    <string name="set_all_to_piano">Set All Instruments to Piano</string>
+    <string name="sheet_prefs_title">Sheet Music Preferences</string>
+    <string name="show_lyrics">Show Lyrics</string>
+    <string name="show_measures">Show Measure Numbers</string>
+    <string name="show_note_letters">Show Note Letters</string>
+    <string name="show_piano">Show the Piano</string>
+    <string name="song_settings_str">Song Settings</string>
+    <string name="split_to_two_staffs">Split Track Into Two Staffs</string>
+    <string name="split_to_two_staffs_summary">Split the single track into two staffs (left hand and right hand staffs).</string>
+    <string name="spoken">Spoken:</string>
+    <string name="sustain">Sustain:</string>
+    <string name="tempo">Tempo:</string>
+    <string name="three">Three</string>
+    <string name="time_signature">Time Signature</string>
+    <string name="title_activity_play_midi">PlayMidi</string>
+    <string name="track_cleared">Track cleared</string>
+    <string name="track_playing">Track playing</string>
+    <string name="track_ready">Track ready</string>
+    <string name="track_stopped">Track stopped</string>
+    <string name="transpose">Transpose Notes</string>
+    <string name="transpose_key">Transpose Key:</string>
+    <string name="try_smaller_tempo">Please try a smaller tempo. Spoken option
+		incoherent over 110 BPM
+	</string>
+    <string name="two">Two</string>
+    <string name="type">Type:</string>
+    <string name="updating_midi">Updating Midi Files</string>
+    <string name="usb_already_connected">USB device already connected</string>
+    <string name="usb_conn">USB Device Connected</string>
+    <string name="usb_connected">USB device connected</string>
+    <string name="usb_disconn">USB Device Disconnected</string>
+    <string name="usb_not_supported">USB device not supported</string>
+    <string name="usb_settings">USB Settings</string>
+    <string name="virtual_keyboard">Virtual Keyboard</string>
+</resources>
