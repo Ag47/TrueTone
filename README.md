@@ -19,13 +19,13 @@ TrueTone transforms your mobile into integrated music application. User can crea
 ### Multi-Platform
 
 Now user can access to TrueTone not only by Android device but also on web browser. TrueTone provides a simple way to access ringtone with your friends. Listen through other’s ringtone shared by creative people across the globe.
- 
-Other Features:
 
-Score Viewing
+####Other Features:
 
-Cloud Storage Service
+- Score Viewing
+
+- Cloud Storage Service
 
 #### Developing:
 
-Preview ringtone on web
+- Preview ringtone on web
