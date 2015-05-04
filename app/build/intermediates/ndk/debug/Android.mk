@@ -7,11 +7,11 @@ LOCAL_LDLIBS := \
 	-llog \
 
 LOCAL_SRC_FILES := \
-	/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613 CSD/FYP/MidiMusic-master-AS/app/src/main/jni/Android.mk \
-	/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613 CSD/FYP/MidiMusic-master-AS/app/src/main/jni/Application.mk \
-	/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613 CSD/FYP/MidiMusic-master-AS/app/src/main/jni/com_comp4905_jasonfleischer_midimusic_audio_NDKFunct.cpp \
+	/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/MidiMusic-master-AS/app/src/main/jni/Android.mk \
+	/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/MidiMusic-master-AS/app/src/main/jni/Application.mk \
+	/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/MidiMusic-master-AS/app/src/main/jni/com_comp4905_jasonfleischer_midimusic_audio_NDKFunct.cpp \
 
-LOCAL_C_INCLUDES += /Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613 CSD/FYP/MidiMusic-master-AS/app/src/main/jni
-LOCAL_C_INCLUDES += /Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613 CSD/FYP/MidiMusic-master-AS/app/src/debug/jni
+LOCAL_C_INCLUDES += /Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/MidiMusic-master-AS/app/src/main/jni
+LOCAL_C_INCLUDES += /Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/MidiMusic-master-AS/app/src/debug/jni
 
 include $(BUILD_SHARED_LIBRARY)

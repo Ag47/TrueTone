@@ -71,4 +71,4 @@
         android:scaleType="fitCenter"
         android:src="@drawable/delete" />
 </com.comp4905.jasonfleischer.midimusic.views.RecordingPane>
-<!-- From: file:/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613%20CSD/FYP/MidiMusic-master-AS/app/src/main/res/layout/recording_pane.xml -->
+<!-- From: file:/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/MidiMusic-master-AS/app/src/main/res/layout/recording_pane.xml -->

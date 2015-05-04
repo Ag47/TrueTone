@@ -22,4 +22,4 @@
           android:drawable="@drawable/marker_left_focused" />
     <item android:drawable="@drawable/marker_left_normal" />
 </selector>
-<!-- From: file:/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613%20CSD/FYP/MidiMusic-master-AS/app/src/main/res/drawable/marker_left.xml -->
+<!-- From: file:/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/MidiMusic-master-AS/app/src/main/res/drawable/marker_left.xml -->

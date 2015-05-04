@@ -4,4 +4,4 @@
 	<usb-device vendor-id="9319" product-id="8192" />
 	<!-- behringer guitar link UCG102 -->
 	<usb-device vendor-id="2235" product-id="10498" />
-</resources><!-- From: file:/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613%20CSD/FYP/MidiMusic-master-AS/app/src/main/res/xml/device_filter.xml -->
+</resources><!-- From: file:/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/MidiMusic-master-AS/app/src/main/res/xml/device_filter.xml -->
