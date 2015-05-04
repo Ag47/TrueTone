@@ -101,265 +101,7 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="app: com.comp4905.jasonfleischer.midimusic" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46abdc1f-8063-4cba-bd6d-c75996e40803" name="Default" comment="After">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/classes-0dcda795e7552284c0634d2e6d55a893b60cfdd4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/classes-1579668c64a5f5b0228ed6f29d886b9408dcf527.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/classes-930e89c7c7964a40a8cf9aeddf3ca41cbe17cf10.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/classes-df40aeab07f86ed4f914444cc7e3d96baa1c7957.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/classes-e59255dab3f0c477808097b1a4f53c35f4c6fa4a.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.2-441a81c761945c7a9156dede0e2d6dd42fd2a37e.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.2-662a238eea486bdf97741be3922314c6f78d53a2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/volley-74a9466404ba5584e43ed97e42ffb3d1790647ac.jar" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug-unaligned.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-debug-unaligned.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/cache.properties.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/model_data.bin" afterPath="$PROJECT_DIR$/build/intermediates/model_data.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/outputFileStates.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug-test.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug-test.ap_" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug.ap_" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.2-d125bebaf59a47cbdd2750301bec6a6b1a38fe0b.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.2-d125bebaf59a47cbdd2750301bec6a6b1a38fe0b.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/ndk/debug/Android.mk" afterPath="$PROJECT_DIR$/app/build/intermediates/ndk/debug/Android.mk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MidiMusic-master-AS.iml" afterPath="$PROJECT_DIR$/MidiMusic-master-AS.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_action_bar_title_item.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_action_bar_title_item.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_action_bar_up_container.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_action_bar_up_container.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_action_bar_view_list_nav_layout.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_action_bar_view_list_nav_layout.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_action_menu_item_layout.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_action_menu_item_layout.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_action_menu_layout.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_action_menu_layout.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_action_mode_bar.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_action_mode_bar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_action_mode_close_item_material.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_action_mode_close_item_material.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_activity_chooser_view.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_activity_chooser_view.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_activity_chooser_view_include.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_activity_chooser_view_include.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_activity_chooser_view_list_item.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_activity_chooser_view_list_item.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/color/abc_background_cache_hint_selector_material_dark.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/color/abc_background_cache_hint_selector_material_dark.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/color/abc_background_cache_hint_selector_material_light.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/color/abc_background_cache_hint_selector_material_light.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/abc_btn_check_material.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/abc_btn_check_material.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/abc_btn_radio_material.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/abc_btn_radio_material.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/abc_cab_background_internal_bg.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/abc_cab_background_internal_bg.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/abc_cab_background_top_material.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/abc_cab_background_top_material.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/abc_edit_text_material.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/abc_edit_text_material.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_expanded_menu_layout.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_expanded_menu_layout.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/anim/abc_fade_in.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/anim/abc_fade_in.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/anim/abc_fade_out.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/anim/abc_fade_out.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/abc_item_background_holo_dark.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/abc_item_background_holo_dark.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/abc_item_background_holo_light.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/abc_item_background_holo_light.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_list_menu_item_checkbox.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_list_menu_item_checkbox.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_list_menu_item_icon.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_list_menu_item_icon.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_list_menu_item_layout.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_list_menu_item_layout.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_list_menu_item_radio.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_list_menu_item_radio.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/abc_list_selector_background_transition_holo_dark.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/abc_list_selector_background_transition_holo_dark.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/abc_list_selector_background_transition_holo_light.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/abc_list_selector_background_transition_holo_light.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/abc_list_selector_holo_dark.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/abc_list_selector_holo_dark.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/abc_list_selector_holo_light.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/abc_list_selector_holo_light.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_popup_menu_item_layout.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_popup_menu_item_layout.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/color/abc_primary_text_disable_only_material_dark.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/color/abc_primary_text_disable_only_material_dark.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/color/abc_primary_text_disable_only_material_light.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/color/abc_primary_text_disable_only_material_light.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/color/abc_primary_text_material_dark.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/color/abc_primary_text_material_dark.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/color/abc_primary_text_material_light.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/color/abc_primary_text_material_light.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_screen_content_include.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_screen_content_include.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout-v11/abc_screen_content_include.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout-v11/abc_screen_content_include.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_screen_simple.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_screen_simple.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_screen_simple_overlay_action_mode.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_screen_simple_overlay_action_mode.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_screen_toolbar.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_screen_toolbar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_search_dropdown_item_icons_2line.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_search_dropdown_item_icons_2line.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/color/abc_search_url_text.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/color/abc_search_url_text.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_search_view.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_search_view.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/color/abc_secondary_text_material_dark.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/color/abc_secondary_text_material_dark.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/color/abc_secondary_text_material_light.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/color/abc_secondary_text_material_light.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_simple_dropdown_hint.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/abc_simple_dropdown_hint.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/anim/abc_slide_in_bottom.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/anim/abc_slide_in_bottom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/anim/abc_slide_in_top.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/anim/abc_slide_in_top.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/anim/abc_slide_out_bottom.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/anim/abc_slide_out_bottom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/anim/abc_slide_out_top.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/anim/abc_slide_out_top.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/abc_switch_thumb_material.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/abc_switch_thumb_material.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/abc_tab_indicator_material.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/abc_tab_indicator_material.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/abc_textfield_search_material.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/abc_textfield_search_material.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/aboutus.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/aboutus.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/activity_login.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/activity_login.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/activity_main.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/activity_main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/activity_navigation_drawer.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/activity_navigation_drawer.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/activity_play_midi.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/activity_play_midi.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/activity_register.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/activity_register.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/after_save_action.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/after_save_action.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_21_0_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_21_0_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/bkgnd_normal.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/bkgnd_normal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/bkgnd_pressed.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/bkgnd_pressed.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable-mdpi-v4/button.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable-mdpi-v4/button.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/button_options_bkgnd.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/button_options_bkgnd.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/choose_contact.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/choose_contact.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/choose_song.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/choose_song.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/choose_song_item.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/choose_song_item.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/menu/choose_song_menu.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/menu/choose_song_menu.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable-mdpi-v4/circle_drum_shape_bass.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable-mdpi-v4/circle_drum_shape_bass.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable-mdpi-v4/circle_drum_shape_lrg.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable-mdpi-v4/circle_drum_shape_lrg.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable-mdpi-v4/circle_drum_shape_med.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable-mdpi-v4/circle_drum_shape_med.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable-mdpi-v4/circle_drum_shape_sml.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable-mdpi-v4/circle_drum_shape_sml.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable-mdpi-v4/circle_drum_shape_thick.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable-mdpi-v4/circle_drum_shape_thick.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/color_preference.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/color_preference.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable-mdpi-v4/conatiner_shape.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable-mdpi-v4/conatiner_shape.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable-mdpi-v4/conatiner_shape_no_border.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable-mdpi-v4/conatiner_shape_no_border.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/contact_row.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/contact_row.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/xml/device_filter.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/xml/device_filter.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/dialog_loading.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/dialog_loading.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/drawer_list_item.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/drawer_list_item.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/drum_pad.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/drum_pad.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable-mdpi-v4/drum_shape_pressed.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable-mdpi-v4/drum_shape_pressed.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/editor.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/editor.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/anim/fade_in.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/anim/fade_in.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/anim/fade_out.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/anim/fade_out.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/file_browser.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/file_browser.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/file_save.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/file_save.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/fragment_chord.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/fragment_chord.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/fragment_console.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/fragment_console.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/fragment_drum.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/fragment_drum.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/fragment_drum_grid.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/fragment_drum_grid.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/fragment_drum_kit.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/fragment_drum_kit.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/fragment_grid.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/fragment_grid.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/fragment_init.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/fragment_init.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/fragment_instrument.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/fragment_instrument.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/fragment_keys.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/fragment_keys.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/fragment_planet.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/fragment_planet.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/fragment_sequence.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/fragment_sequence.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable-mdpi-v4/grid_element.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable-mdpi-v4/grid_element.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/grid_element.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/grid_element.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable-mdpi-v4/grid_element_highlighted.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable-mdpi-v4/grid_element_highlighted.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable-mdpi-v4/grid_element_pressed.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable-mdpi-v4/grid_element_pressed.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/help.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/help.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable-mdpi-v4/img_button.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable-mdpi-v4/img_button.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/tmp/dex/debug/inputList.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/tmp/dex/debug/inputList.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable-mdpi-v4/key_black.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable-mdpi-v4/key_black.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable-mdpi-v4/key_highlighted_black.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable-mdpi-v4/key_highlighted_black.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable-mdpi-v4/key_highlighted_white.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable-mdpi-v4/key_highlighted_white.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable-mdpi-v4/key_white_key.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable-mdpi-v4/key_white_key.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable-mdpi-v4/key_yellow.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable-mdpi-v4/key_yellow.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/main.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/marker_left.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/marker_left.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/marker_right.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable/marker_right.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/media_select.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/media_select.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/media_select_row.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/media_select_row.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/menu/menu_play_midi.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/menu/menu_play_midi.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeAssets/debug/merger.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeAssets/debug/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeAssets/test/debug/merger.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeAssets/test/debug/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeResources/debug/merger.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeResources/debug/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeResources/test/debug/merger.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeResources/test/debug/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/menu/navigation_drawer.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/menu/navigation_drawer.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/qrcode.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/qrcode.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/recording_pane.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/recording_pane.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/recyclerview_v7_21_0_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/recyclerview_v7_21_0_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/rename_dialog.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/rename_dialog.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable-mdpi-v4/rounded_corners_bg_shape.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable-mdpi-v4/rounded_corners_bg_shape.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable-mdpi-v4/rounded_corners_panel_shape.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable-mdpi-v4/rounded_corners_panel_shape.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/sample_dashboard_item.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/sample_dashboard_item.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/save_images_dialog.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/save_images_dialog.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/sequence_element.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/sequence_element.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable-mdpi-v4/sequence_shape.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable-mdpi-v4/sequence_shape.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable-mdpi-v4/sequence_shape_colored.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable-mdpi-v4/sequence_shape_colored.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable-mdpi-v4/sequence_shape_highlight.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable-mdpi-v4/sequence_shape_highlight.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable-mdpi-v4/sequence_shape_selected.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable-mdpi-v4/sequence_shape_selected.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/setting.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/setting.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/menu/sheet_menu.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/menu/sheet_menu.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/support_simple_spinner_dropdown_item.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/support_simple_spinner_dropdown_item.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_v13_21_0_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_v13_21_0_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_v4_21_0_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_v4_21_0_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/thumbnail.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/thumbnail.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable-mdpi-v4/transparent_bg.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/drawable-mdpi-v4/transparent_bg.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/usb_connection.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/usb_connection.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-af/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-af/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-am/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-am/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-ar/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-ar/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-bg/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-bg/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-bn-rBD/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-bn-rBD/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-ca/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-ca/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-cs/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-cs/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-da/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-da/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-de/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-de/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-el/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-el/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-en-rGB/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-en-rGB/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-en-rIN/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-en-rIN/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-es/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-es/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-es-rUS/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-es-rUS/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-et-rEE/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-et-rEE/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-eu-rES/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-eu-rES/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-fa/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-fa/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-fi/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-fi/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-fr/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-fr/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-fr-rCA/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-fr-rCA/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-gl-rES/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-gl-rES/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-hi/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-hi/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-hr/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-hr/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-hu/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-hu/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-hy-rAM/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-hy-rAM/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-in/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-in/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-is-rIS/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-is-rIS/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-it/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-it/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-iw/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-iw/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-ja/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-ja/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-ka-rGE/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-ka-rGE/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-kk-rKZ/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-kk-rKZ/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-km-rKH/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-km-rKH/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-kn-rIN/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-kn-rIN/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-ko/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-ko/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-ky-rKG/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-ky-rKG/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-land/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-land/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-large-v4/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-large-v4/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-lo-rLA/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-lo-rLA/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-lt/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-lt/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-lv/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-lv/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-mk-rMK/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-mk-rMK/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-ml-rIN/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-ml-rIN/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-mn-rMN/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-mn-rMN/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-mr-rIN/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-mr-rIN/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-ms-rMY/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-ms-rMY/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-my-rMM/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-my-rMM/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-nb/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-nb/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-ne-rNP/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-ne-rNP/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-nl/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-nl/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-pl/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-pl/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-port/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-port/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-pt/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-pt/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-pt-rPT/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-pt-rPT/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-ro/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-ro/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-ru/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-ru/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-si-rLK/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-si-rLK/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-sk/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-sk/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-sl/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-sl/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-sr/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-sr/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-sv/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-sv/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-sw/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-sw/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-sw600dp-v13/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-sw600dp-v13/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-ta-rIN/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-ta-rIN/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-te-rIN/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-te-rIN/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-th/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-th/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-tl/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-tl/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-tr/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-tr/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-uk/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-uk/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-ur-rPK/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-ur-rPK/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-uz-rUZ/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-uz-rUZ/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-v11/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-v11/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-v14/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-v14/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-v17/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-v17/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-v21/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-v21/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-vi/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-vi/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-w360dp-v13/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-w360dp-v13/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-w480dp-v13/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-w480dp-v13/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-w500dp-v13/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-w500dp-v13/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-w600dp-v13/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-w600dp-v13/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-w720dp-v13/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-w720dp-v13/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-w820dp-v13/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-w820dp-v13/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-xlarge-land-v4/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-xlarge-land-v4/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-xlarge-v4/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-xlarge-v4/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-zh/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-zh/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-zh-rCN/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-zh-rCN/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-zh-rHK/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-zh-rHK/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-zh-rTW/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-zh-rTW/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-zu/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/values-zu/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+    <list default="true" id="46abdc1f-8063-4cba-bd6d-c75996e40803" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MidiMusic-master.iws" />
@@ -1907,6 +1649,13 @@
       <option name="number" value="Default" />
       <updated>1421821584223</updated>
     </task>
+    <task id="LOCAL-00001" summary="After Android Studio 1.2 Stable Update">
+      <created>1430710333705</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1430710333705</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1937,6 +1686,7 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25310174" sideWeight="0.4613734" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25310174" sideWeight="0.5379113" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20958512" sideWeight="0.50088495" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37468982" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1950,17 +1700,16 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24248926" sideWeight="0.5007236" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20958512" sideWeight="0.49734512" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24317618" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24317618" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Memory Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25310174" sideWeight="0.52360517" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4057072" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.39985693" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1975,6 +1724,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="After Android Studio 1.2 Stable Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="After Android Studio 1.2 Stable Update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
