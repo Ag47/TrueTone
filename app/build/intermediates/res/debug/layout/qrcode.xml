@@ -86,4 +86,4 @@
         android:divider="@null"
         android:scrollbars="vertical" />
 
-</android.support.v4.widget.DrawerLayout><!-- From: file:/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/MidiMusic-master-AS/app/src/main/res/layout/qrcode.xml -->
+</android.support.v4.widget.DrawerLayout><!-- From: file:/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/layout/qrcode.xml -->

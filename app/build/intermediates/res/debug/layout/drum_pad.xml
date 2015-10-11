@@ -16,4 +16,4 @@
 			android:layout_alignParentBottom="true" android:textColor="#AAA" />
 	</RelativeLayout>
 </com.comp4905.jasonfleischer.midimusic.views.DrumPad>
-<!-- From: file:/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/MidiMusic-master-AS/app/src/main/res/layout/drum_pad.xml -->
+<!-- From: file:/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/layout/drum_pad.xml -->
