@@ -1,0 +1,425 @@
+[
+    {
+        "outputFile": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/res/merged/debug/values-w820dp-v13/values-w820dp-v13.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 57,
+                    "endOffset": 108
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-w820dp/dimens.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 1,
+                        "startOffset": 335,
+                        "endColumn": 54,
+                        "endOffset": 388
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 113,
+                    "endColumn": 45,
+                    "endOffset": 154
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-w820dp/dimens.xml",
+                    "position": {
+                        "startLine": 29,
+                        "startColumn": 1,
+                        "startOffset": 1145,
+                        "endColumn": 42,
+                        "endOffset": 1186
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 159,
+                    "endColumn": 43,
+                    "endOffset": 198
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-w820dp/dimens.xml",
+                    "position": {
+                        "startLine": 32,
+                        "startColumn": 1,
+                        "startOffset": 1205,
+                        "endColumn": 40,
+                        "endOffset": 1244
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 203,
+                    "endColumn": 48,
+                    "endOffset": 247
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-w820dp/dimens.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 1,
+                        "startOffset": 659,
+                        "endColumn": 45,
+                        "endOffset": 703
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 252,
+                    "endColumn": 47,
+                    "endOffset": 295
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-w820dp/dimens.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 1,
+                        "startOffset": 614,
+                        "endColumn": 44,
+                        "endOffset": 657
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 300,
+                    "endColumn": 46,
+                    "endOffset": 342
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-w820dp/dimens.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 1,
+                        "startOffset": 570,
+                        "endColumn": 43,
+                        "endOffset": 612
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 347,
+                    "endColumn": 41,
+                    "endOffset": 384
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-w820dp/dimens.xml",
+                    "position": {
+                        "startLine": 35,
+                        "startColumn": 1,
+                        "startOffset": 1328,
+                        "endColumn": 38,
+                        "endOffset": 1365
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 389,
+                    "endColumn": 45,
+                    "endOffset": 430
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-w820dp/dimens.xml",
+                    "position": {
+                        "startLine": 34,
+                        "startColumn": 1,
+                        "startOffset": 1285,
+                        "endColumn": 42,
+                        "endOffset": 1326
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 435,
+                    "endColumn": 41,
+                    "endOffset": 472
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-w820dp/dimens.xml",
+                    "position": {
+                        "startLine": 33,
+                        "startColumn": 1,
+                        "startOffset": 1246,
+                        "endColumn": 38,
+                        "endOffset": 1283
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 477,
+                    "endColumn": 51,
+                    "endOffset": 524
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-w820dp/dimens.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 1,
+                        "startOffset": 520,
+                        "endColumn": 48,
+                        "endOffset": 567
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 529,
+                    "endColumn": 49,
+                    "endOffset": 574
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-w820dp/dimens.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 1,
+                        "startOffset": 473,
+                        "endColumn": 46,
+                        "endOffset": 518
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 579,
+                    "endColumn": 43,
+                    "endOffset": 618
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-w820dp/dimens.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 1,
+                        "startOffset": 431,
+                        "endColumn": 40,
+                        "endOffset": 470
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 623,
+                    "endColumn": 42,
+                    "endOffset": 661
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-w820dp/dimens.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 1,
+                        "startOffset": 391,
+                        "endColumn": 39,
+                        "endOffset": 429
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 666,
+                    "endColumn": 57,
+                    "endOffset": 719
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-w820dp/dimens.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 1,
+                        "startOffset": 754,
+                        "endColumn": 54,
+                        "endOffset": 807
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 724,
+                    "endColumn": 58,
+                    "endOffset": 778
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-w820dp/dimens.xml",
+                    "position": {
+                        "startLine": 24,
+                        "startColumn": 1,
+                        "startOffset": 919,
+                        "endColumn": 55,
+                        "endOffset": 973
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 783,
+                    "endColumn": 58,
+                    "endOffset": 837
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-w820dp/dimens.xml",
+                    "position": {
+                        "startLine": 25,
+                        "startColumn": 1,
+                        "startOffset": 975,
+                        "endColumn": 55,
+                        "endOffset": 1029
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 842,
+                    "endColumn": 59,
+                    "endOffset": 897
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-w820dp/dimens.xml",
+                    "position": {
+                        "startLine": 26,
+                        "startColumn": 1,
+                        "startOffset": 1031,
+                        "endColumn": 56,
+                        "endOffset": 1086
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 902,
+                    "endColumn": 58,
+                    "endOffset": 956
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-w820dp/dimens.xml",
+                    "position": {
+                        "startLine": 27,
+                        "startColumn": 1,
+                        "startOffset": 1088,
+                        "endColumn": 55,
+                        "endOffset": 1142
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 961,
+                    "endColumn": 57,
+                    "endOffset": 1014
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-w820dp/dimens.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 1,
+                        "startOffset": 809,
+                        "endColumn": 54,
+                        "endOffset": 862
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 1019,
+                    "endColumn": 57,
+                    "endOffset": 1072
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-w820dp/dimens.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 1,
+                        "startOffset": 864,
+                        "endColumn": 54,
+                        "endOffset": 917
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 22,
+                    "startColumn": 4,
+                    "startOffset": 1077,
+                    "endColumn": 50,
+                    "endOffset": 1123
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-w820dp/dimens.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 1,
+                        "startOffset": 706,
+                        "endColumn": 47,
+                        "endOffset": 752
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 23,
+                    "startColumn": 4,
+                    "startOffset": 1128,
+                    "endColumn": 36,
+                    "endOffset": 1160
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-w820dp/dimens.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 1,
+                        "startOffset": 283,
+                        "endColumn": 33,
+                        "endOffset": 315
+                    }
+                }
+            }
+        ]
+    }
+]

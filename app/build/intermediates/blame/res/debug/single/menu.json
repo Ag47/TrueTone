@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/res/merged/debug/menu/menu_play_midi.xml",
+        "source": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/menu/menu_play_midi.xml"
+    },
+    {
+        "merged": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/res/merged/debug/menu/choose_song_menu.xml",
+        "source": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/menu/choose_song_menu.xml"
+    },
+    {
+        "merged": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/res/merged/debug/menu/sheet_menu.xml",
+        "source": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/menu/sheet_menu.xml"
+    },
+    {
+        "merged": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/res/merged/debug/menu/navigation_drawer.xml",
+        "source": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/menu/navigation_drawer.xml"
+    }
+]

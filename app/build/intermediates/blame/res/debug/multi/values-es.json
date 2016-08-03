@@ -1,0 +1,2377 @@
+[
+    {
+        "outputFile": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/res/merged/debug/values-es/values-es.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 116,
+                    "endOffset": 167
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-es/values-es.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 116,
+                        "endOffset": 167
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 172,
+                    "endColumn": 107,
+                    "endOffset": 275
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-es/values-es.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 172,
+                        "endColumn": 107,
+                        "endOffset": 275
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 280,
+                    "endColumn": 122,
+                    "endOffset": 398
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-es/values-es.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 280,
+                        "endColumn": 122,
+                        "endOffset": 398
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 403,
+                    "endColumn": 112,
+                    "endOffset": 511
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-es/values-es.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 403,
+                        "endColumn": 112,
+                        "endOffset": 511
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 516,
+                    "endColumn": 107,
+                    "endOffset": 619
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-es/values-es.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 516,
+                        "endColumn": 107,
+                        "endOffset": 619
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 624,
+                    "endColumn": 84,
+                    "endOffset": 704
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-es/values-es.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 624,
+                        "endColumn": 84,
+                        "endOffset": 704
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 709,
+                    "endColumn": 100,
+                    "endOffset": 805
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-es/values-es.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 709,
+                        "endColumn": 100,
+                        "endOffset": 805
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 810,
+                    "endColumn": 127,
+                    "endOffset": 933
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-es/values-es.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 810,
+                        "endColumn": 127,
+                        "endOffset": 933
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 938,
+                    "endColumn": 75,
+                    "endOffset": 1009
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-es/values-es.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 938,
+                        "endColumn": 75,
+                        "endOffset": 1009
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 1014,
+                    "endColumn": 75,
+                    "endOffset": 1085
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-es/values-es.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 1014,
+                        "endColumn": 75,
+                        "endOffset": 1085
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 1090,
+                    "endColumn": 81,
+                    "endOffset": 1167
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-es/values-es.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 1090,
+                        "endColumn": 81,
+                        "endOffset": 1167
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 1172,
+                    "endColumn": 106,
+                    "endOffset": 1274
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-es/values-es.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 1172,
+                        "endColumn": 106,
+                        "endOffset": 1274
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 1279,
+                    "endColumn": 99,
+                    "endOffset": 1374
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-es/values-es.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 1279,
+                        "endColumn": 99,
+                        "endOffset": 1374
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 1379,
+                    "endColumn": 98,
+                    "endOffset": 1473
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-es/values-es.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 1379,
+                        "endColumn": 98,
+                        "endOffset": 1473
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 1478,
+                    "endColumn": 107,
+                    "endOffset": 1581
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-es/values-es.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 1478,
+                        "endColumn": 107,
+                        "endOffset": 1581
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 1586,
+                    "endColumn": 106,
+                    "endOffset": 1688
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-es/values-es.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 1586,
+                        "endColumn": 106,
+                        "endOffset": 1688
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 1693,
+                    "endColumn": 106,
+                    "endOffset": 1795
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-es/values-es.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 1693,
+                        "endColumn": 106,
+                        "endOffset": 1795
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 1800,
+                    "endColumn": 121,
+                    "endOffset": 1917
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-es/values-es.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 1800,
+                        "endColumn": 121,
+                        "endOffset": 1917
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 1922,
+                    "endColumn": 99,
+                    "endOffset": 2017
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-es/values-es.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 1922,
+                        "endColumn": 99,
+                        "endOffset": 2017
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 2022,
+                    "endColumn": 44,
+                    "endOffset": 2062
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 1,
+                        "startOffset": 700,
+                        "endColumn": 41,
+                        "endOffset": 740
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 22,
+                    "startColumn": 4,
+                    "startOffset": 2067,
+                    "endColumn": 50,
+                    "endOffset": 2113
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 1,
+                        "startOffset": 14,
+                        "endColumn": 47,
+                        "endOffset": 60
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 23,
+                    "startColumn": 4,
+                    "startOffset": 2118,
+                    "endLine": 24,
+                    "endColumn": 11,
+                    "endOffset": 2242
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 82,
+                        "startColumn": 1,
+                        "startOffset": 3497,
+                        "endLine": 83,
+                        "endColumn": 11,
+                        "endOffset": 3621
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 25,
+                    "startColumn": 4,
+                    "startOffset": 2247,
+                    "endLine": 26,
+                    "endColumn": 11,
+                    "endOffset": 2355
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 86,
+                        "startColumn": 1,
+                        "startOffset": 3746,
+                        "endLine": 87,
+                        "endColumn": 11,
+                        "endOffset": 3854
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 27,
+                    "startColumn": 4,
+                    "startOffset": 2360,
+                    "endLine": 28,
+                    "endColumn": 11,
+                    "endOffset": 2490
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 90,
+                        "startColumn": 1,
+                        "startOffset": 3973,
+                        "endLine": 91,
+                        "endColumn": 11,
+                        "endOffset": 4103
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 29,
+                    "startColumn": 4,
+                    "startOffset": 2495,
+                    "endColumn": 41,
+                    "endOffset": 2532
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 54,
+                        "startColumn": 1,
+                        "startOffset": 2157,
+                        "endColumn": 38,
+                        "endOffset": 2194
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 30,
+                    "startColumn": 4,
+                    "startOffset": 2537,
+                    "endColumn": 96,
+                    "endOffset": 2629
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 98,
+                        "startColumn": 1,
+                        "startOffset": 4458,
+                        "endColumn": 93,
+                        "endOffset": 4550
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 31,
+                    "startColumn": 4,
+                    "startOffset": 2634,
+                    "endColumn": 102,
+                    "endOffset": 2732
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 102,
+                        "startColumn": 1,
+                        "startOffset": 4678,
+                        "endColumn": 99,
+                        "endOffset": 4776
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 32,
+                    "startColumn": 4,
+                    "startOffset": 2737,
+                    "endColumn": 110,
+                    "endOffset": 2843
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 103,
+                        "startColumn": 1,
+                        "startOffset": 4778,
+                        "endColumn": 107,
+                        "endOffset": 4884
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 33,
+                    "startColumn": 4,
+                    "startOffset": 2848,
+                    "endColumn": 43,
+                    "endOffset": 2887
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 1,
+                        "startOffset": 659,
+                        "endColumn": 40,
+                        "endOffset": 698
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 34,
+                    "startColumn": 4,
+                    "startOffset": 2892,
+                    "endColumn": 57,
+                    "endOffset": 2945
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 32,
+                        "startColumn": 1,
+                        "startOffset": 1335,
+                        "endColumn": 54,
+                        "endOffset": 1388
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 35,
+                    "startColumn": 4,
+                    "startOffset": 2950,
+                    "endColumn": 63,
+                    "endOffset": 3009
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 101,
+                        "startColumn": 1,
+                        "startOffset": 4617,
+                        "endColumn": 60,
+                        "endOffset": 4676
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 36,
+                    "startColumn": 4,
+                    "startOffset": 3014,
+                    "endColumn": 47,
+                    "endOffset": 3057
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 1,
+                        "startOffset": 575,
+                        "endColumn": 44,
+                        "endOffset": 618
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 37,
+                    "startColumn": 4,
+                    "startOffset": 3062,
+                    "endColumn": 65,
+                    "endOffset": 3123
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 1,
+                        "startOffset": 829,
+                        "endColumn": 62,
+                        "endOffset": 890
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 38,
+                    "startColumn": 4,
+                    "startOffset": 3128,
+                    "endColumn": 45,
+                    "endOffset": 3169
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 30,
+                        "startColumn": 1,
+                        "startOffset": 1239,
+                        "endColumn": 42,
+                        "endOffset": 1280
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 39,
+                    "startColumn": 4,
+                    "startOffset": 3174,
+                    "endColumn": 90,
+                    "endOffset": 3260
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 95,
+                        "startColumn": 1,
+                        "startOffset": 4230,
+                        "endColumn": 87,
+                        "endOffset": 4316
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 40,
+                    "startColumn": 4,
+                    "startOffset": 3265,
+                    "endColumn": 36,
+                    "endOffset": 3297
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 1,
+                        "startOffset": 62,
+                        "endColumn": 33,
+                        "endOffset": 94
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 41,
+                    "startColumn": 4,
+                    "startOffset": 3302,
+                    "endColumn": 49,
+                    "endOffset": 3347
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 51,
+                        "startColumn": 1,
+                        "startOffset": 2067,
+                        "endColumn": 46,
+                        "endOffset": 2112
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 42,
+                    "startColumn": 4,
+                    "startOffset": 3352,
+                    "endColumn": 50,
+                    "endOffset": 3398
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 50,
+                        "startColumn": 1,
+                        "startOffset": 2019,
+                        "endColumn": 47,
+                        "endOffset": 2065
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 43,
+                    "startColumn": 4,
+                    "startOffset": 3403,
+                    "endColumn": 65,
+                    "endOffset": 3464
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 129,
+                        "startColumn": 1,
+                        "startOffset": 6473,
+                        "endColumn": 62,
+                        "endOffset": 6534
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 44,
+                    "startColumn": 4,
+                    "startOffset": 3469,
+                    "endColumn": 74,
+                    "endOffset": 3539
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 119,
+                        "startColumn": 1,
+                        "startOffset": 5778,
+                        "endColumn": 71,
+                        "endOffset": 5848
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 45,
+                    "startColumn": 4,
+                    "startOffset": 3544,
+                    "endColumn": 76,
+                    "endOffset": 3616
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 118,
+                        "startColumn": 1,
+                        "startOffset": 5704,
+                        "endColumn": 73,
+                        "endOffset": 5776
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 46,
+                    "startColumn": 4,
+                    "startOffset": 3621,
+                    "endColumn": 74,
+                    "endOffset": 3691
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 116,
+                        "startColumn": 1,
+                        "startOffset": 5576,
+                        "endColumn": 71,
+                        "endOffset": 5646
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 47,
+                    "startColumn": 4,
+                    "startOffset": 3696,
+                    "endColumn": 58,
+                    "endOffset": 3750
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 117,
+                        "startColumn": 1,
+                        "startOffset": 5648,
+                        "endColumn": 55,
+                        "endOffset": 5702
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 48,
+                    "startColumn": 4,
+                    "startOffset": 3755,
+                    "endColumn": 69,
+                    "endOffset": 3820
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 121,
+                        "startColumn": 1,
+                        "startOffset": 5924,
+                        "endColumn": 66,
+                        "endOffset": 5989
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 49,
+                    "startColumn": 4,
+                    "startOffset": 3825,
+                    "endColumn": 83,
+                    "endOffset": 3904
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 113,
+                        "startColumn": 1,
+                        "startOffset": 5335,
+                        "endColumn": 80,
+                        "endOffset": 5414
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 50,
+                    "startColumn": 4,
+                    "startOffset": 3909,
+                    "endColumn": 63,
+                    "endOffset": 3968
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 128,
+                        "startColumn": 1,
+                        "startOffset": 6412,
+                        "endColumn": 60,
+                        "endOffset": 6471
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 51,
+                    "startColumn": 4,
+                    "startOffset": 3973,
+                    "endColumn": 78,
+                    "endOffset": 4047
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 115,
+                        "startColumn": 1,
+                        "startOffset": 5500,
+                        "endColumn": 75,
+                        "endOffset": 5574
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 52,
+                    "startColumn": 4,
+                    "startOffset": 4052,
+                    "endColumn": 76,
+                    "endOffset": 4124
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 120,
+                        "startColumn": 1,
+                        "startOffset": 5850,
+                        "endColumn": 73,
+                        "endOffset": 5922
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 53,
+                    "startColumn": 4,
+                    "startOffset": 4129,
+                    "endColumn": 67,
+                    "endOffset": 4192
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 122,
+                        "startColumn": 1,
+                        "startOffset": 5991,
+                        "endColumn": 64,
+                        "endOffset": 6054
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 54,
+                    "startColumn": 4,
+                    "startOffset": 4197,
+                    "endColumn": 89,
+                    "endOffset": 4282
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 112,
+                        "startColumn": 1,
+                        "startOffset": 5248,
+                        "endColumn": 86,
+                        "endOffset": 5333
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 55,
+                    "startColumn": 4,
+                    "startOffset": 4287,
+                    "endColumn": 68,
+                    "endOffset": 4351
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 123,
+                        "startColumn": 1,
+                        "startOffset": 6056,
+                        "endColumn": 65,
+                        "endOffset": 6120
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 56,
+                    "startColumn": 4,
+                    "startOffset": 4356,
+                    "endColumn": 70,
+                    "endOffset": 4422
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 126,
+                        "startColumn": 1,
+                        "startOffset": 6271,
+                        "endColumn": 67,
+                        "endOffset": 6337
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 57,
+                    "startColumn": 4,
+                    "startOffset": 4427,
+                    "endColumn": 79,
+                    "endOffset": 4502
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 125,
+                        "startColumn": 1,
+                        "startOffset": 6194,
+                        "endColumn": 76,
+                        "endOffset": 6269
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 58,
+                    "startColumn": 4,
+                    "startOffset": 4507,
+                    "endColumn": 74,
+                    "endOffset": 4577
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 124,
+                        "startColumn": 1,
+                        "startOffset": 6122,
+                        "endColumn": 71,
+                        "endOffset": 6192
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 59,
+                    "startColumn": 4,
+                    "startOffset": 4582,
+                    "endColumn": 75,
+                    "endOffset": 4653
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 127,
+                        "startColumn": 1,
+                        "startOffset": 6339,
+                        "endColumn": 72,
+                        "endOffset": 6410
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 60,
+                    "startColumn": 4,
+                    "startOffset": 4658,
+                    "endColumn": 67,
+                    "endOffset": 4721
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 130,
+                        "startColumn": 1,
+                        "startOffset": 6536,
+                        "endColumn": 64,
+                        "endOffset": 6599
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 61,
+                    "startColumn": 4,
+                    "startOffset": 4726,
+                    "endColumn": 86,
+                    "endOffset": 4808
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 114,
+                        "startColumn": 1,
+                        "startOffset": 5416,
+                        "endColumn": 83,
+                        "endOffset": 5498
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 62,
+                    "startColumn": 4,
+                    "startOffset": 4813,
+                    "endLine": 63,
+                    "endColumn": 11,
+                    "endOffset": 4934
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 84,
+                        "startColumn": 1,
+                        "startOffset": 3623,
+                        "endLine": 85,
+                        "endColumn": 11,
+                        "endOffset": 3744
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 64,
+                    "startColumn": 4,
+                    "startOffset": 4939,
+                    "endLine": 65,
+                    "endColumn": 11,
+                    "endOffset": 5054
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 88,
+                        "startColumn": 1,
+                        "startOffset": 3856,
+                        "endLine": 89,
+                        "endColumn": 11,
+                        "endOffset": 3971
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 66,
+                    "startColumn": 4,
+                    "startOffset": 5059,
+                    "endLine": 67,
+                    "endColumn": 11,
+                    "endOffset": 5181
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 92,
+                        "startColumn": 1,
+                        "startOffset": 4105,
+                        "endLine": 93,
+                        "endColumn": 11,
+                        "endOffset": 4227
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 68,
+                    "startColumn": 4,
+                    "startOffset": 5186,
+                    "endColumn": 55,
+                    "endOffset": 5237
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 31,
+                        "startColumn": 1,
+                        "startOffset": 1282,
+                        "endColumn": 52,
+                        "endOffset": 1333
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 69,
+                    "startColumn": 4,
+                    "startOffset": 5242,
+                    "endColumn": 60,
+                    "endOffset": 5298
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 105,
+                        "startColumn": 1,
+                        "startOffset": 4952,
+                        "endColumn": 57,
+                        "endOffset": 5008
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 70,
+                    "startColumn": 4,
+                    "startOffset": 5303,
+                    "endColumn": 58,
+                    "endOffset": 5357
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 57,
+                        "startColumn": 1,
+                        "startOffset": 2312,
+                        "endColumn": 55,
+                        "endOffset": 2366
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 71,
+                    "startColumn": 4,
+                    "startOffset": 5362,
+                    "endColumn": 58,
+                    "endOffset": 5416
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 56,
+                        "startColumn": 1,
+                        "startOffset": 2256,
+                        "endColumn": 55,
+                        "endOffset": 2310
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 72,
+                    "startColumn": 4,
+                    "startOffset": 5421,
+                    "endColumn": 48,
+                    "endOffset": 5465
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 1,
+                        "startOffset": 396,
+                        "endColumn": 45,
+                        "endOffset": 440
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 73,
+                    "startColumn": 4,
+                    "startOffset": 5470,
+                    "endColumn": 43,
+                    "endOffset": 5509
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 52,
+                        "startColumn": 1,
+                        "startOffset": 2114,
+                        "endColumn": 40,
+                        "endOffset": 2153
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 74,
+                    "startColumn": 4,
+                    "startOffset": 5514,
+                    "endColumn": 51,
+                    "endOffset": 5561
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 63,
+                        "startColumn": 1,
+                        "startOffset": 2653,
+                        "endColumn": 48,
+                        "endOffset": 2700
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 75,
+                    "startColumn": 4,
+                    "startOffset": 5566,
+                    "endColumn": 44,
+                    "endOffset": 5606
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 68,
+                        "startColumn": 1,
+                        "startOffset": 2811,
+                        "endColumn": 41,
+                        "endOffset": 2851
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 76,
+                    "startColumn": 4,
+                    "startOffset": 5611,
+                    "endColumn": 65,
+                    "endOffset": 5672
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 28,
+                        "startColumn": 1,
+                        "startOffset": 1175,
+                        "endColumn": 62,
+                        "endOffset": 1236
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 77,
+                    "startColumn": 4,
+                    "startOffset": 5677,
+                    "endColumn": 53,
+                    "endOffset": 5726
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 1,
+                        "startOffset": 307,
+                        "endColumn": 50,
+                        "endOffset": 356
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 78,
+                    "startColumn": 4,
+                    "startOffset": 5731,
+                    "endColumn": 40,
+                    "endOffset": 5767
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 1,
+                        "startOffset": 358,
+                        "endColumn": 37,
+                        "endOffset": 394
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 79,
+                    "startColumn": 4,
+                    "startOffset": 5772,
+                    "endColumn": 46,
+                    "endOffset": 5814
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 35,
+                        "startColumn": 1,
+                        "startOffset": 1438,
+                        "endColumn": 43,
+                        "endOffset": 1480
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 80,
+                    "startColumn": 4,
+                    "startOffset": 5819,
+                    "endColumn": 49,
+                    "endOffset": 5864
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 26,
+                        "startColumn": 1,
+                        "startOffset": 1066,
+                        "endColumn": 46,
+                        "endOffset": 1111
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 81,
+                    "startColumn": 4,
+                    "startOffset": 5869,
+                    "endColumn": 50,
+                    "endOffset": 5915
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 1,
+                        "startOffset": 781,
+                        "endColumn": 47,
+                        "endOffset": 827
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 82,
+                    "startColumn": 4,
+                    "startOffset": 5920,
+                    "endColumn": 58,
+                    "endOffset": 5974
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 96,
+                        "startColumn": 1,
+                        "startOffset": 4318,
+                        "endColumn": 55,
+                        "endOffset": 4372
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 83,
+                    "startColumn": 4,
+                    "startOffset": 5979,
+                    "endColumn": 86,
+                    "endOffset": 6061
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 79,
+                        "startColumn": 1,
+                        "startOffset": 3318,
+                        "endColumn": 83,
+                        "endOffset": 3400
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 84,
+                    "startColumn": 4,
+                    "startOffset": 6066,
+                    "endColumn": 40,
+                    "endOffset": 6102
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 65,
+                        "startColumn": 1,
+                        "startOffset": 2704,
+                        "endColumn": 37,
+                        "endOffset": 2740
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 85,
+                    "startColumn": 4,
+                    "startOffset": 6107,
+                    "endColumn": 40,
+                    "endOffset": 6143
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 1,
+                        "startOffset": 96,
+                        "endColumn": 37,
+                        "endOffset": 132
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 86,
+                    "startColumn": 4,
+                    "startOffset": 6148,
+                    "endColumn": 45,
+                    "endOffset": 6189
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 47,
+                        "startColumn": 1,
+                        "startOffset": 1922,
+                        "endColumn": 42,
+                        "endOffset": 1963
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 87,
+                    "startColumn": 4,
+                    "startOffset": 6194,
+                    "endColumn": 46,
+                    "endOffset": 6236
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 46,
+                        "startColumn": 1,
+                        "startOffset": 1878,
+                        "endColumn": 43,
+                        "endOffset": 1920
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 88,
+                    "startColumn": 4,
+                    "startOffset": 6241,
+                    "endColumn": 46,
+                    "endOffset": 6283
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 45,
+                        "startColumn": 1,
+                        "startOffset": 1834,
+                        "endColumn": 43,
+                        "endOffset": 1876
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 89,
+                    "startColumn": 4,
+                    "startOffset": 6288,
+                    "endColumn": 86,
+                    "endOffset": 6370
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 97,
+                        "startColumn": 1,
+                        "startOffset": 4374,
+                        "endColumn": 83,
+                        "endOffset": 4456
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 90,
+                    "startColumn": 4,
+                    "startOffset": 6375,
+                    "endColumn": 54,
+                    "endOffset": 6425
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 48,
+                        "startColumn": 1,
+                        "startOffset": 1965,
+                        "endColumn": 51,
+                        "endOffset": 2015
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 91,
+                    "startColumn": 4,
+                    "startOffset": 6430,
+                    "endColumn": 55,
+                    "endOffset": 6481
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 44,
+                        "startColumn": 1,
+                        "startOffset": 1781,
+                        "endColumn": 52,
+                        "endOffset": 1832
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 92,
+                    "startColumn": 4,
+                    "startOffset": 6486,
+                    "endColumn": 44,
+                    "endOffset": 6526
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 1,
+                        "startOffset": 265,
+                        "endColumn": 41,
+                        "endOffset": 305
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 93,
+                    "startColumn": 4,
+                    "startOffset": 6531,
+                    "endColumn": 84,
+                    "endOffset": 6611
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 109,
+                        "startColumn": 1,
+                        "startOffset": 5135,
+                        "endColumn": 81,
+                        "endOffset": 5215
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 94,
+                    "startColumn": 4,
+                    "startOffset": 6616,
+                    "endColumn": 96,
+                    "endOffset": 6708
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 80,
+                        "startColumn": 1,
+                        "startOffset": 3402,
+                        "endColumn": 93,
+                        "endOffset": 3494
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 95,
+                    "startColumn": 4,
+                    "startOffset": 6713,
+                    "endColumn": 63,
+                    "endOffset": 6772
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 25,
+                        "startColumn": 1,
+                        "startOffset": 1005,
+                        "endColumn": 60,
+                        "endOffset": 1064
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 96,
+                    "startColumn": 4,
+                    "startOffset": 6777,
+                    "endColumn": 53,
+                    "endOffset": 6826
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 71,
+                        "startColumn": 1,
+                        "startOffset": 2915,
+                        "endColumn": 50,
+                        "endOffset": 2964
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 97,
+                    "startColumn": 4,
+                    "startOffset": 6831,
+                    "endColumn": 55,
+                    "endOffset": 6882
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 73,
+                        "startColumn": 1,
+                        "startOffset": 3024,
+                        "endColumn": 52,
+                        "endOffset": 3075
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 98,
+                    "startColumn": 4,
+                    "startOffset": 6887,
+                    "endColumn": 60,
+                    "endOffset": 6943
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 72,
+                        "startColumn": 1,
+                        "startOffset": 2966,
+                        "endColumn": 57,
+                        "endOffset": 3022
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 99,
+                    "startColumn": 4,
+                    "startOffset": 6948,
+                    "endColumn": 62,
+                    "endOffset": 7006
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 70,
+                        "startColumn": 1,
+                        "startOffset": 2855,
+                        "endColumn": 59,
+                        "endOffset": 2913
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 100,
+                    "startColumn": 4,
+                    "startOffset": 7011,
+                    "endColumn": 68,
+                    "endOffset": 7075
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 104,
+                        "startColumn": 1,
+                        "startOffset": 4886,
+                        "endColumn": 65,
+                        "endOffset": 4950
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 101,
+                    "startColumn": 4,
+                    "startOffset": 7080,
+                    "endColumn": 68,
+                    "endOffset": 7144
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 58,
+                        "startColumn": 1,
+                        "startOffset": 2368,
+                        "endColumn": 65,
+                        "endOffset": 2432
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 102,
+                    "startColumn": 4,
+                    "startOffset": 7149,
+                    "endColumn": 62,
+                    "endOffset": 7207
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 55,
+                        "startColumn": 1,
+                        "startOffset": 2196,
+                        "endColumn": 59,
+                        "endOffset": 2254
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 103,
+                    "startColumn": 4,
+                    "startOffset": 7212,
+                    "endColumn": 45,
+                    "endOffset": 7253
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 41,
+                        "startColumn": 1,
+                        "startOffset": 1685,
+                        "endColumn": 42,
+                        "endOffset": 1726
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 104,
+                    "startColumn": 4,
+                    "startOffset": 7258,
+                    "endColumn": 45,
+                    "endOffset": 7299
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 40,
+                        "startColumn": 1,
+                        "startOffset": 1642,
+                        "endColumn": 42,
+                        "endOffset": 1683
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 105,
+                    "startColumn": 4,
+                    "startOffset": 7304,
+                    "endColumn": 44,
+                    "endOffset": 7344
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 39,
+                        "startColumn": 1,
+                        "startOffset": 1600,
+                        "endColumn": 41,
+                        "endOffset": 1640
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 106,
+                    "startColumn": 4,
+                    "startOffset": 7349,
+                    "endColumn": 54,
+                    "endOffset": 7399
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 42,
+                        "startColumn": 1,
+                        "startOffset": 1728,
+                        "endColumn": 51,
+                        "endOffset": 1778
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 107,
+                    "startColumn": 4,
+                    "startOffset": 7404,
+                    "endColumn": 53,
+                    "endOffset": 7453
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 38,
+                        "startColumn": 1,
+                        "startOffset": 1549,
+                        "endColumn": 50,
+                        "endOffset": 1598
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 108,
+                    "startColumn": 4,
+                    "startOffset": 7458,
+                    "endColumn": 49,
+                    "endOffset": 7503
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 1,
+                        "startOffset": 528,
+                        "endColumn": 46,
+                        "endOffset": 573
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 109,
+                    "startColumn": 4,
+                    "startOffset": 7508,
+                    "endColumn": 66,
+                    "endOffset": 7570
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 99,
+                        "startColumn": 1,
+                        "startOffset": 4552,
+                        "endColumn": 63,
+                        "endOffset": 4614
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 110,
+                    "startColumn": 4,
+                    "startOffset": 7575,
+                    "endColumn": 49,
+                    "endOffset": 7620
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 33,
+                        "startColumn": 1,
+                        "startOffset": 1390,
+                        "endColumn": 46,
+                        "endOffset": 1435
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 111,
+                    "startColumn": 4,
+                    "startOffset": 7625,
+                    "endColumn": 41,
+                    "endOffset": 7662
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 1,
+                        "startOffset": 742,
+                        "endColumn": 38,
+                        "endOffset": 779
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 112,
+                    "startColumn": 4,
+                    "startOffset": 7667,
+                    "endColumn": 100,
+                    "endOffset": 7763
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-es/values-es.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 2022,
+                        "endColumn": 100,
+                        "endOffset": 2118
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 113,
+                    "startColumn": 4,
+                    "startOffset": 7768,
+                    "endColumn": 48,
+                    "endOffset": 7812
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 1,
+                        "startOffset": 482,
+                        "endColumn": 45,
+                        "endOffset": 526
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 114,
+                    "startColumn": 4,
+                    "startOffset": 7817,
+                    "endColumn": 42,
+                    "endOffset": 7855
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 1,
+                        "startOffset": 442,
+                        "endColumn": 39,
+                        "endOffset": 480
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 115,
+                    "startColumn": 4,
+                    "startOffset": 7860,
+                    "endColumn": 38,
+                    "endOffset": 7894
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 67,
+                        "startColumn": 1,
+                        "startOffset": 2775,
+                        "endColumn": 35,
+                        "endOffset": 2809
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 116,
+                    "startColumn": 4,
+                    "startOffset": 7899,
+                    "endColumn": 57,
+                    "endOffset": 7952
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 61,
+                        "startColumn": 1,
+                        "startOffset": 2546,
+                        "endColumn": 54,
+                        "endOffset": 2599
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 117,
+                    "startColumn": 4,
+                    "startOffset": 7957,
+                    "endColumn": 56,
+                    "endOffset": 8009
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 60,
+                        "startColumn": 1,
+                        "startOffset": 2492,
+                        "endColumn": 53,
+                        "endOffset": 2544
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 118,
+                    "startColumn": 4,
+                    "startOffset": 8014,
+                    "endColumn": 60,
+                    "endOffset": 8070
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 59,
+                        "startColumn": 1,
+                        "startOffset": 2434,
+                        "endColumn": 57,
+                        "endOffset": 2490
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 119,
+                    "startColumn": 4,
+                    "startOffset": 8075,
+                    "endColumn": 54,
+                    "endOffset": 8125
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 62,
+                        "startColumn": 1,
+                        "startOffset": 2601,
+                        "endColumn": 51,
+                        "endOffset": 2651
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 120,
+                    "startColumn": 4,
+                    "startOffset": 8130,
+                    "endColumn": 64,
+                    "endOffset": 8190
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 27,
+                        "startColumn": 1,
+                        "startOffset": 1113,
+                        "endColumn": 61,
+                        "endOffset": 1173
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 121,
+                    "startColumn": 4,
+                    "startOffset": 8195,
+                    "endLine": 122,
+                    "endColumn": 11,
+                    "endOffset": 8317
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 107,
+                        "startColumn": 1,
+                        "startOffset": 5011,
+                        "endLine": 108,
+                        "endColumn": 11,
+                        "endOffset": 5133
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 123,
+                    "startColumn": 4,
+                    "startOffset": 8322,
+                    "endColumn": 35,
+                    "endOffset": 8353
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 66,
+                        "startColumn": 1,
+                        "startOffset": 2742,
+                        "endColumn": 32,
+                        "endOffset": 2773
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 124,
+                    "startColumn": 4,
+                    "startOffset": 8358,
+                    "endColumn": 41,
+                    "endOffset": 8395
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 1,
+                        "startOffset": 620,
+                        "endColumn": 38,
+                        "endOffset": 657
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 125,
+                    "startColumn": 4,
+                    "startOffset": 8400,
+                    "endColumn": 68,
+                    "endOffset": 8464
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 36,
+                        "startColumn": 1,
+                        "startOffset": 1482,
+                        "endColumn": 65,
+                        "endOffset": 1546
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 126,
+                    "startColumn": 4,
+                    "startOffset": 8469,
+                    "endColumn": 80,
+                    "endOffset": 8545
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 77,
+                        "startColumn": 1,
+                        "startOffset": 3173,
+                        "endColumn": 77,
+                        "endOffset": 3249
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 127,
+                    "startColumn": 4,
+                    "startOffset": 8550,
+                    "endColumn": 64,
+                    "endOffset": 8610
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 1,
+                        "startOffset": 202,
+                        "endColumn": 61,
+                        "endOffset": 262
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 128,
+                    "startColumn": 4,
+                    "startOffset": 8615,
+                    "endColumn": 69,
+                    "endOffset": 8680
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 78,
+                        "startColumn": 1,
+                        "startOffset": 3251,
+                        "endColumn": 66,
+                        "endOffset": 3316
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 129,
+                    "startColumn": 4,
+                    "startOffset": 8685,
+                    "endColumn": 70,
+                    "endOffset": 8751
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 1,
+                        "startOffset": 134,
+                        "endColumn": 67,
+                        "endOffset": 200
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 130,
+                    "startColumn": 4,
+                    "startOffset": 8756,
+                    "endColumn": 80,
+                    "endOffset": 8832
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 76,
+                        "startColumn": 1,
+                        "startOffset": 3095,
+                        "endColumn": 77,
+                        "endOffset": 3171
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 131,
+                    "startColumn": 4,
+                    "startOffset": 8837,
+                    "endColumn": 54,
+                    "endOffset": 8887
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 1,
+                        "startOffset": 893,
+                        "endColumn": 51,
+                        "endOffset": 943
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 132,
+                    "startColumn": 4,
+                    "startOffset": 8892,
+                    "endColumn": 62,
+                    "endOffset": 8950
+                },
+                "from": {
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-es/strings.xml",
+                    "position": {
+                        "startLine": 24,
+                        "startColumn": 1,
+                        "startOffset": 945,
+                        "endColumn": 59,
+                        "endOffset": 1003
+                    }
+                }
+            }
+        ]
+    }
+]
