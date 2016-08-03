@@ -3,6 +3,7 @@ include $(CLEAR_VARS)
 
 LOCAL_MODULE := com_comp4905_jasonfleischer_midimusic_audio_NDKFunct
 LOCAL_CFLAGS := -std=c++11 -fexceptions
+LOCAL_LDFLAGS := -Wl,--build-id
 LOCAL_LDLIBS := \
 	-llog \
 

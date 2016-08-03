@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<shape xmlns:android="http://schemas.android.com/apk/res/android">
-	<solid android:color="#000" />
-	<stroke android:width="3dip" android:color="#B1BCBE" />
-</shape>
-<!-- From: file:/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/drawable-mdpi/key_black.xml -->

@@ -2,81 +2,95 @@
 <items version="2" >
 
     <item
-        jar="/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.0/libs/internal_impl-23.0.0.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="8bd336eeae661e8311330284897ee07f8ebaa297">
-        <dex dex="/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/pre-dexed/debug/internal_impl-23.0.0-580065e9e96bf0ec44c41a7558f045240188559e.jar" />
+        jar="/Applications/eclipse/android-sdk-macosx/extras/android/m2repository/com/android/support/support-annotations/24.1.1/support-annotations-24.1.1.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="3af19f153122737b372622fa6c81dd11a1c6b999">
+        <dex dex="/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.1.1_22e56a5fcccf08c8cb268d6ab2b06226f22b8433/classes.dex" />
     </item>
     <item
-        jar="/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.0.0/classes.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="1ccbc26be2c465c622a48310e8092241b01abe80">
-        <dex dex="/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/pre-dexed/debug/classes-fbae9a2f22a03eb660258dc840dce3da195582b0.jar" />
+        jar="/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="c936c1bd42f0c018c18920c7bec619ef056b24f8">
+        <dex dex="/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.1.1_92772875169f8bdb11d64dfeff39b1c60b1606da/classes.dex" />
     </item>
     <item
-        jar="/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/support-v13/23.0.0/classes.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="bb0ac3f3ee2d71854501cc28e52cc84a20209b41">
-        <dex dex="/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/pre-dexed/debug/classes-a77609c8a1a4d6601500177d84f93c9fe469a669.jar" />
+        jar="/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="4add8aa95c9f4e9a2ad64b7e2bf08e97e28955c1">
+        <dex dex="/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-cardview-v7-24.1.1_cc529fb2a9d94aac95aeb7b1b42d53a6bb3496fa/classes.dex" />
     </item>
     <item
-        jar="/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.0.0/classes.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="40e7757d9b06db670062ddb3cf5b30c129b2fd8c">
-        <dex dex="/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/pre-dexed/debug/classes-c888e297a82b8108c33fe965e95eee151bec1ca7.jar" />
+        jar="/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="6d7d803871e3203465f71a163e7af104f807b446">
+        <dex dex="/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.1.1_b045ffbc37da1e94a1f2e1a40477383ed0e9cf0c/classes.dex" />
+    </item>
+    <item
+        jar="/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="d317ecd215a6a4c49cb7ff813050d10aa78d6bfd">
+        <dex dex="/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_d34bb7af4a310445a44d6004d764fcb0b8a0415a/classes.dex" />
+    </item>
+    <item
+        jar="/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="f62e763609f65e47dc6c498760a4accf02776788">
+        <dex dex="/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.1.1_1eec00eb84d4a4b8d8594262c5c67c0c0490961a/classes.dex" />
+    </item>
+    <item
+        jar="/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/support-v13/24.1.1/jars/libs/internal_impl-24.1.1.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="ca74722504f90166103d01edcdfdb93192eb1cba">
+        <dex dex="/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.1.1_dcd9d5d16ae174cde0ecea8bd0f76f76bc20b70f/classes.dex" />
+    </item>
+    <item
+        jar="/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/jars/libs/internal_impl-24.1.1.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="f78c2f395cb096f9dc1dc07e729922b8fcd3c4f5">
+        <dex dex="/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.1.1_6a778fc387841a12d7a2393cf1607e94fe9197f9/classes.dex" />
+    </item>
+    <item
+        jar="/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="73af46d01424c3e5d945bb4e303a3375c5da7463">
+        <dex dex="/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_e57285325e983dc9fa8ea20e66c0e45221b87ad6/classes.dex" />
+    </item>
+    <item
+        jar="/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="787871951412550519b0222aba3c9df4cea49875">
+        <dex dex="/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-24.1.1_60bfec8a272e8e715866690b45237fd784035a99/classes.dex" />
+    </item>
+    <item
+        jar="/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/support-v13/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="327f68d58bb39fb8b585150596b313541f8fdb87">
+        <dex dex="/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v13-24.1.1_fbf730d7bc737a301196cb62a0800a2845c693f5/classes.dex" />
+    </item>
+    <item
+        jar="/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="1256c10604bb098490eab070d76754ac5ceab35c">
+        <dex dex="/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.1.1_0e71b87171d3580b6ad4c10a55c4c775dd99e3f9/classes.dex" />
     </item>
     <item
         jar="/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/libs/volley.jar"
-        jumboMode="false"
-        revision="21.1.2"
+        jumboMode="true"
+        revision="24.0.1"
         sha1="d4aaa36e04ee71a83444f8367c97a46fda662d2c">
-        <dex dex="/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/pre-dexed/debug/volley-73a5e49a9fd62949a8ec68d205bd28f7e3ecf96e.jar" />
-    </item>
-    <item
-        jar="/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/libs/volley.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="d4aaa36e04ee71a83444f8367c97a46fda662d2c">
-        <dex dex="/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/pre-dexed/debug/volley-73a5e49a9fd62949a8ec68d205bd28f7e3ecf96e.jar" />
-    </item>
-    <item
-        jar="/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.0/classes.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="8413c27b45b7fe61dca4a98159f65e2cee215f5a">
-        <dex dex="/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/pre-dexed/debug/classes-4a2764229ee6c2ef03e520f1a8d57af499960b29.jar" />
-    </item>
-    <item
-        jar="/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/classes.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="4fcf0b1879f8caf497c073e1432d398e9e2988c1">
-        <dex dex="/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/pre-dexed/debug/classes-538b5c43161ef013dee85be32585ea7e7cc3aa53.jar" />
-    </item>
-    <item
-        jar="/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/libs/volley.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="d4aaa36e04ee71a83444f8367c97a46fda662d2c">
-        <dex dex="/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/pre-dexed/debug/volley-73a5e49a9fd62949a8ec68d205bd28f7e3ecf96e.jar" />
-    </item>
-    <item
-        jar="/Applications/eclipse/android-sdk-macosx/extras/android/m2repository/com/android/support/support-annotations/23.0.0/support-annotations-23.0.0.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="990e7f98a7bad86a40b1f0bcfeb039023afd0839">
-        <dex dex="/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/pre-dexed/debug/support-annotations-23.0.0-06b6d9910e6f1e0f37ac36979bc863a59f81ce95.jar" />
-    </item>
-    <item
-        jar="/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/support-v13/23.0.0/libs/internal_impl-23.0.0.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="5d4bccb885c8a89d066ecb6c4addb553a99a79a2">
-        <dex dex="/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/pre-dexed/debug/internal_impl-23.0.0-e8a035a643d37b9849c794c448c67f014e6927b1.jar" />
+        <dex dex="/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/transforms/dex/debug/folders/1000/2/volley_73a5e49a9fd62949a8ec68d205bd28f7e3ecf96e/classes.dex" />
     </item>
 
 </items>

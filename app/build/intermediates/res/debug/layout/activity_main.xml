@@ -1,8 +1,0 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/fragment_container"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.comp4905.jasonfleischer.midimusic.MainActivity"
-    tools:ignore="MergeRootFrame" />
-<!-- From: file:/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/layout/activity_main.xml -->

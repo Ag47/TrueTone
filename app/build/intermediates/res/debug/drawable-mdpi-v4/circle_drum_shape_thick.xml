@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<shape xmlns:android="http://schemas.android.com/apk/res/android"
-	android:shape="oval">
-	<size android:width="200dp" android:height="200dp" />
-	<solid android:color="#FFFFFF" />
-	<stroke android:width="5dip" android:color="#B1BCBE" />
-</shape>
-<!-- From: file:/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/drawable-mdpi/circle_drum_shape_thick.xml -->
