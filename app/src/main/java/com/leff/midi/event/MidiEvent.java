@@ -16,104 +16,47 @@
 
 package com.leff.midi.event;
 
+import com.leff.midi.event.meta.MetaEvent;
+import com.leff.midi.util.VariableLengthInt;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
-import com.leff.midi.event.meta.MetaEvent;
-import com.leff.midi.util.VariableLengthInt;
-
-public abstract class MidiEvent implements Comparable<MidiEvent>
-{
+public abstract class MidiEvent implements Comparable<MidiEvent> {
+    private static int sId = -1;
+    private static int sType = -1;
+    private static int sChannel = -1;
     protected long mTick;
     protected VariableLengthInt mDelta;
 
-    public MidiEvent(long tick, long delta)
-    {
+    public MidiEvent(long tick, long delta) {
         mTick = tick;
         mDelta = new VariableLengthInt((int) delta);
     }
 
-    public long getTick()
-    {
-        return mTick;
-    }
-
-    public long getDelta()
-    {
-        return mDelta.getValue();
-    }
-
-    public void setDelta(long d)
-    {
-        mDelta.setValue((int) d);
-    }
-
-    protected abstract int getEventSize();
-
-    public int getSize()
-    {
-        return getEventSize() + mDelta.getByteCount();
-    }
-
-    public boolean requiresStatusByte(MidiEvent prevEvent)
-    {
-        if(prevEvent == null)
-        {
-            return true;
-        }
-        if(this instanceof MetaEvent)
-        {
-            return true;
-        }
-        if(this.getClass().equals(prevEvent.getClass()))
-        {
-            return false;
-        }
-        return true;
-    }
-
-    public void writeToFile(OutputStream out, boolean writeType) throws IOException
-    {
-        out.write(mDelta.getBytes());
-    }
-
-    private static int sId = -1;
-    private static int sType = -1;
-    private static int sChannel = -1;
-
-    public static final MidiEvent parseEvent(long tick, long delta, InputStream in) throws IOException
-    {
+    public static final MidiEvent parseEvent(long tick, long delta, InputStream in) throws IOException {
         in.mark(1);
         boolean reset = false;
 
         int id = in.read();
-        if(!verifyIdentifier(id))
-        {
+        if (!verifyIdentifier(id)) {
             in.reset();
             reset = true;
         }
 
-        if(sType >= 0x8 && sType <= 0xE)
-        {
+        if (sType >= 0x8 && sType <= 0xE) {
             return ChannelEvent.parseChannelEvent(tick, delta, sType, sChannel, in);
-        }
-        else if(sId == 0xFF)
-        {
+        } else if (sId == 0xFF) {
             return MetaEvent.parseMetaEvent(tick, delta, in);
-        }
-        else if(sId == 0xF0 || sId == 0xF7)
-        {
+        } else if (sId == 0xF0 || sId == 0xF7) {
             VariableLengthInt size = new VariableLengthInt(in);
             byte[] data = new byte[size.getValue()];
             in.read(data);
             return new SystemExclusiveEvent(sId, tick, delta, data);
-        }
-        else
-        {
+        } else {
             System.out.println("Unable to handle status byte, skipping: " + sId);
-            if(reset)
-            {
+            if (reset) {
                 in.read();
             }
         }
@@ -121,41 +64,67 @@ public abstract class MidiEvent implements Comparable<MidiEvent>
         return null;
     }
 
-    private static boolean verifyIdentifier(int id)
-    {
+    private static boolean verifyIdentifier(int id) {
         sId = id;
 
         int type = id >> 4;
         int channel = id & 0x0F;
 
-        if(type >= 0x8 && type <= 0xE)
-        {
+        if (type >= 0x8 && type <= 0xE) {
             sId = id;
             sType = type;
             sChannel = channel;
-        }
-        else if(id == 0xFF)
-        {
+        } else if (id == 0xFF) {
             sId = id;
             sType = -1;
             sChannel = -1;
-        }
-        else if(type == 0xF)
-        {
+        } else if (type == 0xF) {
             sId = id;
             sType = type;
             sChannel = -1;
-        }
-        else
-        {
+        } else {
             return false;
         }
         return true;
     }
 
+    public long getTick() {
+        return mTick;
+    }
+
+    public long getDelta() {
+        return mDelta.getValue();
+    }
+
+    public void setDelta(long d) {
+        mDelta.setValue((int) d);
+    }
+
+    protected abstract int getEventSize();
+
+    public int getSize() {
+        return getEventSize() + mDelta.getByteCount();
+    }
+
+    public boolean requiresStatusByte(MidiEvent prevEvent) {
+        if (prevEvent == null) {
+            return true;
+        }
+        if (this instanceof MetaEvent) {
+            return true;
+        }
+        if (this.getClass().equals(prevEvent.getClass())) {
+            return false;
+        }
+        return true;
+    }
+
+    public void writeToFile(OutputStream out, boolean writeType) throws IOException {
+        out.write(mDelta.getBytes());
+    }
+
     @Override
-    public String toString()
-    {
+    public String toString() {
         return "" + mTick + " (" + mDelta.getValue() + "): " + this.getClass().getSimpleName();
     }
 }

@@ -18,44 +18,30 @@ package com.ringdroid;
 
 import android.content.Context;
 import android.graphics.Canvas;
-import android.graphics.Paint;
-import android.graphics.Path;
 import android.graphics.Rect;
 import android.util.AttributeSet;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
-import android.view.View;
 import android.widget.ImageView;
 
 /**
  * Represents a draggable start or end marker.
- *
+ * <p/>
  * Most events are passed back to the client class using a
  * listener interface.
- *
+ * <p/>
  * This class directly keeps track of its own velocity, though,
  * accelerating as the user holds down the left or right arrows
  * while this control is focused.
  */
 public class MarkerView extends ImageView {
 
-    public interface MarkerListener {
-        public void markerTouchStart(MarkerView marker, float pos);
-        public void markerTouchMove(MarkerView marker, float pos);
-        public void markerTouchEnd(MarkerView marker);
-        public void markerFocus(MarkerView marker);
-        public void markerLeft(MarkerView marker, int velocity);
-        public void markerRight(MarkerView marker, int velocity);
-        public void markerEnter(MarkerView marker);
-        public void markerKeyUp();
-        public void markerDraw();
-    };
-
     private int mVelocity;
+
+    ;
     private MarkerListener mListener;
     private float mTouchStart;
     private int mTouchLast;
-
     public MarkerView(Context context, AttributeSet attrs) {
         super(context, attrs);
 
@@ -72,21 +58,21 @@ public class MarkerView extends ImageView {
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
-        switch(event.getAction()) {
-        case MotionEvent.ACTION_DOWN:
-            requestFocus();
-            // We use raw x because this window itself is going to
-            // move, which will screw up the "local" coordinates
-            mListener.markerTouchStart(this, event.getRawX());
-            break;
-        case MotionEvent.ACTION_MOVE:
-            // We use raw x because this window itself is going to
-            // move, which will screw up the "local" coordinates
-            mListener.markerTouchMove(this, event.getRawX());
-            break;
-        case MotionEvent.ACTION_UP:
-            mListener.markerTouchEnd(this);
-            break;
+        switch (event.getAction()) {
+            case MotionEvent.ACTION_DOWN:
+                requestFocus();
+                // We use raw x because this window itself is going to
+                // move, which will screw up the "local" coordinates
+                mListener.markerTouchStart(this, event.getRawX());
+                break;
+            case MotionEvent.ACTION_MOVE:
+                // We use raw x because this window itself is going to
+                // move, which will screw up the "local" coordinates
+                mListener.markerTouchMove(this, event.getRawX());
+                break;
+            case MotionEvent.ACTION_UP:
+                mListener.markerTouchEnd(this);
+                break;
         }
         return true;
     }
@@ -110,7 +96,7 @@ public class MarkerView extends ImageView {
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         mVelocity++;
-        int v = (int)Math.sqrt(1 + mVelocity / 2);
+        int v = (int) Math.sqrt(1 + mVelocity / 2);
         if (mListener != null) {
             if (keyCode == KeyEvent.KEYCODE_DPAD_LEFT) {
                 mListener.markerLeft(this, v);
@@ -133,5 +119,25 @@ public class MarkerView extends ImageView {
         if (mListener != null)
             mListener.markerKeyUp();
         return super.onKeyDown(keyCode, event);
+    }
+
+    public interface MarkerListener {
+        public void markerTouchStart(MarkerView marker, float pos);
+
+        public void markerTouchMove(MarkerView marker, float pos);
+
+        public void markerTouchEnd(MarkerView marker);
+
+        public void markerFocus(MarkerView marker);
+
+        public void markerLeft(MarkerView marker, int velocity);
+
+        public void markerRight(MarkerView marker, int velocity);
+
+        public void markerEnter(MarkerView marker);
+
+        public void markerKeyUp();
+
+        public void markerDraw();
     }
 }

@@ -17,10 +17,9 @@
 package com.ringdroid;
 
 import android.content.Context;
-import android.content.res.Resources;
 import android.graphics.Canvas;
-import android.graphics.Paint;
 import android.graphics.DashPathEffect;
+import android.graphics.Paint;
 import android.util.AttributeSet;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
@@ -29,39 +28,30 @@ import android.view.View;
 import com.comp4905.jasonfleischer.midimusic.R;
 import com.ringdroid.soundfile.CheapSoundFile;
 
-import java.util.Map;
-
 /**
  * WaveformView is an Android view that displays a visual representation
  * of an audio waveform.  It retrieves the frame gains from a CheapSoundFile
  * object and recomputes the shape contour at several zoom levels.
- *
+ * <p/>
  * This class doesn't handle selection or any of the touch interactions
  * directly, so it exposes a listener interface.  The class that embeds
  * this view should add itself as a listener and make the view scroll
  * and respond to other events appropriately.
- *
+ * <p/>
  * WaveformView doesn't actually handle selection, but it will just display
  * the selected part of the waveform in a different color.
  */
 public class WaveformView extends View {
-    public interface WaveformListener {
-        public void waveformTouchStart(float x);
-        public void waveformTouchMove(float x);
-        public void waveformTouchEnd();
-        public void waveformFling(float x);
-        public void waveformDraw();
-    };
-
     // Colors
     private Paint mGridPaint;
+
+    ;
     private Paint mSelectedLinePaint;
     private Paint mUnselectedLinePaint;
     private Paint mUnselectedBkgndLinePaint;
     private Paint mBorderLinePaint;
     private Paint mPlaybackLinePaint;
     private Paint mTimecodePaint;
-
     private CheapSoundFile mSoundFile;
     private int[] mLenByZoomLevel;
     private double[][] mValuesByZoomLevel;
@@ -79,7 +69,6 @@ public class WaveformView extends View {
     private WaveformListener mListener;
     private GestureDetector mGestureDetector;
     private boolean mInitialized;
-
     public WaveformView(Context context, AttributeSet attrs) {
         super(context, attrs);
 
@@ -89,49 +78,49 @@ public class WaveformView extends View {
         mGridPaint = new Paint();
         mGridPaint.setAntiAlias(false);
         mGridPaint.setColor(
-            getResources().getColor(R.drawable.grid_line));
+                getResources().getColor(R.drawable.grid_line));
         mSelectedLinePaint = new Paint();
         mSelectedLinePaint.setAntiAlias(false);
         mSelectedLinePaint.setColor(
-            getResources().getColor(R.drawable.waveform_selected));
+                getResources().getColor(R.drawable.waveform_selected));
         mUnselectedLinePaint = new Paint();
         mUnselectedLinePaint.setAntiAlias(false);
         mUnselectedLinePaint.setColor(
-            getResources().getColor(R.drawable.waveform_unselected));
+                getResources().getColor(R.drawable.waveform_unselected));
         mUnselectedBkgndLinePaint = new Paint();
         mUnselectedBkgndLinePaint.setAntiAlias(false);
         mUnselectedBkgndLinePaint.setColor(
-            getResources().getColor(
-                R.drawable.waveform_unselected_bkgnd_overlay));
+                getResources().getColor(
+                        R.drawable.waveform_unselected_bkgnd_overlay));
         mBorderLinePaint = new Paint();
         mBorderLinePaint.setAntiAlias(true);
         mBorderLinePaint.setStrokeWidth(1.5f);
         mBorderLinePaint.setPathEffect(
-            new DashPathEffect(new float[] { 3.0f, 2.0f }, 0.0f));
+                new DashPathEffect(new float[]{3.0f, 2.0f}, 0.0f));
         mBorderLinePaint.setColor(
-            getResources().getColor(R.drawable.selection_border));
+                getResources().getColor(R.drawable.selection_border));
         mPlaybackLinePaint = new Paint();
         mPlaybackLinePaint.setAntiAlias(false);
         mPlaybackLinePaint.setColor(
-            getResources().getColor(R.drawable.playback_indicator));
+                getResources().getColor(R.drawable.playback_indicator));
         mTimecodePaint = new Paint();
         mTimecodePaint.setTextSize(12);
         mTimecodePaint.setAntiAlias(true);
         mTimecodePaint.setColor(
-            getResources().getColor(R.drawable.timecode));
+                getResources().getColor(R.drawable.timecode));
         mTimecodePaint.setShadowLayer(
-            2, 1, 1,
-            getResources().getColor(R.drawable.timecode_shadow));
+                2, 1, 1,
+                getResources().getColor(R.drawable.timecode_shadow));
 
-	mGestureDetector = new GestureDetector(
-	        context,
-		new GestureDetector.SimpleOnGestureListener() {
-		    public boolean onFling(
-			        MotionEvent e1, MotionEvent e2, float vx, float vy) {
-			mListener.waveformFling(vx);
-			return true;
-		    }
-		});
+        mGestureDetector = new GestureDetector(
+                context,
+                new GestureDetector.SimpleOnGestureListener() {
+                    public boolean onFling(
+                            MotionEvent e1, MotionEvent e2, float vx, float vy) {
+                        mListener.waveformFling(vx);
+                        return true;
+                    }
+                });
 
         mSoundFile = null;
         mLenByZoomLevel = null;
@@ -147,20 +136,20 @@ public class WaveformView extends View {
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
-	if (mGestureDetector.onTouchEvent(event)) {
-	    return true;
-	}
+        if (mGestureDetector.onTouchEvent(event)) {
+            return true;
+        }
 
-        switch(event.getAction()) {
-        case MotionEvent.ACTION_DOWN:
-            mListener.waveformTouchStart(event.getX());
-            break;
-        case MotionEvent.ACTION_MOVE:
-            mListener.waveformTouchMove(event.getX());
-            break;
-        case MotionEvent.ACTION_UP:
-            mListener.waveformTouchEnd();
-            break;
+        switch (event.getAction()) {
+            case MotionEvent.ACTION_DOWN:
+                mListener.waveformTouchStart(event.getX());
+                break;
+            case MotionEvent.ACTION_MOVE:
+                mListener.waveformTouchMove(event.getX());
+                break;
+            case MotionEvent.ACTION_UP:
+                mListener.waveformTouchEnd();
+                break;
         }
         return true;
     }
@@ -233,29 +222,29 @@ public class WaveformView extends View {
     }
 
     public int secondsToFrames(double seconds) {
-        return (int)(1.0 * seconds * mSampleRate / mSamplesPerFrame + 0.5);
+        return (int) (1.0 * seconds * mSampleRate / mSamplesPerFrame + 0.5);
     }
 
     public int secondsToPixels(double seconds) {
         double z = mZoomFactorByZoomLevel[mZoomLevel];
-        return (int)(z * seconds * mSampleRate / mSamplesPerFrame + 0.5);
+        return (int) (z * seconds * mSampleRate / mSamplesPerFrame + 0.5);
     }
 
     public double pixelsToSeconds(int pixels) {
         double z = mZoomFactorByZoomLevel[mZoomLevel];
-        return (pixels * (double)mSamplesPerFrame / (mSampleRate * z));
+        return (pixels * (double) mSamplesPerFrame / (mSampleRate * z));
     }
 
     public int millisecsToPixels(int msecs) {
         double z = mZoomFactorByZoomLevel[mZoomLevel];
-        return (int)((msecs * 1.0 * mSampleRate * z) /
-                     (1000.0 * mSamplesPerFrame) + 0.5);
+        return (int) ((msecs * 1.0 * mSampleRate * z) /
+                (1000.0 * mSamplesPerFrame) + 0.5);
     }
 
     public int pixelsToMillisecs(int pixels) {
         double z = mZoomFactorByZoomLevel[mZoomLevel];
-        return (int)(pixels * (1000.0 * mSamplesPerFrame) /
-                     (mSampleRate * z) + 0.5);
+        return (int) (pixels * (1000.0 * mSamplesPerFrame) /
+                (mSampleRate * z) + 0.5);
     }
 
     public void setParameters(int start, int end, int offset) {
@@ -287,7 +276,7 @@ public class WaveformView extends View {
     public void recomputeHeights(float density) {
         mHeightsAtThisZoomLevel = null;
         mDensity = density;
-        mTimecodePaint.setTextSize((int)(12 * density));
+        mTimecodePaint.setTextSize((int) (12 * density));
 
         invalidate();
     }
@@ -339,18 +328,18 @@ public class WaveformView extends View {
         for (i = 0; i < width; i++) {
             Paint paint;
             if (i + start >= mSelectionStart &&
-                i + start < mSelectionEnd) {
+                    i + start < mSelectionEnd) {
                 paint = mSelectedLinePaint;
             } else {
                 drawWaveformLine(canvas, i, 0, measuredHeight,
-                                 mUnselectedBkgndLinePaint);
+                        mUnselectedBkgndLinePaint);
                 paint = mUnselectedLinePaint;
             }
             drawWaveformLine(
-                canvas, i,
-                ctr - mHeightsAtThisZoomLevel[start + i],
-                ctr + 1 + mHeightsAtThisZoomLevel[start + i],
-                paint);
+                    canvas, i,
+                    ctr - mHeightsAtThisZoomLevel[start + i],
+                    ctr + 1 + mHeightsAtThisZoomLevel[start + i],
+                    paint);
 
             if (i + start == mPlaybackPos) {
                 canvas.drawLine(i, 0, i, measuredHeight, mPlaybackLinePaint);
@@ -361,18 +350,18 @@ public class WaveformView extends View {
         // non-waveform area to the right as unselected
         for (i = width; i < measuredWidth; i++) {
             drawWaveformLine(canvas, i, 0, measuredHeight,
-                             mUnselectedBkgndLinePaint);
+                    mUnselectedBkgndLinePaint);
         }
 
         // Draw borders
         canvas.drawLine(
-            mSelectionStart - mOffset + 0.5f, 30,
-            mSelectionStart - mOffset + 0.5f, measuredHeight,
-            mBorderLinePaint);
+                mSelectionStart - mOffset + 0.5f, 30,
+                mSelectionStart - mOffset + 0.5f, measuredHeight,
+                mBorderLinePaint);
         canvas.drawLine(
-            mSelectionEnd - mOffset + 0.5f, 0,
-            mSelectionEnd - mOffset + 0.5f, measuredHeight - 30,
-            mBorderLinePaint);
+                mSelectionEnd - mOffset + 0.5f, 0,
+                mSelectionEnd - mOffset + 0.5f, measuredHeight - 30,
+                mBorderLinePaint);
 
         // Draw timecode
         double timecodeIntervalSecs = 1.0;
@@ -392,7 +381,7 @@ public class WaveformView extends View {
             fractionalSecs += onePixelInSecs;
             integerSecs = (int) fractionalSecs;
             int integerTimecodeNew = (int) (fractionalSecs /
-                                            timecodeIntervalSecs);
+                    timecodeIntervalSecs);
             if (integerTimecodeNew != integerTimecode) {
                 integerTimecode = integerTimecodeNew;
 
@@ -404,11 +393,11 @@ public class WaveformView extends View {
                 }
                 String timecodeStr = timecodeMinutes + ":" + timecodeSeconds;
                 float offset = (float) (
-                    0.5 * mTimecodePaint.measureText(timecodeStr));
+                        0.5 * mTimecodePaint.measureText(timecodeStr));
                 canvas.drawText(timecodeStr,
-                                i - offset,
-                                (int)(12 * mDensity),
-                                mTimecodePaint);
+                        i - offset,
+                        (int) (12 * mDensity),
+                        mTimecodePaint);
             }
         }
 
@@ -430,18 +419,18 @@ public class WaveformView extends View {
             smoothedGains[0] = frameGains[0];
             smoothedGains[1] = frameGains[1];
         } else if (numFrames > 2) {
-            smoothedGains[0] = (double)(
-                (frameGains[0] / 2.0) +
-                (frameGains[1] / 2.0));
+            smoothedGains[0] = (double) (
+                    (frameGains[0] / 2.0) +
+                            (frameGains[1] / 2.0));
             for (int i = 1; i < numFrames - 1; i++) {
-                smoothedGains[i] = (double)(
-                    (frameGains[i - 1] / 3.0) +
-                    (frameGains[i    ] / 3.0) +
-                    (frameGains[i + 1] / 3.0));
+                smoothedGains[i] = (double) (
+                        (frameGains[i - 1] / 3.0) +
+                                (frameGains[i] / 3.0) +
+                                (frameGains[i + 1] / 3.0));
             }
-            smoothedGains[numFrames - 1] = (double)(
-                (frameGains[numFrames - 2] / 2.0) +
-                (frameGains[numFrames - 1] / 2.0));
+            smoothedGains[numFrames - 1] = (double) (
+                    (frameGains[numFrames - 2] / 2.0) +
+                            (frameGains[numFrames - 1] / 2.0));
         }
 
         // Make sure the range is no more than 0 - 255
@@ -460,7 +449,7 @@ public class WaveformView extends View {
         maxGain = 0;
         int gainHist[] = new int[256];
         for (int i = 0; i < numFrames; i++) {
-            int smoothedGain = (int)(smoothedGains[i] * scaleFactor);
+            int smoothedGain = (int) (smoothedGains[i] * scaleFactor);
             if (smoothedGain < 0)
                 smoothedGain = 0;
             if (smoothedGain > 255)
@@ -476,14 +465,14 @@ public class WaveformView extends View {
         double minGain = 0;
         int sum = 0;
         while (minGain < 255 && sum < numFrames / 20) {
-            sum += gainHist[(int)minGain];
+            sum += gainHist[(int) minGain];
             minGain++;
         }
 
         // Re-calibrate the max to be 99%
         sum = 0;
         while (maxGain > 2 && sum < numFrames / 100) {
-            sum += gainHist[(int)maxGain];
+            sum += gainHist[(int) maxGain];
             maxGain--;
         }
 
@@ -532,8 +521,8 @@ public class WaveformView extends View {
             mZoomFactorByZoomLevel[j] = mZoomFactorByZoomLevel[j - 1] / 2.0;
             for (int i = 0; i < mLenByZoomLevel[j]; i++) {
                 mValuesByZoomLevel[j][i] =
-                    0.5 * (mValuesByZoomLevel[j - 1][2 * i] +
-                           mValuesByZoomLevel[j - 1][2 * i + 1]);
+                        0.5 * (mValuesByZoomLevel[j - 1][2 * i] +
+                                mValuesByZoomLevel[j - 1][2 * i + 1]);
             }
         }
 
@@ -559,7 +548,19 @@ public class WaveformView extends View {
         mHeightsAtThisZoomLevel = new int[mLenByZoomLevel[mZoomLevel]];
         for (int i = 0; i < mLenByZoomLevel[mZoomLevel]; i++) {
             mHeightsAtThisZoomLevel[i] =
-                (int)(mValuesByZoomLevel[mZoomLevel][i] * halfHeight);
+                    (int) (mValuesByZoomLevel[mZoomLevel][i] * halfHeight);
         }
+    }
+
+    public interface WaveformListener {
+        public void waveformTouchStart(float x);
+
+        public void waveformTouchMove(float x);
+
+        public void waveformTouchEnd();
+
+        public void waveformFling(float x);
+
+        public void waveformDraw();
     }
 }

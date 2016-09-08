@@ -15,7 +15,6 @@ import com.comp4905.jasonfleischer.midimusic.MidiMusicConfig.PlayingMode;
 import com.comp4905.jasonfleischer.midimusic.R;
 import com.comp4905.jasonfleischer.midimusic.views.RecordingPane;
 import com.comp4905.jasonfleischer.midimusic.views.UsbConnection;
-import com.midisheetmusic.ChooseSongActivity;
 
 public class InstrumentFragment extends Fragment {
 
@@ -118,7 +117,7 @@ public class InstrumentFragment extends Fragment {
             @Override
             public void onClick(View v) {
 //                MainActivity.getInstance().finish();
-                Intent intent = new Intent(MainActivity.getInstance(),com.midisheetmusic.ChooseSongActivity.class);
+                Intent intent = new Intent(MainActivity.getInstance(), com.midisheetmusic.ChooseSongActivity.class);
                 startActivity(intent);
             }
         });

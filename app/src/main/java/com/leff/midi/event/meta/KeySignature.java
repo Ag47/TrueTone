@@ -16,73 +16,28 @@
 
 package com.leff.midi.event.meta;
 
-import java.io.IOException;
-import java.io.OutputStream;
-
 import com.leff.midi.event.MidiEvent;
 import com.leff.midi.util.VariableLengthInt;
 
-public class KeySignature extends MetaEvent
-{
+import java.io.IOException;
+import java.io.OutputStream;
+
+public class KeySignature extends MetaEvent {
     public static final int SCALE_MAJOR = 0;
     public static final int SCALE_MINOR = 1;
 
     private int mKey;
     private int mScale;
 
-    public KeySignature(long tick, long delta, int key, int scale)
-    {
+    public KeySignature(long tick, long delta, int key, int scale) {
         super(tick, delta, MetaEvent.KEY_SIGNATURE, new VariableLengthInt(2));
 
         this.setKey(key);
         mScale = scale;
     }
 
-    public void setKey(int key)
-    {
-        mKey = (byte) key;
-
-        if(mKey < -7)
-            mKey = -7;
-        else if(mKey > 7)
-            mKey = 7;
-    }
-
-    public int getKey()
-    {
-        return mKey;
-    }
-
-    public void setScale(int scale)
-    {
-        mScale = scale;
-    }
-
-    public int getScale()
-    {
-        return mScale;
-    }
-
-    @Override
-    protected int getEventSize()
-    {
-        return 5;
-    }
-
-    @Override
-    public void writeToFile(OutputStream out) throws IOException
-    {
-        super.writeToFile(out);
-
-        out.write(2);
-        out.write(mKey);
-        out.write(mScale);
-    }
-
-    public static MetaEvent parseKeySignature(long tick, long delta, MetaEventData info)
-    {
-        if(info.length.getValue() != 2)
-        {
+    public static MetaEvent parseKeySignature(long tick, long delta, MetaEventData info) {
+        if (info.length.getValue() != 2) {
             return new GenericMetaEvent(tick, delta, info);
         }
 
@@ -92,31 +47,60 @@ public class KeySignature extends MetaEvent
         return new KeySignature(tick, delta, key, scale);
     }
 
+    public int getKey() {
+        return mKey;
+    }
+
+    public void setKey(int key) {
+        mKey = (byte) key;
+
+        if (mKey < -7)
+            mKey = -7;
+        else if (mKey > 7)
+            mKey = 7;
+    }
+
+    public int getScale() {
+        return mScale;
+    }
+
+    public void setScale(int scale) {
+        mScale = scale;
+    }
+
     @Override
-    public int compareTo(MidiEvent other)
-    {
-        if(mTick != other.getTick())
-        {
+    protected int getEventSize() {
+        return 5;
+    }
+
+    @Override
+    public void writeToFile(OutputStream out) throws IOException {
+        super.writeToFile(out);
+
+        out.write(2);
+        out.write(mKey);
+        out.write(mScale);
+    }
+
+    @Override
+    public int compareTo(MidiEvent other) {
+        if (mTick != other.getTick()) {
             return mTick < other.getTick() ? -1 : 1;
         }
-        if(mDelta.getValue() != other.getDelta())
-        {
+        if (mDelta.getValue() != other.getDelta()) {
             return mDelta.getValue() < other.getDelta() ? 1 : -1;
         }
 
-        if(!(other instanceof KeySignature))
-        {
+        if (!(other instanceof KeySignature)) {
             return 1;
         }
 
         KeySignature o = (KeySignature) other;
-        if(mKey != o.mKey)
-        {
+        if (mKey != o.mKey) {
             return mKey < o.mKey ? -1 : 1;
         }
 
-        if(mScale != o.mScale)
-        {
+        if (mScale != o.mScale) {
             return mKey < o.mScale ? -1 : 1;
         }
 

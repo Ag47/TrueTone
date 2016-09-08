@@ -7,8 +7,7 @@ import com.leff.midi.event.meta.TimeSignature;
  * An event specifically for MidiProcessor to broadcast metronome ticks so that
  * observers need not rely on time conversions or measure tracking
  */
-public class MetronomeTick extends MidiEvent
-{
+public class MetronomeTick extends MidiEvent {
     private int mResolution;
     private TimeSignature mSignature;
 
@@ -18,8 +17,7 @@ public class MetronomeTick extends MidiEvent
     private double mMetronomeProgress;
     private int mMetronomeFrequency;
 
-    public MetronomeTick(TimeSignature sig, int resolution)
-    {
+    public MetronomeTick(TimeSignature sig, int resolution) {
         super(0, 0);
 
         mResolution = resolution;
@@ -28,26 +26,22 @@ public class MetronomeTick extends MidiEvent
         mCurrentMeasure = 1;
     }
 
-    public void setTimeSignature(TimeSignature sig)
-    {
+    public void setTimeSignature(TimeSignature sig) {
         mSignature = sig;
         mCurrentBeat = 0;
 
         setMetronomeFrequency(sig.getMeter());
     }
 
-    public boolean update(double ticksElapsed)
-    {
+    public boolean update(double ticksElapsed) {
         mMetronomeProgress += ticksElapsed;
 
-        if(mMetronomeProgress >= mMetronomeFrequency)
-        {
+        if (mMetronomeProgress >= mMetronomeFrequency) {
 
             mMetronomeProgress %= mMetronomeFrequency;
 
             mCurrentBeat = (mCurrentBeat + 1) % mSignature.getNumerator();
-            if(mCurrentBeat == 0)
-            {
+            if (mCurrentBeat == 0) {
                 mCurrentMeasure++;
             }
 
@@ -56,10 +50,8 @@ public class MetronomeTick extends MidiEvent
         return false;
     }
 
-    public void setMetronomeFrequency(int meter)
-    {
-        switch(meter)
-        {
+    public void setMetronomeFrequency(int meter) {
+        switch (meter) {
             case TimeSignature.METER_EIGHTH:
                 mMetronomeFrequency = mResolution / 2;
                 break;
@@ -75,37 +67,31 @@ public class MetronomeTick extends MidiEvent
         }
     }
 
-    public int getBeatNumber()
-    {
+    public int getBeatNumber() {
         return mCurrentBeat + 1;
     }
 
-    public int getMeasure()
-    {
+    public int getMeasure() {
         return mCurrentMeasure;
     }
 
     @Override
-    public String toString()
-    {
+    public String toString() {
         return "Metronome: " + mCurrentMeasure + "\t" + getBeatNumber();
     }
 
     @Override
-    public int compareTo(MidiEvent o)
-    {
+    public int compareTo(MidiEvent o) {
         return 0;
     }
 
     @Override
-    protected int getEventSize()
-    {
+    protected int getEventSize() {
         return 0;
     }
 
     @Override
-    public int getSize()
-    {
+    public int getSize() {
         return 0;
     }
 }

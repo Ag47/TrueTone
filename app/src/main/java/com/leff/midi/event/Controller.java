@@ -16,35 +16,28 @@
 
 package com.leff.midi.event;
 
-public class Controller extends ChannelEvent
-{
-    public Controller(long tick, int channel, int controllerType, int value)
-    {
+public class Controller extends ChannelEvent {
+    public Controller(long tick, int channel, int controllerType, int value) {
         super(tick, ChannelEvent.CONTROLLER, channel, controllerType, value);
     }
 
-    public Controller(long tick, long delta, int channel, int controllerType, int value)
-    {
+    public Controller(long tick, long delta, int channel, int controllerType, int value) {
         super(tick, delta, ChannelEvent.CONTROLLER, channel, controllerType, value);
     }
 
-    public int getControllerType()
-    {
+    public int getControllerType() {
         return mValue1;
     }
 
-    public int getValue()
-    {
-        return mValue2;
-    }
-
-    public void setControllerType(int t)
-    {
+    public void setControllerType(int t) {
         mValue1 = t;
     }
 
-    public void setValue(int v)
-    {
+    public int getValue() {
+        return mValue2;
+    }
+
+    public void setValue(int v) {
         mValue2 = v;
     }
 }

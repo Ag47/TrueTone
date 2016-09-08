@@ -16,6 +16,8 @@
 
 package com.leff.midi;
 
+import com.leff.midi.util.MidiUtil;
+
 import java.io.BufferedInputStream;
 import java.io.File;
 import java.io.FileInputStream;
@@ -24,8 +26,6 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
-
-import com.leff.midi.util.MidiUtil;
 
 public class MidiFile {
     public static final int HEADER_SIZE = 14;
@@ -73,6 +73,10 @@ public class MidiFile {
         }
     }
 
+    public int getType() {
+        return mType;
+    }
+
     public void setType(int type) {
         if (type < 0) {
             type = 0;
@@ -84,22 +88,18 @@ public class MidiFile {
         mType = type;
     }
 
-    public int getType() {
-        return mType;
-    }
-
     public int getTrackCount() {
         return mTrackCount;
+    }
+
+    public int getResolution() {
+        return mResolution;
     }
 
     public void setResolution(int res) {
         if (res >= 0) {
             mResolution = res;
         }
-    }
-
-    public int getResolution() {
-        return mResolution;
     }
 
     public long getLengthInTicks() {

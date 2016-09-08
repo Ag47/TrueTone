@@ -1,7 +1,6 @@
 package com.comp4905.jasonfleischer.midimusic;
 
 import android.app.Activity;
-import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -41,96 +40,37 @@ public class MainActivity extends Activity implements SensorEventListener {
 
     private static final String ACTION_USB_PERMISSION = "com.comp4905.jasonfleischer.midimusic";
     private static final int CHECK_USB_CONN_TIME_MS = 2500;
-    private static Timer checkUsbDetachedTimer;
-
-    private static MainActivity instance;
-    private static UsbManager usbManager;
     public static MidiMusicConfig config = null;
     public static MidiInputDevice midiInputDevice;
-
+    private static Timer checkUsbDetachedTimer;
+    private static MainActivity instance;
+    private static UsbManager usbManager;
     private static PendingIntent mPermissionIntent;
+    private final BroadcastReceiver mUsbReceiver = new BroadcastReceiver() {
 
+        public void onReceive(Context context, Intent intent) {
+            String action = intent.getAction();
+            if (ACTION_USB_PERMISSION.equals(action)) {
+                synchronized (this) {
+                    UsbDevice device = (UsbDevice) intent.getParcelableExtra(UsbManager.EXTRA_DEVICE);
+
+                    if (intent.getBooleanExtra(UsbManager.EXTRA_PERMISSION_GRANTED, false)) {
+                        if (device != null) {
+                            //call method to set up device communication
+                            connectToKeyboard(device);
+                        }
+                    } else {
+                        HLog.i(getResources().getString(R.string.permission_denied_for_usb));
+                    }
+                }
+            }
+        }
+    };
     private SensorManager mSensorManager;
     private Sensor mOrientation;
 
     public static Activity getInstance() {
         return instance;
-    }
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
-        
-        if (savedInstanceState == null) {
-            FragMentManager.getInstance().init(getFragmentManager());
-
-        }
-        instance = this;
-
-        usbManager = (UsbManager) getSystemService(Context.USB_SERVICE);
-        mPermissionIntent = PendingIntent.getBroadcast(this, 0, new Intent(ACTION_USB_PERMISSION), 0);
-        IntentFilter filter = new IntentFilter(ACTION_USB_PERMISSION);
-        registerReceiver(mUsbReceiver, filter);
-
-//        connectUSBDevice();
-
-        new BuildModel().execute();
-
-        mSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
-        mOrientation = mSensorManager.getDefaultSensor(Sensor.TYPE_ORIENTATION);
-    }
-
-    private class BuildModel extends AsyncTask<Void, Integer, Void> {
-        @Override
-        protected void onPostExecute(Void result) {
-            super.onPostExecute(result);
-            FragMentManager.getInstance().showInstrumentFragment();
-
-        }
-
-        @Override
-        protected void onProgressUpdate(Integer... values) {
-            super.onProgressUpdate(values);
-            FragMentManager.getInstance().updateInitProgress(values[0]);
-        }
-
-        protected Void doInBackground(Void... params) {
-            publishProgress(0);
-            if (FileManager.getInstance().hasMusicConfigFile()) {
-                config = FileManager.getInstance().readMidiMusicConfig();
-                //config = new MidiMusicConfig();
-            } else {
-                config = new MidiMusicConfig();
-            }
-            publishProgress(5);
-            //populate drums Sounds
-            for (int i = 0; i < config.allDrumSounds.length; i++) {
-                publishProgress((int) (5 + ((45.0f / config.allDrumSounds.length) * i)));
-                config.allDrumSounds[i].setSoundId();
-            }
-            publishProgress(50);
-            // populate notes
-            int i = 0;
-            int oct = 0;
-            int midiV = 21;
-            config.setNotes(i++, oct, NoteName.A, midiV++);
-            config.setNotes(i++, oct, NoteName.Bb, midiV++);
-            config.setNotes(i++, oct, NoteName.B, midiV++);
-            for (int j = 0; j < 7; j++) {
-                publishProgress(51 + ((50 / 7) * j));
-                oct++;
-                for (NoteName n : NoteName.values()) {
-                    config.setNotes(i++, oct, n, midiV++);
-                }
-            }
-            config.setNotes(i++, ++oct, NoteName.C, midiV++);
-
-            SoundManager.getInstance().initMetronome();
-            publishProgress(100);
-            return null;
-        }
     }
 
     public static void connectUSBDevice() {
@@ -154,26 +94,38 @@ public class MainActivity extends Activity implements SensorEventListener {
         }
     }
 
-    private final BroadcastReceiver mUsbReceiver = new BroadcastReceiver() {
-
-        public void onReceive(Context context, Intent intent) {
-            String action = intent.getAction();
-            if (ACTION_USB_PERMISSION.equals(action)) {
-                synchronized (this) {
-                    UsbDevice device = (UsbDevice) intent.getParcelableExtra(UsbManager.EXTRA_DEVICE);
-
-                    if (intent.getBooleanExtra(UsbManager.EXTRA_PERMISSION_GRANTED, false)) {
-                        if (device != null) {
-                            //call method to set up device communication
-                            connectToKeyboard(device);
-                        }
-                    } else {
-                        HLog.i(getResources().getString(R.string.permission_denied_for_usb));
-                    }
-                }
-            }
+    private static void stopCheckUsbDetachedTimer() {
+        if (checkUsbDetachedTimer != null) {
+            checkUsbDetachedTimer.purge();
+            checkUsbDetachedTimer.cancel();
+            checkUsbDetachedTimer = null;
         }
-    };
+    }
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+
+        if (savedInstanceState == null) {
+            FragMentManager.getInstance().init(getFragmentManager());
+
+        }
+        instance = this;
+
+        usbManager = (UsbManager) getSystemService(Context.USB_SERVICE);
+        mPermissionIntent = PendingIntent.getBroadcast(this, 0, new Intent(ACTION_USB_PERMISSION), 0);
+        IntentFilter filter = new IntentFilter(ACTION_USB_PERMISSION);
+        registerReceiver(mUsbReceiver, filter);
+
+//        connectUSBDevice();
+
+        new BuildModel().execute();
+
+        mSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
+        mOrientation = mSensorManager.getDefaultSensor(Sensor.TYPE_ORIENTATION);
+    }
 
     private void connectToKeyboard(UsbDevice device) {
         int vendorId = device.getVendorId();
@@ -283,14 +235,6 @@ public class MainActivity extends Activity implements SensorEventListener {
 		}
 	}*/
 
-    private static void stopCheckUsbDetachedTimer() {
-        if (checkUsbDetachedTimer != null) {
-            checkUsbDetachedTimer.purge();
-            checkUsbDetachedTimer.cancel();
-            checkUsbDetachedTimer = null;
-        }
-    }
-
     @Override
     protected void onPause() {
         super.onPause();
@@ -360,5 +304,56 @@ public class MainActivity extends Activity implements SensorEventListener {
             Note.DEFAULT_NOTE_VELOCITY = 127;
 
 //        Log.i("VelocityFixed", Float.toString(Note.DEFAULT_NOTE_VELOCITY));
+    }
+
+    private class BuildModel extends AsyncTask<Void, Integer, Void> {
+        @Override
+        protected void onPostExecute(Void result) {
+            super.onPostExecute(result);
+            FragMentManager.getInstance().showInstrumentFragment();
+
+        }
+
+        @Override
+        protected void onProgressUpdate(Integer... values) {
+            super.onProgressUpdate(values);
+            FragMentManager.getInstance().updateInitProgress(values[0]);
+        }
+
+        protected Void doInBackground(Void... params) {
+            publishProgress(0);
+            if (FileManager.getInstance().hasMusicConfigFile()) {
+                config = FileManager.getInstance().readMidiMusicConfig();
+                //config = new MidiMusicConfig();
+            } else {
+                config = new MidiMusicConfig();
+            }
+            publishProgress(5);
+            //populate drums Sounds
+            for (int i = 0; i < config.allDrumSounds.length; i++) {
+                publishProgress((int) (5 + ((45.0f / config.allDrumSounds.length) * i)));
+                config.allDrumSounds[i].setSoundId();
+            }
+            publishProgress(50);
+            // populate notes
+            int i = 0;
+            int oct = 0;
+            int midiV = 21;
+            config.setNotes(i++, oct, NoteName.A, midiV++);
+            config.setNotes(i++, oct, NoteName.Bb, midiV++);
+            config.setNotes(i++, oct, NoteName.B, midiV++);
+            for (int j = 0; j < 7; j++) {
+                publishProgress(51 + ((50 / 7) * j));
+                oct++;
+                for (NoteName n : NoteName.values()) {
+                    config.setNotes(i++, oct, n, midiV++);
+                }
+            }
+            config.setNotes(i++, ++oct, NoteName.C, midiV++);
+
+            SoundManager.getInstance().initMetronome();
+            publishProgress(100);
+            return null;
+        }
     }
 }

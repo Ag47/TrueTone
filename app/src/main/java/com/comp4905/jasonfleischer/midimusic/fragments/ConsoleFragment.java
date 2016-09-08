@@ -1,8 +1,23 @@
 package com.comp4905.jasonfleischer.midimusic.fragments;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
+import android.app.Fragment;
+import android.os.AsyncTask;
+import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemSelectedListener;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.GridLayout;
+import android.widget.ImageButton;
+import android.widget.LinearLayout;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
+import android.widget.Spinner;
+import android.widget.ToggleButton;
 
 import com.comp4905.jasonfleischer.midimusic.MainActivity;
 import com.comp4905.jasonfleischer.midimusic.MidiMusicConfig.PlayingMode;
@@ -13,33 +28,17 @@ import com.comp4905.jasonfleischer.midimusic.model.Chord;
 import com.comp4905.jasonfleischer.midimusic.model.Chord.ChordName;
 import com.comp4905.jasonfleischer.midimusic.model.Instrument;
 import com.comp4905.jasonfleischer.midimusic.model.Note;
-import com.comp4905.jasonfleischer.midimusic.model.Tempo;
 import com.comp4905.jasonfleischer.midimusic.model.Note.NoteDuration;
 import com.comp4905.jasonfleischer.midimusic.model.Note.NoteName;
 import com.comp4905.jasonfleischer.midimusic.model.Scale;
 import com.comp4905.jasonfleischer.midimusic.model.Sequence;
+import com.comp4905.jasonfleischer.midimusic.model.Tempo;
 import com.comp4905.jasonfleischer.midimusic.util.HLog;
 import com.comp4905.jasonfleischer.midimusic.views.UsbConnection;
 
-import android.app.Fragment;
-import android.os.AsyncTask;
-import android.os.Bundle;
-import android.util.Log;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.view.View.OnClickListener;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.Button;
-import android.widget.GridLayout;
-import android.widget.ImageButton;
-import android.widget.LinearLayout;
-import android.widget.RadioButton;
-import android.widget.RadioGroup;
-import android.widget.Spinner;
-import android.widget.AdapterView.OnItemSelectedListener;
-import android.widget.ToggleButton;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 
 public class ConsoleFragment extends Fragment {
 
@@ -339,6 +338,10 @@ public class ConsoleFragment extends Fragment {
         return rootView;
     }
 
+    public UsbConnection getUsbConn() {
+        return usbConn;
+    }
+
     private class UpdateSelections extends AsyncTask<Void, Integer, Void> {
         @Override
         protected void onPostExecute(Void result) {
@@ -383,8 +386,5 @@ public class ConsoleFragment extends Fragment {
             publishProgress(100);
             return null;
         }
-    }
-    public UsbConnection getUsbConn() {
-        return usbConn;
     }
 }

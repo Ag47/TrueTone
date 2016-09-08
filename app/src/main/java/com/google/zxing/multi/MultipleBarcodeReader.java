@@ -26,14 +26,14 @@ import java.util.Map;
 /**
  * Implementation of this interface attempt to read several barcodes from one image.
  *
- * @see com.google.zxing.Reader
  * @author Sean Owen
+ * @see com.google.zxing.Reader
  */
 public interface MultipleBarcodeReader {
 
-  Result[] decodeMultiple(BinaryBitmap image) throws NotFoundException;
+    Result[] decodeMultiple(BinaryBitmap image) throws NotFoundException;
 
-  Result[] decodeMultiple(BinaryBitmap image,
-                          Map<DecodeHintType,?> hints) throws NotFoundException;
+    Result[] decodeMultiple(BinaryBitmap image,
+                            Map<DecodeHintType, ?> hints) throws NotFoundException;
 
 }

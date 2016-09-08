@@ -24,14 +24,14 @@ package com.google.zxing;
  */
 public final class NotFoundException extends ReaderException {
 
-  private static final NotFoundException instance = new NotFoundException();
+    private static final NotFoundException instance = new NotFoundException();
 
-  private NotFoundException() {
-    // do nothing
-  }
+    private NotFoundException() {
+        // do nothing
+    }
 
-  public static NotFoundException getNotFoundInstance() {
-    return instance;
-  }
+    public static NotFoundException getNotFoundInstance() {
+        return instance;
+    }
 
 }

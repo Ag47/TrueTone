@@ -1,13 +1,13 @@
 package com.comp4905.jasonfleischer.midimusic.views;
 
+import android.view.View;
+
 import com.comp4905.jasonfleischer.midimusic.MainActivity;
-import com.comp4905.jasonfleischer.midimusic.R;
 import com.comp4905.jasonfleischer.midimusic.MidiMusicConfig.PlayingMode;
+import com.comp4905.jasonfleischer.midimusic.R;
 import com.comp4905.jasonfleischer.midimusic.model.Finger;
 import com.comp4905.jasonfleischer.midimusic.model.Note;
 import com.comp4905.jasonfleischer.midimusic.util.HLog;
-
-import android.view.View;
 
 import java.util.ArrayList;
 

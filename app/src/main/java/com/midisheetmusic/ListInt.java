@@ -15,13 +15,21 @@ package com.midisheetmusic;
 
 import java.util.Arrays;
 
-/** @class ListInt
+/**
+ * @class ListInt
  * An ArrayList of int types.
  */
 
 public class ListInt {
-    private int[] data;    /** The list of ints */
-    private int count;     /** The size of the list */
+    private int[] data;
+    /**
+     * The list of ints
+     */
+    private int count;
+
+    /**
+     * The size of the list
+     */
 
     public ListInt() {
         data = new int[11];
@@ -36,6 +44,7 @@ public class ListInt {
     public int size() {
         return count;
     }
+
     public void add(int x) {
         if (data.length == count) {
             int[] newdata = new int[count * 2];

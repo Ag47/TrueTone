@@ -44,8 +44,8 @@ public class MainActivity extends Activity implements AdapterView.OnItemClickLis
 
         // Prepare list of samples in this dashboard.
         mSamples = new Sample[]{
-            new Sample(R.string.navigationdraweractivity_title, R.string.navigationdraweractivity_description,
-                    com.comp4905.jasonfleischer.midimusic.MainActivity.class),
+                new Sample(R.string.navigationdraweractivity_title, R.string.navigationdraweractivity_description,
+                        com.comp4905.jasonfleischer.midimusic.MainActivity.class),
         };
 
         // Prepare the GridView
@@ -110,7 +110,7 @@ public class MainActivity extends Activity implements AdapterView.OnItemClickLis
         }
 
         private Sample(int titleResId, int descriptionResId,
-                Class<? extends Activity> activityClass) {
+                       Class<? extends Activity> activityClass) {
             this(titleResId, descriptionResId,
                     new Intent(MainActivity.this, activityClass));
         }

@@ -1,10 +1,5 @@
 package com.leff.midi.examples;
 
-import java.io.File;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Iterator;
-
 import com.leff.midi.MidiFile;
 import com.leff.midi.MidiTrack;
 import com.leff.midi.event.MidiEvent;
@@ -12,20 +7,20 @@ import com.leff.midi.event.NoteOff;
 import com.leff.midi.event.NoteOn;
 import com.leff.midi.event.meta.Tempo;
 
-public class MidiManipulation
-{
-    public static void main(String[] args)
-    {
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class MidiManipulation {
+    public static void main(String[] args) {
         // 1. Open up a MIDI file
         MidiFile mf = null;
         File input = new File("example.mid");
 
-        try
-        {
+        try {
             mf = new MidiFile(input);
-        }
-        catch(IOException e)
-        {
+        } catch (IOException e) {
             System.err.println("Error parsing MIDI file:");
             e.printStackTrace();
             return;
@@ -40,18 +35,15 @@ public class MidiManipulation
         Iterator<MidiEvent> it = T.getEvents().iterator();
         ArrayList<MidiEvent> eventsToRemove = new ArrayList<MidiEvent>();
 
-        while(it.hasNext())
-        {
+        while (it.hasNext()) {
             MidiEvent E = it.next();
 
-            if(!E.getClass().equals(NoteOn.class) && !E.getClass().equals(NoteOff.class))
-            {
+            if (!E.getClass().equals(NoteOn.class) && !E.getClass().equals(NoteOff.class)) {
                 eventsToRemove.add(E);
             }
         }
 
-        for(MidiEvent E : eventsToRemove)
-        {
+        for (MidiEvent E : eventsToRemove) {
             T.removeEvent(E);
         }
 
@@ -62,12 +54,10 @@ public class MidiManipulation
         T = mf.getTracks().get(0);
 
         it = T.getEvents().iterator();
-        while(it.hasNext())
-        {
+        while (it.hasNext()) {
             MidiEvent E = it.next();
 
-            if(E.getClass().equals(Tempo.class))
-            {
+            if (E.getClass().equals(Tempo.class)) {
 
                 Tempo tempo = (Tempo) E;
                 tempo.setBpm(tempo.getBpm() / 2);
@@ -75,12 +65,9 @@ public class MidiManipulation
         }
 
         // 3. Save the file back to disk
-        try
-        {
+        try {
             mf.writeToFile(input);
-        }
-        catch(IOException e)
-        {
+        } catch (IOException e) {
             System.err.println("Error writing MIDI file:");
             e.printStackTrace();
         }

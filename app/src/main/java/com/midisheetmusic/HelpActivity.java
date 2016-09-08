@@ -18,8 +18,9 @@ import android.webkit.WebView;
 
 import com.comp4905.jasonfleischer.midimusic.R;
 
-/** @class HelpActivity
- *  The HelpActivity displays the help.html file in the assets directory.
+/**
+ * @class HelpActivity
+ * The HelpActivity displays the help.html file in the assets directory.
  */
 public class HelpActivity extends Activity {
 

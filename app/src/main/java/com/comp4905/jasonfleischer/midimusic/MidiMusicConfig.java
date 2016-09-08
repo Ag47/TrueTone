@@ -1,24 +1,24 @@
 package com.comp4905.jasonfleischer.midimusic;
 
-import java.io.Serializable;
-import java.util.ArrayList;
-
 import com.comp4905.jasonfleischer.midimusic.model.Chord;
+import com.comp4905.jasonfleischer.midimusic.model.Chord.ChordName;
 import com.comp4905.jasonfleischer.midimusic.model.DrumSound;
 import com.comp4905.jasonfleischer.midimusic.model.Instrument;
 import com.comp4905.jasonfleischer.midimusic.model.Note;
-import com.comp4905.jasonfleischer.midimusic.model.Scale;
-import com.comp4905.jasonfleischer.midimusic.model.Sequence;
-import com.comp4905.jasonfleischer.midimusic.model.Chord.ChordName;
 import com.comp4905.jasonfleischer.midimusic.model.Note.NoteDuration;
 import com.comp4905.jasonfleischer.midimusic.model.Note.NoteName;
+import com.comp4905.jasonfleischer.midimusic.model.Scale;
+import com.comp4905.jasonfleischer.midimusic.model.Sequence;
 import com.comp4905.jasonfleischer.midimusic.model.Tempo;
 import com.comp4905.jasonfleischer.midimusic.util.FileManager;
+
+import java.io.Serializable;
+import java.util.ArrayList;
 
 public class MidiMusicConfig implements Serializable {
 
     private static final long serialVersionUID = 6431197269116457775L;
-
+    public static int seqNum;
     //Global Variables
     public NoteName key;
     public int octave;
@@ -37,8 +37,6 @@ public class MidiMusicConfig implements Serializable {
     public ArrayList<Tempo> tempos;
     public Tempo tempo;
     public Tempo sequenceTempo;
-    public static int seqNum;
-
     public DrumSound[] allDrumSounds;
     public DrumSound[] gridDrumSounds;
     public DrumSound[] kitDrumSounds;
@@ -46,23 +44,6 @@ public class MidiMusicConfig implements Serializable {
 
     public boolean kitIsShowing;
     public boolean keysAreShowing; // for instrument fragment
-
-    public static enum PlayingMode {
-
-        SINGLE_NOTE(MainActivity.getInstance().getResources().getString(R.string.playing_mode_single_note)),
-        CHORD(MainActivity.getInstance().getResources().getString(R.string.playing_mode_chord)),
-        SEQUENCE(MainActivity.getInstance().getResources().getString(R.string.playing_mode_sequence)),
-        DRUMS(MainActivity.getInstance().getResources().getString(R.string.playing_mode_drums));
-        private String name;
-
-        PlayingMode(String n) {
-            name = n;
-        }
-
-        public String toString() {
-            return name;
-        }
-    }
 
     public MidiMusicConfig() {
         // set defaults settings
@@ -210,5 +191,22 @@ public class MidiMusicConfig implements Serializable {
             return true;
         }
         return false;
+    }
+
+    public static enum PlayingMode {
+
+        SINGLE_NOTE(MainActivity.getInstance().getResources().getString(R.string.playing_mode_single_note)),
+        CHORD(MainActivity.getInstance().getResources().getString(R.string.playing_mode_chord)),
+        SEQUENCE(MainActivity.getInstance().getResources().getString(R.string.playing_mode_sequence)),
+        DRUMS(MainActivity.getInstance().getResources().getString(R.string.playing_mode_drums));
+        private String name;
+
+        PlayingMode(String n) {
+            name = n;
+        }
+
+        public String toString() {
+            return name;
+        }
     }
 }

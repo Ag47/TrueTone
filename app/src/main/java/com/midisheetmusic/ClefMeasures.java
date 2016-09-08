@@ -15,18 +15,24 @@ package com.midisheetmusic;
 
 import java.util.ArrayList;
 
-/** @class ClefMeasures
+/**
+ * @class ClefMeasures
  * The ClefMeasures class is used to report what Clef (Treble or Bass) a
  * given measure uses.
  */
 public class ClefMeasures {
-    private ArrayList<Clef> clefs;  /** The clefs used for each measure (for a single track) */
+    private ArrayList<Clef> clefs;
+    /**
+     * The clefs used for each measure (for a single track)
+     */
     private int measure;       /** The length of a measure, in pulses */
 
- 
-    /** Given the notes in a track, calculate the appropriate Clef to use
+
+    /**
+     * Given the notes in a track, calculate the appropriate Clef to use
      * for each measure.  Store the result in the clefs list.
-     * @param notes  The midi notes
+     *
+     * @param notes      The midi notes
      * @param measurelen The length of a measure, in pulses
      */
     public ClefMeasures(ArrayList<MidiNote> notes, int measurelen) {
@@ -56,14 +62,11 @@ public class ClefMeasures {
                 /* This measure doesn't contain any notes.
                  * Keep the previous clef.
                  */
-            }
-            else if (avgnote >= WhiteNote.BottomTreble.getNumber()) {
+            } else if (avgnote >= WhiteNote.BottomTreble.getNumber()) {
                 clef = Clef.Treble;
-            }
-            else if (avgnote <= WhiteNote.TopBass.getNumber()) {
+            } else if (avgnote <= WhiteNote.TopBass.getNumber()) {
                 clef = Clef.Bass;
-            }
-            else {
+            } else {
                 /* The average note is between G3 and F4. We can use either
                  * the treble or bass clef.  Use the "main" clef, the clef
                  * that appears most for this track.
@@ -77,19 +80,8 @@ public class ClefMeasures {
         clefs.add(clef);
     }
 
-    /** Given a time (in pulses), return the clef used for that measure. */
-    public Clef GetClef(int starttime) {
-
-        /* If the time exceeds the last measure, return the last measure */
-        if (starttime / measure >= clefs.size()) {
-            return clefs.get(clefs.size()-1);
-        }
-        else {
-            return clefs.get(starttime / measure);
-        }
-    }
-
-    /** Calculate the best clef to use for the given notes.  If the
+    /**
+     * Calculate the best clef to use for the given notes.  If the
      * average note is below Middle C, use a bass clef.  Else, use a treble
      * clef.
      */
@@ -101,12 +93,23 @@ public class ClefMeasures {
         }
         if (notes.size() == 0) {
             return Clef.Treble;
-        }
-        else if (total/notes.size() >= middleC) {
+        } else if (total / notes.size() >= middleC) {
             return Clef.Treble;
-        }
-        else {
+        } else {
             return Clef.Bass;
+        }
+    }
+
+    /**
+     * Given a time (in pulses), return the clef used for that measure.
+     */
+    public Clef GetClef(int starttime) {
+
+        /* If the time exceeds the last measure, return the last measure */
+        if (starttime / measure >= clefs.size()) {
+            return clefs.get(clefs.size() - 1);
+        } else {
+            return clefs.get(starttime / measure);
         }
     }
 }

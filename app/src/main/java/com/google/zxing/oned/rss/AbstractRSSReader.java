@@ -21,113 +21,113 @@ import com.google.zxing.oned.OneDReader;
 
 public abstract class AbstractRSSReader extends OneDReader {
 
-  private static final float MAX_AVG_VARIANCE = 0.2f;
-  private static final float MAX_INDIVIDUAL_VARIANCE = 0.45f;
+    private static final float MAX_AVG_VARIANCE = 0.2f;
+    private static final float MAX_INDIVIDUAL_VARIANCE = 0.45f;
 
-  private static final float MIN_FINDER_PATTERN_RATIO = 9.5f / 12.0f;
-  private static final float MAX_FINDER_PATTERN_RATIO = 12.5f / 14.0f;
+    private static final float MIN_FINDER_PATTERN_RATIO = 9.5f / 12.0f;
+    private static final float MAX_FINDER_PATTERN_RATIO = 12.5f / 14.0f;
 
-  private final int[] decodeFinderCounters;
-  private final int[] dataCharacterCounters;
-  private final float[] oddRoundingErrors;
-  private final float[] evenRoundingErrors;
-  private final int[] oddCounts;
-  private final int[] evenCounts;
+    private final int[] decodeFinderCounters;
+    private final int[] dataCharacterCounters;
+    private final float[] oddRoundingErrors;
+    private final float[] evenRoundingErrors;
+    private final int[] oddCounts;
+    private final int[] evenCounts;
 
-  protected AbstractRSSReader(){
-    decodeFinderCounters = new int[4];
-    dataCharacterCounters = new int[8];
-    oddRoundingErrors = new float[4];
-    evenRoundingErrors = new float[4];
-    oddCounts = new int[dataCharacterCounters.length / 2];
-    evenCounts = new int[dataCharacterCounters.length / 2];
-  }
-
-  protected final int[] getDecodeFinderCounters() {
-    return decodeFinderCounters;
-  }
-
-  protected final int[] getDataCharacterCounters() {
-    return dataCharacterCounters;
-  }
-
-  protected final float[] getOddRoundingErrors() {
-    return oddRoundingErrors;
-  }
-
-  protected final float[] getEvenRoundingErrors() {
-    return evenRoundingErrors;
-  }
-
-  protected final int[] getOddCounts() {
-    return oddCounts;
-  }
-
-  protected final int[] getEvenCounts() {
-    return evenCounts;
-  }
-
-  protected static int parseFinderValue(int[] counters,
-                                        int[][] finderPatterns) throws NotFoundException {
-    for (int value = 0; value < finderPatterns.length; value++) {
-      if (patternMatchVariance(counters, finderPatterns[value], MAX_INDIVIDUAL_VARIANCE) <
-          MAX_AVG_VARIANCE) {
-        return value;
-      }
+    protected AbstractRSSReader() {
+        decodeFinderCounters = new int[4];
+        dataCharacterCounters = new int[8];
+        oddRoundingErrors = new float[4];
+        evenRoundingErrors = new float[4];
+        oddCounts = new int[dataCharacterCounters.length / 2];
+        evenCounts = new int[dataCharacterCounters.length / 2];
     }
-    throw NotFoundException.getNotFoundInstance();
-  }
 
-  protected static int count(int[] array) {
-    int count = 0;
-    for (int a : array) {
-      count += a;
-    }
-    return count;
-  }
-
-  protected static void increment(int[] array, float[] errors) {
-    int index = 0;
-    float biggestError = errors[0];
-    for (int i = 1; i < array.length; i++) {
-      if (errors[i] > biggestError) {
-        biggestError = errors[i];
-        index = i;
-      }
-    }
-    array[index]++;
-  }
-
-  protected static void decrement(int[] array, float[] errors) {
-    int index = 0;
-    float biggestError = errors[0];
-    for (int i = 1; i < array.length; i++) {
-      if (errors[i] < biggestError) {
-        biggestError = errors[i];
-        index = i;
-      }
-    }
-    array[index]--;
-  }
-
-  protected static boolean isFinderPattern(int[] counters) {
-    int firstTwoSum = counters[0] + counters[1];
-    int sum = firstTwoSum + counters[2] + counters[3];
-    float ratio = (float) firstTwoSum / (float) sum;
-    if (ratio >= MIN_FINDER_PATTERN_RATIO && ratio <= MAX_FINDER_PATTERN_RATIO) {
-      // passes ratio test in spec, but see if the counts are unreasonable
-      int minCounter = Integer.MAX_VALUE;
-      int maxCounter = Integer.MIN_VALUE;
-      for (int counter : counters) {
-        if (counter > maxCounter) {
-          maxCounter = counter;
+    protected static int parseFinderValue(int[] counters,
+                                          int[][] finderPatterns) throws NotFoundException {
+        for (int value = 0; value < finderPatterns.length; value++) {
+            if (patternMatchVariance(counters, finderPatterns[value], MAX_INDIVIDUAL_VARIANCE) <
+                    MAX_AVG_VARIANCE) {
+                return value;
+            }
         }
-        if (counter < minCounter) {
-          minCounter = counter;
-        }
-      }
-      return maxCounter < 10 * minCounter;
+        throw NotFoundException.getNotFoundInstance();
     }
-    return false;
-  }
+
+    protected static int count(int[] array) {
+        int count = 0;
+        for (int a : array) {
+            count += a;
+        }
+        return count;
+    }
+
+    protected static void increment(int[] array, float[] errors) {
+        int index = 0;
+        float biggestError = errors[0];
+        for (int i = 1; i < array.length; i++) {
+            if (errors[i] > biggestError) {
+                biggestError = errors[i];
+                index = i;
+            }
+        }
+        array[index]++;
+    }
+
+    protected static void decrement(int[] array, float[] errors) {
+        int index = 0;
+        float biggestError = errors[0];
+        for (int i = 1; i < array.length; i++) {
+            if (errors[i] < biggestError) {
+                biggestError = errors[i];
+                index = i;
+            }
+        }
+        array[index]--;
+    }
+
+    protected static boolean isFinderPattern(int[] counters) {
+        int firstTwoSum = counters[0] + counters[1];
+        int sum = firstTwoSum + counters[2] + counters[3];
+        float ratio = (float) firstTwoSum / (float) sum;
+        if (ratio >= MIN_FINDER_PATTERN_RATIO && ratio <= MAX_FINDER_PATTERN_RATIO) {
+            // passes ratio test in spec, but see if the counts are unreasonable
+            int minCounter = Integer.MAX_VALUE;
+            int maxCounter = Integer.MIN_VALUE;
+            for (int counter : counters) {
+                if (counter > maxCounter) {
+                    maxCounter = counter;
+                }
+                if (counter < minCounter) {
+                    minCounter = counter;
+                }
+            }
+            return maxCounter < 10 * minCounter;
+        }
+        return false;
+    }
+
+    protected final int[] getDecodeFinderCounters() {
+        return decodeFinderCounters;
+    }
+
+    protected final int[] getDataCharacterCounters() {
+        return dataCharacterCounters;
+    }
+
+    protected final float[] getOddRoundingErrors() {
+        return oddRoundingErrors;
+    }
+
+    protected final float[] getEvenRoundingErrors() {
+        return evenRoundingErrors;
+    }
+
+    protected final int[] getOddCounts() {
+        return oddCounts;
+    }
+
+    protected final int[] getEvenCounts() {
+        return evenCounts;
+    }
 }

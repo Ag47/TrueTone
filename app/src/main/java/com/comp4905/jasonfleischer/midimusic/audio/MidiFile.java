@@ -1,15 +1,11 @@
 package com.comp4905.jasonfleischer.midimusic.audio;
 
 import android.os.Environment;
-import android.util.Log;
 
-import java.io.*;
-import java.util.*;
-import java.lang.String;
-
-import com.comp4905.jasonfleischer.midimusic.MainActivity;
-import com.comp4905.jasonfleischer.midimusic.model.Note;
 import com.comp4905.jasonfleischer.midimusic.util.FileManager;
+
+import java.io.FileOutputStream;
+import java.util.Vector;
 
 
 public class MidiFile {
@@ -69,6 +65,55 @@ public class MidiFile {
     public MidiFile() {
         playEvents = new Vector<int[]>();
         allBytes = new Vector<int[]>();
+    }
+
+    /**
+     * Convert an array of integers which are assumed to contain
+     * unsigned bytes into an array of bytes
+     */
+    private static byte[] intArrayToByteArray(int[] ints) {
+        int l = ints.length;
+        byte[] out = new byte[ints.length];
+        for (int i = 0; i < l; i++) {
+            out[i] = (byte) ints[i];
+        }
+        return out;
+    }
+
+    public static void writeSingleNoteFile(int midiValue, int instrument, int velocity, int noteDuration, String fileName, int[] tempo) {
+        int channel = 0x00;
+        MidiFile mf = new MidiFile();
+        mf.progChange(channel, instrument); // change instrument
+        mf.noteOn(channel, 0, midiValue, velocity);
+        mf.noteOff(channel, noteDuration, midiValue);
+
+        mf.writeToFile(FileManager.getInstance().INTERNAL_PATH + fileName, tempo);
+        mf.writeToFile(Environment.getExternalStorageDirectory().getAbsolutePath() + fileName, tempo);
+//        Log.i("Saved as check log: ", fileName);
+    }
+
+    public static void writeChordFile(int midiValue, int instrument, int velocity, int noteDuration, String fileName, int[] tempo, int[] intervals) {
+        int channel = 0x00;
+        MidiFile mf = new MidiFile();
+        mf.progChange(channel, instrument); // change instrument
+        mf.noteOn(channel, 0, midiValue, velocity);
+
+        for (int i = 0; i < intervals.length; i++) {
+            mf.noteOn(channel, 0, midiValue + intervals[i], velocity);
+        }
+        mf.noteOff(channel, noteDuration, midiValue);
+        for (int i = 0; i < intervals.length; i++) {
+            mf.noteOff(channel, 0, midiValue + intervals[i]);
+        }
+        mf.writeToFile(FileManager.getInstance().INTERNAL_PATH + fileName, tempo);
+    }
+
+    public static void writeSequenceFile(int midiValue, int instrument, int velocity, String fileName, int[] tempo, int[] sequence) {
+        int channel = 0x00;
+        MidiFile mf = new MidiFile();
+        mf.progChange(channel, instrument); // change instrument
+        mf.noteSequenceFixedVelocity(channel, sequence, velocity, midiValue);
+        mf.writeToFile(FileManager.getInstance().INTERNAL_PATH + fileName, tempo);
     }
 
     public String toString() {
@@ -136,19 +181,6 @@ public class MidiFile {
     }
 
     /**
-     * Convert an array of integers which are assumed to contain
-     * unsigned bytes into an array of bytes
-     */
-    private static byte[] intArrayToByteArray(int[] ints) {
-        int l = ints.length;
-        byte[] out = new byte[ints.length];
-        for (int i = 0; i < l; i++) {
-            out[i] = (byte) ints[i];
-        }
-        return out;
-    }
-
-    /**
      * Store a note-on event
      */
     private void noteOn(int channel, int delta, int note, int velocity) {
@@ -159,6 +191,21 @@ public class MidiFile {
         data[3] = velocity;
         playEvents.add(data);
     }
+
+    // Jason Fleischer
+
+    // 88 notes on a keyboard: range note from A0 to C8
+    // midi notes range from 21 to 108 where
+    // (Note<octave> -> midiValue)
+    // A0 -> 21
+    // C1 -> 24
+    // C2 -> 36
+    // C3 -> 48
+    // C4 -> 60 middle C, A4 = 440Hz
+    // C5 -> 72
+    // C6 -> 84
+    // C7 -> 96
+    // C8 -> 108
 
     /**
      * Store a note-off event
@@ -204,56 +251,5 @@ public class MidiFile {
                 lastWasRest = false;
             }
         }
-    }
-
-    // Jason Fleischer
-
-    // 88 notes on a keyboard: range note from A0 to C8
-    // midi notes range from 21 to 108 where
-    // (Note<octave> -> midiValue)
-    // A0 -> 21
-    // C1 -> 24
-    // C2 -> 36
-    // C3 -> 48
-    // C4 -> 60 middle C, A4 = 440Hz
-    // C5 -> 72
-    // C6 -> 84
-    // C7 -> 96
-    // C8 -> 108
-
-    public static void writeSingleNoteFile(int midiValue, int instrument, int velocity, int noteDuration, String fileName, int[] tempo) {
-        int channel = 0x00;
-        MidiFile mf = new MidiFile();
-        mf.progChange(channel, instrument); // change instrument
-        mf.noteOn(channel, 0, midiValue, velocity);
-        mf.noteOff(channel, noteDuration, midiValue);
-
-        mf.writeToFile(FileManager.getInstance().INTERNAL_PATH + fileName, tempo);
-        mf.writeToFile(Environment.getExternalStorageDirectory().getAbsolutePath() + fileName, tempo);
-//        Log.i("Saved as check log: ", fileName);
-    }
-
-    public static void writeChordFile(int midiValue, int instrument, int velocity, int noteDuration, String fileName, int[] tempo, int[] intervals) {
-        int channel = 0x00;
-        MidiFile mf = new MidiFile();
-        mf.progChange(channel, instrument); // change instrument
-        mf.noteOn(channel, 0, midiValue, velocity);
-
-        for (int i = 0; i < intervals.length; i++) {
-            mf.noteOn(channel, 0, midiValue + intervals[i], velocity);
-        }
-        mf.noteOff(channel, noteDuration, midiValue);
-        for (int i = 0; i < intervals.length; i++) {
-            mf.noteOff(channel, 0, midiValue + intervals[i]);
-        }
-        mf.writeToFile(FileManager.getInstance().INTERNAL_PATH + fileName, tempo);
-    }
-
-    public static void writeSequenceFile(int midiValue, int instrument, int velocity, String fileName, int[] tempo, int[] sequence) {
-        int channel = 0x00;
-        MidiFile mf = new MidiFile();
-        mf.progChange(channel, instrument); // change instrument
-        mf.noteSequenceFixedVelocity(channel, sequence, velocity, midiValue);
-        mf.writeToFile(FileManager.getInstance().INTERNAL_PATH + fileName, tempo);
     }
 }

@@ -63,10 +63,13 @@ import com.comp4905.jasonfleischer.midimusic.R;
  * for example enabling or disabling a data overlay on top of the current content.</p>
  */
 public class Setting extends Activity implements PlanetAdapter.OnItemClickListener {
+    static public final String PREF_RECORD_CALLS = "PREF_RECORD_CALLS";
+    static public final String PREF_AUDIO_SOURCE = "PREF_AUDIO_SOURCE";
+    static public final String PREF_AUDIO_FORMAT = "PREF_AUDIO_FORMAT";
+    SharedPreferences prefs;
     private DrawerLayout mDrawerLayout;
     private RecyclerView mDrawerList;
     private ActionBarDrawerToggle mDrawerToggle;
-
     private CharSequence mDrawerTitle;
     private CharSequence mTitle;
     private String[] mPlanetTitles;
@@ -118,7 +121,6 @@ public class Setting extends Activity implements PlanetAdapter.OnItemClickListen
             selectItem(3);
         }
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -240,10 +242,4 @@ public class Setting extends Activity implements PlanetAdapter.OnItemClickListen
             return fragment;
         }
     }
-
-    static public final String PREF_RECORD_CALLS = "PREF_RECORD_CALLS";
-    static public final String PREF_AUDIO_SOURCE = "PREF_AUDIO_SOURCE";
-    static public final String PREF_AUDIO_FORMAT = "PREF_AUDIO_FORMAT";
-
-    SharedPreferences prefs;
 }

@@ -36,23 +36,24 @@ import com.google.zxing.common.BitArray;
  */
 final class AI01AndOtherAIs extends AI01decoder {
 
-  private static final int HEADER_SIZE = 1 + 1 + 2; //first bit encodes the linkage flag,
-                          //the second one is the encodation method, and the other two are for the variable length
-  AI01AndOtherAIs(BitArray information) {
-    super(information);
-  }
+    private static final int HEADER_SIZE = 1 + 1 + 2; //first bit encodes the linkage flag,
 
-  @Override
-  public String parseInformation() throws NotFoundException, FormatException {
-    StringBuilder buff = new StringBuilder();
+    //the second one is the encodation method, and the other two are for the variable length
+    AI01AndOtherAIs(BitArray information) {
+        super(information);
+    }
 
-    buff.append("(01)");
-    int initialGtinPosition = buff.length();
-    int firstGtinDigit = this.getGeneralDecoder().extractNumericValueFromBitArray(HEADER_SIZE, 4);
-    buff.append(firstGtinDigit);
+    @Override
+    public String parseInformation() throws NotFoundException, FormatException {
+        StringBuilder buff = new StringBuilder();
 
-    this.encodeCompressedGtinWithoutAI(buff, HEADER_SIZE + 4, initialGtinPosition);
+        buff.append("(01)");
+        int initialGtinPosition = buff.length();
+        int firstGtinDigit = this.getGeneralDecoder().extractNumericValueFromBitArray(HEADER_SIZE, 4);
+        buff.append(firstGtinDigit);
 
-    return this.getGeneralDecoder().decodeAllCodes(buff, HEADER_SIZE + 44);
-  }
+        this.encodeCompressedGtinWithoutAI(buff, HEADER_SIZE + 4, initialGtinPosition);
+
+        return this.getGeneralDecoder().decodeAllCodes(buff, HEADER_SIZE + 44);
+    }
 }

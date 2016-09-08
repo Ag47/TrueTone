@@ -38,15 +38,15 @@ public class Vertical implements Arrangement {
         mCamera.restore();
     }
 
-    private void setDelta(int i) {
-        // TODO Auto-generated method stub
-        del = i;
-    }
-
     @Override
     public int getDelta() {
         // TODO Auto-generated method stub
         return del;
+    }
+
+    private void setDelta(int i) {
+        // TODO Auto-generated method stub
+        del = i;
     }
 
 

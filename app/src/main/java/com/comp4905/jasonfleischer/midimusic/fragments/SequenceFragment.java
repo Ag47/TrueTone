@@ -1,28 +1,8 @@
 package com.comp4905.jasonfleischer.midimusic.fragments;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-
-import com.comp4905.jasonfleischer.midimusic.MainActivity;
-import com.comp4905.jasonfleischer.midimusic.MidiMusicConfig.PlayingMode;
-import com.comp4905.jasonfleischer.midimusic.R;
-import com.comp4905.jasonfleischer.midimusic.audio.MidiFile;
-import com.comp4905.jasonfleischer.midimusic.audio.SoundManager;
-import com.comp4905.jasonfleischer.midimusic.dialogs.LoadingDialogFragment;
-import com.comp4905.jasonfleischer.midimusic.model.Instrument;
-import com.comp4905.jasonfleischer.midimusic.model.Note;
-import com.comp4905.jasonfleischer.midimusic.model.Note.NoteDuration;
-import com.comp4905.jasonfleischer.midimusic.model.Note.NoteName;
-import com.comp4905.jasonfleischer.midimusic.model.Sequence;
-import com.comp4905.jasonfleischer.midimusic.model.Tempo;
-import com.comp4905.jasonfleischer.midimusic.util.HLog;
-import com.comp4905.jasonfleischer.midimusic.views.UsbConnection;
-
 import android.app.Fragment;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -39,147 +19,45 @@ import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import com.comp4905.jasonfleischer.midimusic.MainActivity;
+import com.comp4905.jasonfleischer.midimusic.MidiMusicConfig.PlayingMode;
+import com.comp4905.jasonfleischer.midimusic.R;
+import com.comp4905.jasonfleischer.midimusic.audio.MidiFile;
+import com.comp4905.jasonfleischer.midimusic.audio.SoundManager;
+import com.comp4905.jasonfleischer.midimusic.dialogs.LoadingDialogFragment;
+import com.comp4905.jasonfleischer.midimusic.model.Instrument;
+import com.comp4905.jasonfleischer.midimusic.model.Note;
+import com.comp4905.jasonfleischer.midimusic.model.Note.NoteDuration;
+import com.comp4905.jasonfleischer.midimusic.model.Note.NoteName;
+import com.comp4905.jasonfleischer.midimusic.model.Sequence;
+import com.comp4905.jasonfleischer.midimusic.model.Tempo;
+import com.comp4905.jasonfleischer.midimusic.util.HLog;
+import com.comp4905.jasonfleischer.midimusic.views.UsbConnection;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
 public class SequenceFragment extends Fragment {
 
+    private static final int NUM_OF_ROWS = 25;
+    private static final String[] VERT_MARKERS = new String[]{"-", "-", "m3", "M3", "-", "-", "5", "-", "6", "-", "-", "Oct"};
+    private static boolean isLooping = false;
+    //Config
+    private static PlayingMode lastSelectedPlayingMode = PlayingMode.SINGLE_NOTE;
+    private static NoteName key = NoteName.C;
+    private static int octave = 2;
+    private static int numberOfCol;
+    private static NoteDuration noteDuration = NoteDuration.Eighth;
     private TextView sequenceNameTv, middleTv;
     private UsbConnection usbConn;
     private ImageButton addBtn, deleteBtn, playBtn, loopBtn, connectBtn, expandBtn, keyBtn;
     private LinearLayout verticalMarkers;
     private GridLayout gridLayout, configGridLayout;
+    ;
     private Spinner sequenceSpinner, tempoSpinner, keySpinner, octaveSpinner, instrumentSpinner, durationSpinner, columnsSpinner;
     private ArrayList<SequenceElement> sequenceElements;
-    private static boolean isLooping = false;
-    private static final int NUM_OF_ROWS = 25;
-    private static final String[] VERT_MARKERS = new String[]{"-", "-", "m3", "M3", "-", "-", "5", "-", "6", "-", "-", "Oct"};
     private HashMap<String, Integer> tempoMap;
-
-    //Config
-    private static PlayingMode lastSelectedPlayingMode = PlayingMode.SINGLE_NOTE;
-    private static NoteName key = NoteName.C;
-    ;
-    private static int octave = 2;
-    private static int numberOfCol;
-    private static NoteDuration noteDuration = NoteDuration.Eighth;
-
-
-    private class SequenceElement {
-        private FrameLayout view;
-        private boolean colored;
-        private boolean selected;
-
-        private Integer id;
-        private int interval;
-        private int column;
-        private int defaultDrawable;
-        private NoteDuration noteDuration;
-
-        private ArrayList<Integer> ids; // other associated fms
-
-        private static final int selectedDrawable = R.drawable.sequence_shape_selected;
-        private static final int coloredDrawable = R.drawable.sequence_shape_colored;
-
-        private SequenceElement(int i, int c, FrameLayout v, int idz) {
-            id = idz;
-            interval = i;
-            column = c;
-            view = v;
-            ids = new ArrayList<Integer>();
-            if (interval == 0 || interval == -12 || interval == 12) {
-                defaultDrawable = R.drawable.sequence_shape_highlight;
-            } else {
-                defaultDrawable = R.drawable.sequence_shape;
-            }
-            view.setBackgroundResource(defaultDrawable);
-            noteDuration = null;
-            selected = false;
-            colored = false;
-        }
-
-        private void update(NoteDuration nd) {
-            int iterations = nd.getValue() / 4;
-            if (noteDuration != null)
-                iterations = Math.max(nd.getValue() / 4, noteDuration.getValue() / 4);
-
-            if (nd.getValue() / 4 > numberOfCol - column) {
-                HLog.i(nd.toString() + " " + getResources().getString(R.string.note_too_large));
-                return;
-            }
-            boolean isAdding = true;
-
-            for (int i = 0; i < iterations; i++) {
-                SequenceElement element = getSeqElement(interval, column + i);
-
-                if (i == 0) {
-                    if (selected) {
-                        isAdding = false;
-                        ids.remove(id);
-                        if (ids.isEmpty())
-                            unSelect();
-                        else
-                            color();
-                    } else {
-                        select(nd);
-                        ids.add(id);
-
-                        for (int j = -12; j <= 12; j++) {
-                            if (j != interval) {
-
-                                SequenceElement otherSeqElementInCol = getSeqElement(j, column);
-                                NoteDuration otherNd = otherSeqElementInCol.getNoteDuration();
-                                if (otherNd != null && otherSeqElementInCol.selected) {
-                                    otherSeqElementInCol.update(otherNd);
-                                }
-                            }
-                        }
-                    }
-                } else {
-                    if (isAdding) {
-                        if (!element.selected) {  //unselected
-                            element.color();
-                        }
-                        element.ids.add(id);
-                    } else { // removing
-                        element.ids.remove(id);
-                        if (element.colored) {
-                            if (element.ids.isEmpty())
-                                element.unSelect();
-                        }
-                    }
-                }
-            }
-        }
-
-        private SequenceElement getSeqElement(int interval, int col) {
-            int row = (-1 * interval + 12) % 24;
-            if (interval == -12) row = 24;
-            return sequenceElements.get(row * numberOfCol + col);
-        }
-
-        private void unSelect() {
-            view.setBackgroundResource(defaultDrawable);
-            noteDuration = null;
-            selected = false;
-            colored = false;
-        }
-
-        private void select(NoteDuration nd) {
-            view.setBackgroundResource(selectedDrawable);
-            noteDuration = nd;
-            selected = true;
-            colored = false;
-        }
-
-        private void color() {
-            view.setBackgroundResource(coloredDrawable);
-            noteDuration = null;
-            selected = false;
-            colored = true;
-        }
-
-        public NoteDuration getNoteDuration() {
-            return noteDuration;
-        }
-    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -615,6 +493,122 @@ public class SequenceFragment extends Fragment {
 
     public UsbConnection getUsbConn() {
         return usbConn;
+    }
+
+    private class SequenceElement {
+        private static final int selectedDrawable = R.drawable.sequence_shape_selected;
+        private static final int coloredDrawable = R.drawable.sequence_shape_colored;
+        private FrameLayout view;
+        private boolean colored;
+        private boolean selected;
+        private Integer id;
+        private int interval;
+        private int column;
+        private int defaultDrawable;
+        private NoteDuration noteDuration;
+        private ArrayList<Integer> ids; // other associated fms
+
+        private SequenceElement(int i, int c, FrameLayout v, int idz) {
+            id = idz;
+            interval = i;
+            column = c;
+            view = v;
+            ids = new ArrayList<Integer>();
+            if (interval == 0 || interval == -12 || interval == 12) {
+                defaultDrawable = R.drawable.sequence_shape_highlight;
+            } else {
+                defaultDrawable = R.drawable.sequence_shape;
+            }
+            view.setBackgroundResource(defaultDrawable);
+            noteDuration = null;
+            selected = false;
+            colored = false;
+        }
+
+        private void update(NoteDuration nd) {
+            int iterations = nd.getValue() / 4;
+            if (noteDuration != null)
+                iterations = Math.max(nd.getValue() / 4, noteDuration.getValue() / 4);
+
+            if (nd.getValue() / 4 > numberOfCol - column) {
+                HLog.i(nd.toString() + " " + getResources().getString(R.string.note_too_large));
+                return;
+            }
+            boolean isAdding = true;
+
+            for (int i = 0; i < iterations; i++) {
+                SequenceElement element = getSeqElement(interval, column + i);
+
+                if (i == 0) {
+                    if (selected) {
+                        isAdding = false;
+                        ids.remove(id);
+                        if (ids.isEmpty())
+                            unSelect();
+                        else
+                            color();
+                    } else {
+                        select(nd);
+                        ids.add(id);
+
+                        for (int j = -12; j <= 12; j++) {
+                            if (j != interval) {
+
+                                SequenceElement otherSeqElementInCol = getSeqElement(j, column);
+                                NoteDuration otherNd = otherSeqElementInCol.getNoteDuration();
+                                if (otherNd != null && otherSeqElementInCol.selected) {
+                                    otherSeqElementInCol.update(otherNd);
+                                }
+                            }
+                        }
+                    }
+                } else {
+                    if (isAdding) {
+                        if (!element.selected) {  //unselected
+                            element.color();
+                        }
+                        element.ids.add(id);
+                    } else { // removing
+                        element.ids.remove(id);
+                        if (element.colored) {
+                            if (element.ids.isEmpty())
+                                element.unSelect();
+                        }
+                    }
+                }
+            }
+        }
+
+        private SequenceElement getSeqElement(int interval, int col) {
+            int row = (-1 * interval + 12) % 24;
+            if (interval == -12) row = 24;
+            return sequenceElements.get(row * numberOfCol + col);
+        }
+
+        private void unSelect() {
+            view.setBackgroundResource(defaultDrawable);
+            noteDuration = null;
+            selected = false;
+            colored = false;
+        }
+
+        private void select(NoteDuration nd) {
+            view.setBackgroundResource(selectedDrawable);
+            noteDuration = nd;
+            selected = true;
+            colored = false;
+        }
+
+        private void color() {
+            view.setBackgroundResource(coloredDrawable);
+            noteDuration = null;
+            selected = false;
+            colored = true;
+        }
+
+        public NoteDuration getNoteDuration() {
+            return noteDuration;
+        }
     }
 
     private class UpdateSelections extends AsyncTask<Void, Integer, Void> {

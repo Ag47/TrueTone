@@ -38,36 +38,36 @@ import java.util.Map;
  */
 public final class MultiDetector extends Detector {
 
-  private static final DetectorResult[] EMPTY_DETECTOR_RESULTS = new DetectorResult[0];
+    private static final DetectorResult[] EMPTY_DETECTOR_RESULTS = new DetectorResult[0];
 
-  public MultiDetector(BitMatrix image) {
-    super(image);
-  }
-
-  public DetectorResult[] detectMulti(Map<DecodeHintType,?> hints) throws NotFoundException {
-    BitMatrix image = getImage();
-    ResultPointCallback resultPointCallback =
-        hints == null ? null : (ResultPointCallback) hints.get(DecodeHintType.NEED_RESULT_POINT_CALLBACK);
-    MultiFinderPatternFinder finder = new MultiFinderPatternFinder(image, resultPointCallback);
-    FinderPatternInfo[] infos = finder.findMulti(hints);
-
-    if (infos.length == 0) {
-      throw NotFoundException.getNotFoundInstance();
+    public MultiDetector(BitMatrix image) {
+        super(image);
     }
 
-    List<DetectorResult> result = new ArrayList<>();
-    for (FinderPatternInfo info : infos) {
-      try {
-        result.add(processFinderPatternInfo(info));
-      } catch (ReaderException e) {
-        // ignore
-      }
+    public DetectorResult[] detectMulti(Map<DecodeHintType, ?> hints) throws NotFoundException {
+        BitMatrix image = getImage();
+        ResultPointCallback resultPointCallback =
+                hints == null ? null : (ResultPointCallback) hints.get(DecodeHintType.NEED_RESULT_POINT_CALLBACK);
+        MultiFinderPatternFinder finder = new MultiFinderPatternFinder(image, resultPointCallback);
+        FinderPatternInfo[] infos = finder.findMulti(hints);
+
+        if (infos.length == 0) {
+            throw NotFoundException.getNotFoundInstance();
+        }
+
+        List<DetectorResult> result = new ArrayList<>();
+        for (FinderPatternInfo info : infos) {
+            try {
+                result.add(processFinderPatternInfo(info));
+            } catch (ReaderException e) {
+                // ignore
+            }
+        }
+        if (result.isEmpty()) {
+            return EMPTY_DETECTOR_RESULTS;
+        } else {
+            return result.toArray(new DetectorResult[result.size()]);
+        }
     }
-    if (result.isEmpty()) {
-      return EMPTY_DETECTOR_RESULTS;
-    } else {
-      return result.toArray(new DetectorResult[result.size()]);
-    }
-  }
 
 }

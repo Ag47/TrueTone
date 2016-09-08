@@ -1,8 +1,8 @@
 package com.comp4905.jasonfleischer.midimusic.model;
 
-import java.util.ArrayList;
-
 import com.comp4905.jasonfleischer.midimusic.audio.SoundManager.SoundType;
+
+import java.util.ArrayList;
 
 public class Track {
     private Long startTime;

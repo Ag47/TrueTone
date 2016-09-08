@@ -18,14 +18,15 @@ import android.view.View;
 
 import com.comp4905.jasonfleischer.midimusic.R;
 
-/** @class ColorPreference
- *  The ColorPreference is used in a PreferenceScreen to let
- *  the user choose a color for an option.
- *
- *  This Preference displays text, plus an additional color box
+/**
+ * @class ColorPreference
+ * The ColorPreference is used in a PreferenceScreen to let
+ * the user choose a color for an option.
+ * <p/>
+ * This Preference displays text, plus an additional color box
  */
 
-public class ColorPreference extends Preference 
+public class ColorPreference extends Preference
         implements ColorChangedListener {
 
     private View colorview;    /* The view displaying the selected color */
@@ -38,20 +39,22 @@ public class ColorPreference extends Preference
         setWidgetLayoutResource(R.layout.color_preference);
     }
 
-    public void setColor(int value) { 
-        color = value; 
+    public int getColor() {
+        return color;
+    }
+
+    public void setColor(int value) {
+        color = value;
         if (colorview != null) {
             colorview.setBackgroundColor(color);
         }
     }
-    public int getColor() { return color; }
-
 
     @Override
     protected void onBindView(View view) {
         super.onBindView(view);
 
-        colorview = (View)view.findViewById(R.id.color_preference_widget);
+        colorview = (View) view.findViewById(R.id.color_preference_widget);
         if (color != 0) {
             colorview.setBackgroundColor(color);
         }

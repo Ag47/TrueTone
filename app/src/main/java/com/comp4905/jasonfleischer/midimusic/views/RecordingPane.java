@@ -1,16 +1,5 @@
 package com.comp4905.jasonfleischer.midimusic.views;
 
-import java.util.Timer;
-import java.util.TimerTask;
-
-import com.comp4905.jasonfleischer.midimusic.MainActivity;
-import com.comp4905.jasonfleischer.midimusic.R;
-import com.comp4905.jasonfleischer.midimusic.audio.SoundManager;
-import com.comp4905.jasonfleischer.midimusic.model.Note;
-import com.comp4905.jasonfleischer.midimusic.model.Tempo;
-import com.comp4905.jasonfleischer.midimusic.model.Track;
-import com.comp4905.jasonfleischer.midimusic.util.HLog;
-
 import android.content.Context;
 import android.util.AttributeSet;
 import android.view.View;
@@ -18,20 +7,50 @@ import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.comp4905.jasonfleischer.midimusic.MainActivity;
+import com.comp4905.jasonfleischer.midimusic.R;
+import com.comp4905.jasonfleischer.midimusic.audio.SoundManager;
+import com.comp4905.jasonfleischer.midimusic.model.Tempo;
+import com.comp4905.jasonfleischer.midimusic.model.Track;
+import com.comp4905.jasonfleischer.midimusic.util.HLog;
+
+import java.util.Timer;
+import java.util.TimerTask;
+
 public class RecordingPane extends LinearLayout {
 
-    private static TextView bpmTextView, timeTextView, statusTextView;
-    private static ImageButton recordBtn, loopBtn, saveBtn, deleteTrackBtn;
-
-    private volatile static boolean isLooping = false;
     public volatile static boolean isRecording = false;
     public volatile static Track masterTrack;
+    private static TextView bpmTextView, timeTextView, statusTextView;
+    private static ImageButton recordBtn, loopBtn, saveBtn, deleteTrackBtn;
+    private volatile static boolean isLooping = false;
     private static Timer countInTimer;
 
     private Tempo tempo;
 
     public RecordingPane(Context context, AttributeSet attrs) {
         super(context, attrs);
+    }
+
+    public static void stopDub() {
+        MainActivity.getInstance().runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                statusTextView.setText(MainActivity.getInstance().getResources().getString(R.string.dubbing_stopped));
+                recordBtn.setImageResource(R.drawable.record);
+            }
+        });
+        SoundManager.getInstance().stopMetronome();
+        masterTrack.normalizeTime();
+        isRecording = false;
+    }
+
+    public static void stopTimer() {
+        if (countInTimer != null) {
+            countInTimer.purge();
+            countInTimer.cancel();
+            countInTimer = null;
+        }
     }
 
     public void init() {
@@ -190,27 +209,6 @@ public class RecordingPane extends LinearLayout {
             statusTextView.setText(getResources().getString(R.string.track_playing));
         } else {
             statusTextView.setText(getResources().getString(R.string.track_ready));
-        }
-    }
-
-    public static void stopDub() {
-        MainActivity.getInstance().runOnUiThread(new Runnable() {
-            @Override
-            public void run() {
-                statusTextView.setText(MainActivity.getInstance().getResources().getString(R.string.dubbing_stopped));
-                recordBtn.setImageResource(R.drawable.record);
-            }
-        });
-        SoundManager.getInstance().stopMetronome();
-        masterTrack.normalizeTime();
-        isRecording = false;
-    }
-
-    public static void stopTimer() {
-        if (countInTimer != null) {
-            countInTimer.purge();
-            countInTimer.cancel();
-            countInTimer = null;
         }
     }
 }

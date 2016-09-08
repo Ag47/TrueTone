@@ -16,7 +16,8 @@ package com.midisheetmusic;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-/** @class SymbolWidths
+/**
+ * @class SymbolWidths
  * The SymbolWidths class is used to vertically align notes in different
  * tracks that occur at the same time (that have the same starttime).
  * This is done by the following:
@@ -24,30 +25,37 @@ import java.util.Arrays;
  * - Store the width of symbols for each start time, for each track.
  * - Store the maximum width for each start time, across all tracks.
  * - Get the extra width needed for each track to match the maximum
- *   width for that start time.
- *
+ * width for that start time.
+ * <p/>
  * See method SheetMusic.AlignSymbols(), which uses this class.
  */
 
 public class SymbolWidths {
 
-    /** Array of maps (starttime -> symbol width), one per track */
+    /**
+     * Array of maps (starttime -> symbol width), one per track
+     */
     private DictInt[] widths;
 
-    /** Map of starttime -> maximum symbol width */
+    /**
+     * Map of starttime -> maximum symbol width
+     */
     private DictInt maxwidths;
 
-    /** An array of all the starttimes, in all tracks */
+    /**
+     * An array of all the starttimes, in all tracks
+     */
     private int[] starttimes;
 
 
-    /** Initialize the symbol width maps, given all the symbols in
+    /**
+     * Initialize the symbol width maps, given all the symbols in
      * all the tracks.
      */
     public SymbolWidths(ArrayList<ArrayList<MusicSymbol>> tracks, ArrayList<ArrayList<LyricSymbol>> tracklyrics) {
 
         /* Get the symbol widths for all the tracks */
-        widths = new DictInt[ tracks.size() ];
+        widths = new DictInt[tracks.size()];
         for (int track = 0; track < tracks.size(); track++) {
             widths[track] = GetTrackWidths(tracks.get(track));
         }
@@ -58,7 +66,7 @@ public class SymbolWidths {
             for (int i = 0; i < dict.count(); i++) {
                 int time = dict.getKey(i);
                 if (!maxwidths.contains(time) ||
-                    (maxwidths.get(time) < dict.get(time)) ) {
+                        (maxwidths.get(time) < dict.get(time))) {
 
                     maxwidths.set(time, dict.get(time));
                 }
@@ -74,7 +82,7 @@ public class SymbolWidths {
                     int width = lyric.getMinWidth();
                     int time = lyric.getStartTime();
                     if (!maxwidths.contains(time) ||
-                        (maxwidths.get(time) < width) ) {
+                            (maxwidths.get(time) < width)) {
 
                         maxwidths.set(time, width);
                     }
@@ -83,15 +91,17 @@ public class SymbolWidths {
         }
 
         /* Store all the start times to the starttime array */
-        starttimes = new int[ maxwidths.count() ];
+        starttimes = new int[maxwidths.count()];
         for (int i = 0; i < maxwidths.count(); i++) {
             int key = maxwidths.getKey(i);
             starttimes[i] = key;
         }
-        Arrays.sort(starttimes); 
+        Arrays.sort(starttimes);
     }
 
-    /** Create a table of the symbol widths for each starttime in the track. */
+    /**
+     * Create a table of the symbol widths for each starttime in the track.
+     */
     private static DictInt GetTrackWidths(ArrayList<MusicSymbol> symbols) {
         DictInt widths = new DictInt();
 
@@ -101,18 +111,17 @@ public class SymbolWidths {
 
             if (m instanceof BarSymbol) {
                 continue;
-            }
-            else if (widths.contains(start)) {
+            } else if (widths.contains(start)) {
                 widths.set(start, widths.get(start) + w);
-            }
-            else {
+            } else {
                 widths.set(start, w);
             }
         }
         return widths;
     }
 
-    /** Given a track and a start time, return the extra width needed so that
+    /**
+     * Given a track and a start time, return the extra width needed so that
      * the symbols for that start time align with the other tracks.
      */
     public int GetExtraWidth(int track, int start) {
@@ -123,8 +132,12 @@ public class SymbolWidths {
         }
     }
 
-    /** Return an array of all the start times in all the tracks */
-    public int[] getStartTimes() { return starttimes; }
+    /**
+     * Return an array of all the start times in all the tracks
+     */
+    public int[] getStartTimes() {
+        return starttimes;
+    }
 }
 
 

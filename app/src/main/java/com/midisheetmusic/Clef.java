@@ -14,7 +14,11 @@
 package com.midisheetmusic;
 
 
-/** The possible clefs, Treble or Bass */
-public enum Clef { Treble, Bass }
+/**
+ * The possible clefs, Treble or Bass
+ */
+public enum Clef {
+    Treble, Bass
+}
 
 

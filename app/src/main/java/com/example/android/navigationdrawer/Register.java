@@ -184,7 +184,7 @@ public class Register extends Activity implements PlanetAdapter.OnItemClickListe
     public void btnlog(View v) {
         Intent intent = new Intent(this, HomePage.class);
         this.startActivity(intent);
-           }
+    }
 
     public void btnreg(View v) {
         Context context = getApplicationContext();
@@ -194,7 +194,7 @@ public class Register extends Activity implements PlanetAdapter.OnItemClickListe
         toast.show();
         Intent intent = new Intent(this, com.comp4905.jasonfleischer.midimusic.MainActivity.class);
         this.startActivity(intent);
-       }
+    }
 
     private void selectItem(int position) {
         // update the main content by replacing fragments

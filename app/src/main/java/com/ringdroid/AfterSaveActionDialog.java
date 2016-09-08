@@ -18,18 +18,11 @@ package com.ringdroid;
 
 import android.app.Dialog;
 import android.content.Context;
-import android.content.res.Resources;
 import android.os.Message;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.Spinner;
 
 import com.comp4905.jasonfleischer.midimusic.R;
-
-import java.util.ArrayList;
-import java.util.HashMap;
 
 public class AfterSaveActionDialog extends Dialog {
 

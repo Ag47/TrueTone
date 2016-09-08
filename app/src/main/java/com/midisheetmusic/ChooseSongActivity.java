@@ -14,17 +14,12 @@ package com.midisheetmusic;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
-import android.app.AlarmManager;
 import android.app.AlertDialog;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.app.ListActivity;
-import android.app.NotificationManager;
-import android.app.PendingIntent;
 import android.content.ContentResolver;
-import android.content.ContentValues;
-import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -52,28 +47,22 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Toast;
 
-//import com.comp4905.jasonfleischer.midimusic.R;
-
 import com.comp4905.jasonfleischer.midimusic.MainActivity;
 import com.comp4905.jasonfleischer.midimusic.R;
-import com.comp4905.jasonfleischer.midimusic.audio.SoundManager;
 import com.example.android.navigationdrawer.AboutUs;
 import com.example.android.navigationdrawer.PlanetAdapter;
-import com.example.android.navigationdrawer.QRCode;
 
-import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.Collections;
+
+//import com.comp4905.jasonfleischer.midimusic.R;
 
 /**
  * @class ScanMidiFiles
@@ -191,30 +180,50 @@ class ScanMidiFiles extends AsyncTask<Integer, Integer, ArrayList<FileUri>> {
  */
 public class ChooseSongActivity extends ListActivity implements PlanetAdapter.OnItemClickListener, TextWatcher {
 
-    private DrawerLayout mDrawerLayout;
-    private RecyclerView mDrawerList;
-    private ActionBarDrawerToggle mDrawerToggle;
-
-    private CharSequence mDrawerTitle;
-    private CharSequence mTitle;
-    private String[] mPlanetTitles;
-
     /**
      * The complete list of midi files
      */
     ArrayList<FileUri> songlist;
-
     /**
      * Textbox to filter the songs by name
      */
     EditText filterText;
-
     /**
      * Task to scan for midi files
      */
     ScanMidiFiles scanner;
-
     IconArrayAdapter<FileUri> adapter;
+    private DrawerLayout mDrawerLayout;
+    private RecyclerView mDrawerList;
+    private ActionBarDrawerToggle mDrawerToggle;
+    private CharSequence mDrawerTitle;
+    private CharSequence mTitle;
+    private String[] mPlanetTitles;
+
+    public static byte[] hexStringToByteArray(String s) {
+        int len = s.length();
+        byte[] data = new byte[len / 2];
+
+        for (int i = 0; i < len; i += 2) {
+            data[i / 2] = (byte) ((Character.digit(s.charAt(i), 16) << 4) + Character.digit(s.charAt(i + 1), 16));
+        }
+
+        return data;
+    }
+
+    @SuppressLint("NewApi")
+    public static final void recreateActivityCompat(final Activity a) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
+            a.recreate();
+        } else {
+            final Intent intent = a.getIntent();
+            intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+            a.finish();
+            a.overridePendingTransition(0, 0);
+            a.startActivity(intent);
+            a.overridePendingTransition(0, 0);
+        }
+    }
 
     /* When this activity changes orientation, save the songlist,
      * so we don't have to re-scan for midi songs.
@@ -235,7 +244,7 @@ public class ChooseSongActivity extends ListActivity implements PlanetAdapter.On
         getActionBar().setTitle("TrueTone: Library");
 
         scanForSongs();
-        
+
         /* If we're restarting from an orientation change,
          * load the saved song list.
          */
@@ -397,7 +406,6 @@ public class ChooseSongActivity extends ListActivity implements PlanetAdapter.On
         }
     }
 
-
     /**
      * Look for midi files (with mime-type audio/midi) in the
      * internal/external storage. Add them to the songlist.
@@ -485,7 +493,6 @@ public class ChooseSongActivity extends ListActivity implements PlanetAdapter.On
         startActivity(intent);
     }
 
-
     /**
      * As text is entered in the filter box, filter the list of
      * midi songs to display.
@@ -499,11 +506,9 @@ public class ChooseSongActivity extends ListActivity implements PlanetAdapter.On
     public void afterTextChanged(Editable s) {
     }
 
-
     @Override
     public void beforeTextChanged(CharSequence s, int start, int count, int after) {
     }
-
 
     /**
      * Return true if the data starts with the header MTrk
@@ -538,17 +543,6 @@ public class ChooseSongActivity extends ListActivity implements PlanetAdapter.On
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.choose_song_menu, menu);
         return true;
-    }
-
-    public static byte[] hexStringToByteArray(String s) {
-        int len = s.length();
-        byte[] data = new byte[len / 2];
-
-        for (int i = 0; i < len; i += 2) {
-            data[i / 2] = (byte) ((Character.digit(s.charAt(i), 16) << 4) + Character.digit(s.charAt(i + 1), 16));
-        }
-
-        return data;
     }
 
     /**
@@ -688,25 +682,6 @@ public class ChooseSongActivity extends ListActivity implements PlanetAdapter.On
         alert.show();
     }
 
-    /**
-     * Fragment that appears in the "content_frame", shows a planet
-     */
-    public static class PlanetFragment extends Fragment {
-        public static final String ARG_PLANET_NUMBER = "planet_number";
-
-        public PlanetFragment() {
-            // Empty constructor required for fragment subclasses
-        }
-
-        public static Fragment newInstance(int position) {
-            Fragment fragment = new PlanetFragment();
-            Bundle args = new Bundle();
-            args.putInt(PlanetFragment.ARG_PLANET_NUMBER, position);
-            fragment.setArguments(args);
-            return fragment;
-        }
-    }
-
     private void selectItem(int position) {
         // update the main content by replacing fragments
         Fragment fragment = PlanetFragment.newInstance(position);
@@ -726,21 +701,6 @@ public class ChooseSongActivity extends ListActivity implements PlanetAdapter.On
     public void onOption(View v) {
 
     }
-
-    @SuppressLint("NewApi")
-    public static final void recreateActivityCompat(final Activity a) {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
-            a.recreate();
-        } else {
-            final Intent intent = a.getIntent();
-            intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
-            a.finish();
-            a.overridePendingTransition(0, 0);
-            a.startActivity(intent);
-            a.overridePendingTransition(0, 0);
-        }
-    }
-
 
     /* The click listener for RecyclerView in the navigation drawer */
     @Override
@@ -773,6 +733,25 @@ public class ChooseSongActivity extends ListActivity implements PlanetAdapter.On
             case 3:
                 intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://202.125.255.1/finaltruetonev1/index.php/user/tutorial"));
                 this.startActivity(intent);
+        }
+    }
+
+    /**
+     * Fragment that appears in the "content_frame", shows a planet
+     */
+    public static class PlanetFragment extends Fragment {
+        public static final String ARG_PLANET_NUMBER = "planet_number";
+
+        public PlanetFragment() {
+            // Empty constructor required for fragment subclasses
+        }
+
+        public static Fragment newInstance(int position) {
+            Fragment fragment = new PlanetFragment();
+            Bundle args = new Bundle();
+            args.putInt(PlanetFragment.ARG_PLANET_NUMBER, position);
+            fragment.setArguments(args);
+            return fragment;
         }
     }
 }

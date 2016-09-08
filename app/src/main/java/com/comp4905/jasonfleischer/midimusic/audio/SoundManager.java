@@ -1,8 +1,21 @@
 package com.comp4905.jasonfleischer.midimusic.audio;
 
+import android.media.AudioManager;
+import android.media.MediaPlayer;
+import android.media.MediaScannerConnection;
+import android.media.SoundPool;
+import android.media.SoundPool.OnLoadCompleteListener;
+import android.os.Environment;
+import android.util.Log;
+
+import com.comp4905.jasonfleischer.midimusic.MainActivity;
+import com.comp4905.jasonfleischer.midimusic.model.Note;
+import com.comp4905.jasonfleischer.midimusic.model.Track;
+import com.comp4905.jasonfleischer.midimusic.util.FileManager;
+import com.comp4905.jasonfleischer.midimusic.util.HLog;
+import com.comp4905.jasonfleischer.midimusic.views.RecordingPane;
+
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.math.BigInteger;
 import java.text.SimpleDateFormat;
@@ -13,60 +26,25 @@ import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
 import java.util.Vector;
-import java.sql.Time;
-
-import com.comp4905.jasonfleischer.midimusic.MainActivity;
-import com.comp4905.jasonfleischer.midimusic.model.Note;
-import com.comp4905.jasonfleischer.midimusic.model.Track;
-import com.comp4905.jasonfleischer.midimusic.util.FileManager;
-import com.comp4905.jasonfleischer.midimusic.util.HLog;
-import com.comp4905.jasonfleischer.midimusic.views.RecordingPane;
-import com.leff.midi.event.MidiEvent;
-
-import android.content.Intent;
-import android.media.AudioManager;
-import android.media.MediaPlayer;
-import android.media.MediaScannerConnection;
-import android.media.SoundPool;
-import android.media.SoundPool.OnLoadCompleteListener;
-import android.net.Uri;
-import android.os.Environment;
-import android.util.Log;
 
 // TODO set onSensor change the DEFAULT_NOTE_VELOCITY in this java
 
 public class SoundManager {
 
-    public static File lastSaved;
-
-    public String toHex(String arg) {
-        return String.format("%x", new BigInteger(1, arg.getBytes(/*YOUR_CHARSET?*/)));
-    }
-
     private static final SoundManager instance = new SoundManager();
-    private static SoundPool metronomePool, soundPool, drumSoundPool, chordSoundPool, dynamicSoundPool, sequenceSoundPool;
-    MediaPlayer mediaPlayer;
-    private Timer timer, metronomeTimer;
-
-    private int lastSequenceId;
-
+    public static File lastSaved;
     public static boolean isPlayingMetronome = false;
     public static boolean isMetronomeSpeakState = false;
-
-    static private HashMap<String, Integer> metronomeSoundMap;
-
-    private Vector<Integer> pKillSoundQueue = new Vector<Integer>();
-
     public static int[] savedVel = new int[1000];
     public static int saveno = 0;
-
     public static ArrayList<Integer> publicIds;
     public static ArrayList<Long> publicTimes;
-
-    public enum SoundType {
-        NOTE, CHORD, SEQUENCE, DRUM;
-    }
-
+    private static SoundPool metronomePool, soundPool, drumSoundPool, chordSoundPool, dynamicSoundPool, sequenceSoundPool;
+    static private HashMap<String, Integer> metronomeSoundMap;
+    MediaPlayer mediaPlayer;
+    private Timer timer, metronomeTimer;
+    private int lastSequenceId;
+    private Vector<Integer> pKillSoundQueue = new Vector<Integer>();
     private SoundManager() {
 
         soundPool = new SoundPool(35, AudioManager.STREAM_MUSIC, 0);
@@ -107,6 +85,9 @@ public class SoundManager {
         return instance;
     }
 
+    public String toHex(String arg) {
+        return String.format("%x", new BigInteger(1, arg.getBytes(/*YOUR_CHARSET?*/)));
+    }
 
     public void createAndPlayNoteDynamically(int midiValue, int velocity) {
         if (dynamicSoundPool == null) {
@@ -123,11 +104,11 @@ public class SoundManager {
         });
     }
 
-    //KEY POOL
-
     public int addSoundSoundPool(String fileName) {
         return soundPool.load(FileManager.getInstance().INTERNAL_PATH + fileName, 1);
     }
+
+    //KEY POOL
 
     public void playSound(int soundId, SoundType st) {
         float vol = (float) Note.DEFAULT_NOTE_VELOCITY / 127.0f;
@@ -138,6 +119,10 @@ public class SoundManager {
             savedVel[saveno] = Note.DEFAULT_NOTE_VELOCITY;
             saveno++;
         }
+    }
+
+    public void unloadFromSoundPool(int soundID) {
+        soundPool.unload(soundID);
     }
 
 	/*public void playSingleNoteSound(int soundId){
@@ -159,16 +144,11 @@ public class SoundManager {
 		}
 	}*/
 
-
-    public void unloadFromSoundPool(int soundID) {
-        soundPool.unload(soundID);
-    }
-
-    //DRUM POOL
-
     public int addSoundToDrumSoundPool(String fileName) {
         return drumSoundPool.load(FileManager.getInstance().getAFD("drums/" + fileName), 1);
     }
+
+    //DRUM POOL
 
     public void playDrumSound(int soundId) {
         drumSoundPool.play(soundId, 0.5f, 0.5f, 0, 0, 1);
@@ -336,21 +316,6 @@ public class SoundManager {
         stopTimer(metronomeTimer);
     }
 
-    private class TrackTimerTimer extends TimerTask {
-        private int soundId;
-        private SoundPool sundPool;
-
-        private TrackTimerTimer(Integer integer, SoundPool sp) {
-            soundId = integer;
-            sundPool = sp;
-        }
-
-        @Override
-        public void run() {
-            sundPool.play(soundId, 1, 1, 0, 0, 1);
-        }
-    }
-
     private void stopTimer(Timer timer) {
         if (timer != null) {
             timer.purge();
@@ -358,20 +323,6 @@ public class SoundManager {
             timer = null;
         }
     }
-
-    //CHORD POOL
-
-	/*public void playChordPlayerSound(int soundId) {
-        chordSoundPool.play(soundId, 1, 1, 0, 0, 1);
-	}
-	public void unloadChordSound(int soundId){
-		chordSoundPool.unload(soundId);
-	}
-	public int addChordSoundPool(String fileName) {
-		return chordSoundPool.load(FileManager.getInstance().EXTERNAL_PATH+fileName, 1);
-	}*/
-
-    //SEQUENCE
 
     public void playSequence(final boolean loop) {
         int midiValue = 0;
@@ -407,26 +358,25 @@ public class SoundManager {
         //mediaPlayer.reset();
     }
 
+    //CHORD POOL
+
+	/*public void playChordPlayerSound(int soundId) {
+        chordSoundPool.play(soundId, 1, 1, 0, 0, 1);
+	}
+	public void unloadChordSound(int soundId){
+		chordSoundPool.unload(soundId);
+	}
+	public int addChordSoundPool(String fileName) {
+		return chordSoundPool.load(FileManager.getInstance().EXTERNAL_PATH+fileName, 1);
+	}*/
+
+    //SEQUENCE
+
     public void releaseMediaPlayer() {
         if (mediaPlayer != null) {
             mediaPlayer.reset();
             mediaPlayer.release();
             mediaPlayer = null;
-        }
-    }
-
-    // Metronome
-
-    private class MetronomeTimerTimer extends TimerTask {
-        private String fileName;
-
-        public MetronomeTimerTimer(String string) {
-            fileName = string;
-        }
-
-        @Override
-        public void run() {
-            metronomePool.play(metronomeSoundMap.get(fileName), 1, 1, 0, 0, 1);
         }
     }
 
@@ -443,6 +393,8 @@ public class SoundManager {
         }
         stopMetronome();
     }
+
+    // Metronome
 
     public void stopMetronome() {
         isPlayingMetronome = false;
@@ -501,6 +453,38 @@ public class SoundManager {
         metronomeTimer = new Timer();
         isPlayingMetronome = true;
         metronomeTimer.schedule(tt, 0, time * (accent + 1));
+    }
+
+    public enum SoundType {
+        NOTE, CHORD, SEQUENCE, DRUM;
+    }
+
+    private class TrackTimerTimer extends TimerTask {
+        private int soundId;
+        private SoundPool sundPool;
+
+        private TrackTimerTimer(Integer integer, SoundPool sp) {
+            soundId = integer;
+            sundPool = sp;
+        }
+
+        @Override
+        public void run() {
+            sundPool.play(soundId, 1, 1, 0, 0, 1);
+        }
+    }
+
+    private class MetronomeTimerTimer extends TimerTask {
+        private String fileName;
+
+        public MetronomeTimerTimer(String string) {
+            fileName = string;
+        }
+
+        @Override
+        public void run() {
+            metronomePool.play(metronomeSoundMap.get(fileName), 1, 1, 0, 0, 1);
+        }
     }
 
 	/*public static void release(){

@@ -11,11 +11,11 @@
  */
 
 
-
 package com.midisheetmusic;
 
 
-/** @class MidiFileException
+/**
+ * @class MidiFileException
  * A MidiFileException is thrown when an error occurs
  * while parsing the Midi File.  The constructore takes
  * the file offset (in bytes) where the error occurred,

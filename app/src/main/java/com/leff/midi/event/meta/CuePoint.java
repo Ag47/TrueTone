@@ -16,20 +16,16 @@
 
 package com.leff.midi.event.meta;
 
-public class CuePoint extends TextualMetaEvent
-{
-    public CuePoint(long tick, long delta, String marker)
-    {
+public class CuePoint extends TextualMetaEvent {
+    public CuePoint(long tick, long delta, String marker) {
         super(tick, delta, MetaEvent.CUE_POINT, marker);
     }
 
-    public void setCue(String name)
-    {
-        setText(name);
+    public String getCue() {
+        return getText();
     }
 
-    public String getCue()
-    {
-        return getText();
+    public void setCue(String name) {
+        setText(name);
     }
 }

@@ -34,9 +34,9 @@ import android.view.ContextMenu;
 import android.view.ContextMenu.ContextMenuInfo;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.AdapterView.AdapterContextMenuInfo;
 import android.widget.AdapterView.OnItemClickListener;
-import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.SimpleCursorAdapter;
@@ -44,7 +44,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.comp4905.jasonfleischer.midimusic.R;
-
 import com.midisheetmusic.FileUri;
 import com.midisheetmusic.SheetMusicActivity;
 import com.ringdroid.soundfile.CheapSoundFile;
@@ -60,26 +59,46 @@ import java.util.ArrayList;
 public class RingdroidSelectActivity
         extends ListActivity
         implements TextWatcher {
-    private TextView mFilter;
-    private SimpleCursorAdapter mAdapter;
-    private boolean mWasGetContentIntent;
-    private boolean mShowAll;
-
     // Result codes
     private static final int REQUEST_CODE_EDIT = 1;
     private static final int REQUEST_CODE_CHOOSE_CONTACT = 2;
-
     // Menu commands
     private static final int CMD_ABOUT = 1;
     private static final int CMD_PRIVACY = 2;
     private static final int CMD_SHOW_ALL = 3;
-
     // Context menu
     private static final int CMD_EDIT = 4;
     private static final int CMD_DELETE = 5;
     private static final int CMD_SET_AS_DEFAULT = 6;
     private static final int CMD_SET_AS_CONTACT = 7;
-
+    private static final String[] INTERNAL_COLUMNS = new String[]{
+            MediaStore.Audio.Media._ID,
+            MediaStore.Audio.Media.DATA,
+            MediaStore.Audio.Media.TITLE,
+            MediaStore.Audio.Media.ARTIST,
+            MediaStore.Audio.Media.ALBUM,
+            MediaStore.Audio.Media.IS_RINGTONE,
+            MediaStore.Audio.Media.IS_ALARM,
+            MediaStore.Audio.Media.IS_NOTIFICATION,
+            MediaStore.Audio.Media.IS_MUSIC,
+            "\"" + MediaStore.Audio.Media.INTERNAL_CONTENT_URI + "\""
+    };
+    private static final String[] EXTERNAL_COLUMNS = new String[]{
+            MediaStore.Audio.Media._ID,
+            MediaStore.Audio.Media.DATA,
+            MediaStore.Audio.Media.TITLE,
+            MediaStore.Audio.Media.ARTIST,
+            MediaStore.Audio.Media.ALBUM,
+            MediaStore.Audio.Media.IS_RINGTONE,
+            MediaStore.Audio.Media.IS_ALARM,
+            MediaStore.Audio.Media.IS_NOTIFICATION,
+            MediaStore.Audio.Media.IS_MUSIC,
+            "\"" + MediaStore.Audio.Media.EXTERNAL_CONTENT_URI + "\""
+    };
+    private TextView mFilter;
+    private SimpleCursorAdapter mAdapter;
+    private boolean mWasGetContentIntent;
+    private boolean mShowAll;
 
     public RingdroidSelectActivity() {
     }
@@ -204,6 +223,51 @@ public class RingdroidSelectActivity
         refreshListView();
     }
 
+//    @Override
+//    public boolean onCreateOptionsMenu(Menu menu) {
+//        super.onCreateOptionsMenu(menu);
+//        MenuItem item;
+//
+////        item = menu.add(0, CMD_ABOUT, 0, R.string.menu_about);
+////        item.setIcon(R.drawable.menu_about);
+////
+////        item = menu.add(0, CMD_PRIVACY, 0, R.string.menu_privacy);
+////        item.setIcon(android.R.drawable.ic_menu_share);
+//
+//        item = menu.add(0, CMD_SHOW_ALL, 0, R.string.menu_show_all_audio);
+//        item.setIcon(R.drawable.menu_show_all_audio);
+//
+//        return true;
+//    }
+
+//    @Override
+//    public boolean onPrepareOptionsMenu(Menu menu) {
+//        super.onPrepareOptionsMenu(menu);
+////        menu.findItem(CMD_ABOUT).setVisible(true);
+////        menu.findItem(CMD_PRIVACY).setVisible(true);
+//        menu.findItem(CMD_SHOW_ALL).setVisible(true);
+//        menu.findItem(CMD_SHOW_ALL).setEnabled(!mShowAll);
+//        return true;
+//    }
+//
+//    @Override
+//    public boolean onOptionsItemSelected(MenuItem item) {
+//        switch (item.getItemId()) {
+//            case CMD_ABOUT:
+//                RingdroidEditActivity.onAbout(this);
+//                return true;
+//            case CMD_PRIVACY:
+//                showPrivacyDialog();
+//                return true;
+//            case CMD_SHOW_ALL:
+//                mShowAll = true;
+//                refreshListView();
+//                return true;
+//            default:
+//                return false;
+//        }
+//    }
+
     private void setSoundIconFromCursor(ImageView view, Cursor cursor) {
         if (0 != cursor.getInt(cursor.getColumnIndexOrThrow(
                 MediaStore.Audio.Media.IS_RINGTONE))) {
@@ -252,51 +316,6 @@ public class RingdroidSelectActivity
         setResult(RESULT_OK, dataIntent);
         finish();
     }
-
-//    @Override
-//    public boolean onCreateOptionsMenu(Menu menu) {
-//        super.onCreateOptionsMenu(menu);
-//        MenuItem item;
-//
-////        item = menu.add(0, CMD_ABOUT, 0, R.string.menu_about);
-////        item.setIcon(R.drawable.menu_about);
-////
-////        item = menu.add(0, CMD_PRIVACY, 0, R.string.menu_privacy);
-////        item.setIcon(android.R.drawable.ic_menu_share);
-//
-//        item = menu.add(0, CMD_SHOW_ALL, 0, R.string.menu_show_all_audio);
-//        item.setIcon(R.drawable.menu_show_all_audio);
-//
-//        return true;
-//    }
-
-//    @Override
-//    public boolean onPrepareOptionsMenu(Menu menu) {
-//        super.onPrepareOptionsMenu(menu);
-////        menu.findItem(CMD_ABOUT).setVisible(true);
-////        menu.findItem(CMD_PRIVACY).setVisible(true);
-//        menu.findItem(CMD_SHOW_ALL).setVisible(true);
-//        menu.findItem(CMD_SHOW_ALL).setEnabled(!mShowAll);
-//        return true;
-//    }
-//
-//    @Override
-//    public boolean onOptionsItemSelected(MenuItem item) {
-//        switch (item.getItemId()) {
-//            case CMD_ABOUT:
-//                RingdroidEditActivity.onAbout(this);
-//                return true;
-//            case CMD_PRIVACY:
-//                showPrivacyDialog();
-//                return true;
-//            case CMD_SHOW_ALL:
-//                mShowAll = true;
-//                refreshListView();
-//                return true;
-//            default:
-//                return false;
-//        }
-//    }
 
     @Override
     public void onCreateContextMenu(ContextMenu menu,
@@ -360,7 +379,7 @@ public class RingdroidSelectActivity
     private void setAsDefaultRingtoneOrNotification() {
         Cursor c = mAdapter.getCursor();
 
-        // If the item is a ringtone then set the default ringtone, 
+        // If the item is a ringtone then set the default ringtone,
         // otherwise it has to be a notification so set the default notification sound
         if (0 != c.getInt(c.getColumnIndexOrThrow(MediaStore.Audio.Media.IS_RINGTONE))) {
             RingtoneManager.setActualDefaultRingtoneUri(
@@ -644,30 +663,4 @@ public class RingdroidSelectActivity
         String filterStr = mFilter.getText().toString();
         mAdapter.changeCursor(createCursor(filterStr));
     }
-
-    private static final String[] INTERNAL_COLUMNS = new String[]{
-            MediaStore.Audio.Media._ID,
-            MediaStore.Audio.Media.DATA,
-            MediaStore.Audio.Media.TITLE,
-            MediaStore.Audio.Media.ARTIST,
-            MediaStore.Audio.Media.ALBUM,
-            MediaStore.Audio.Media.IS_RINGTONE,
-            MediaStore.Audio.Media.IS_ALARM,
-            MediaStore.Audio.Media.IS_NOTIFICATION,
-            MediaStore.Audio.Media.IS_MUSIC,
-            "\"" + MediaStore.Audio.Media.INTERNAL_CONTENT_URI + "\""
-    };
-
-    private static final String[] EXTERNAL_COLUMNS = new String[]{
-            MediaStore.Audio.Media._ID,
-            MediaStore.Audio.Media.DATA,
-            MediaStore.Audio.Media.TITLE,
-            MediaStore.Audio.Media.ARTIST,
-            MediaStore.Audio.Media.ALBUM,
-            MediaStore.Audio.Media.IS_RINGTONE,
-            MediaStore.Audio.Media.IS_ALARM,
-            MediaStore.Audio.Media.IS_NOTIFICATION,
-            MediaStore.Audio.Media.IS_MUSIC,
-            "\"" + MediaStore.Audio.Media.EXTERNAL_CONTENT_URI + "\""
-    };
 }

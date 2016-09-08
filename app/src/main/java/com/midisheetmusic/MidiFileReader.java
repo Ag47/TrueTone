@@ -13,11 +13,6 @@
 
 package com.midisheetmusic;
 
-import android.util.Log;
-
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 
 
@@ -49,30 +44,30 @@ public class MidiFileReader {
      * Create a new MidiFileReader for the given filename
      */
     /**
-//     Not used
-    public MidiFileReader(String filename) {
-        try {
-            File info = new File(filename);
-            FileInputStream file = new FileInputStream(filename);
-            data = new byte[(int) info.length()];
-            int offset = 0;
-            int len = (int) info.length();
-            while (true) {
-                if (offset == len)
-                    break;
-                int n = file.read(data, offset, len - offset);
-                if (n <= 0)
-                    break;
-                offset += n;
-            }
-            file.close();
+     //     Not used
+     public MidiFileReader(String filename) {
+     try {
+     File info = new File(filename);
+     FileInputStream file = new FileInputStream(filename);
+     data = new byte[(int) info.length()];
+     int offset = 0;
+     int len = (int) info.length();
+     while (true) {
+     if (offset == len)
+     break;
+     int n = file.read(data, offset, len - offset);
+     if (n <= 0)
+     break;
+     offset += n;
+     }
+     file.close();
 
-            parse_offset = 0;
-        } catch (IOException e) {
-            throw new MidiFileException("Cannot open file " + filename, 0);
-        }
-    }
-**/
+     parse_offset = 0;
+     } catch (IOException e) {
+     throw new MidiFileException("Cannot open file " + filename, 0);
+     }
+     }
+     **/
 
     /**
      * Create a new MidiFileReader from the given data

@@ -16,43 +16,37 @@
 
 package com.leff.midi.event.meta;
 
-import java.io.IOException;
-import java.io.OutputStream;
-
 import com.leff.midi.event.MidiEvent;
 import com.leff.midi.util.VariableLengthInt;
 
-public abstract class TextualMetaEvent extends MetaEvent
-{
+import java.io.IOException;
+import java.io.OutputStream;
+
+public abstract class TextualMetaEvent extends MetaEvent {
     protected String mText;
 
-    protected TextualMetaEvent(long tick, long delta, int type, String text)
-    {
+    protected TextualMetaEvent(long tick, long delta, int type, String text) {
         super(tick, delta, type, new VariableLengthInt(text.length()));
 
         setText(text);
     }
 
-    protected void setText(String t)
-    {
+    protected String getText() {
+        return mText;
+    }
+
+    protected void setText(String t) {
         mText = t;
         mLength.setValue(t.getBytes().length);
     }
 
-    protected String getText()
-    {
-        return mText;
-    }
-
     @Override
-    protected int getEventSize()
-    {
+    protected int getEventSize() {
         return 1 + 1 + mLength.getByteCount() + mLength.getValue();
     }
 
     @Override
-    public void writeToFile(OutputStream out) throws IOException
-    {
+    public void writeToFile(OutputStream out) throws IOException {
         super.writeToFile(out);
 
         out.write(mLength.getBytes());
@@ -60,19 +54,15 @@ public abstract class TextualMetaEvent extends MetaEvent
     }
 
     @Override
-    public int compareTo(MidiEvent other)
-    {
-        if(mTick != other.getTick())
-        {
+    public int compareTo(MidiEvent other) {
+        if (mTick != other.getTick()) {
             return mTick < other.getTick() ? -1 : 1;
         }
-        if(mDelta.getValue() != other.getDelta())
-        {
+        if (mDelta.getValue() != other.getDelta()) {
             return mDelta.getValue() < other.getDelta() ? 1 : -1;
         }
 
-        if(!(other instanceof TextualMetaEvent))
-        {
+        if (!(other instanceof TextualMetaEvent)) {
             return 1;
         }
 
@@ -82,8 +72,7 @@ public abstract class TextualMetaEvent extends MetaEvent
     }
 
     @Override
-    public String toString()
-    {
+    public String toString() {
         return super.toString() + ": " + mText;
     }
 }

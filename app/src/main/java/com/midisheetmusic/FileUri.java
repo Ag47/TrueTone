@@ -22,21 +22,36 @@ import java.io.InputStream;
 import java.util.Comparator;
 
 
-/** @class FileUri
+/**
+ * @class FileUri
  * Represents a reference to a file.
- * The file could be either in the /assets directory, 
+ * The file could be either in the /assets directory,
  * the internal storage, or the external storage.
  */
 public class FileUri implements Comparator<FileUri> {
-    private AssetManager asset;       /** For reading files in /assets */
-    private String filepath;          /** The path to the file */
+    /**
+     * For reading from storage
+     */
+    public Uri uri;
+    private AssetManager asset;
+    /**
+     * For reading files in /assets
+     */
+    private String filepath;
+    /**
+     * The path to the file
+     */
 
-    private ContentResolver resolver; /** For reading from storage */
-    public Uri uri;                  /** The URI path to the file */
+    private ContentResolver resolver;
+    /**
+     * The URI path to the file
+     */
 
     private String displayName;       /** The name to display */
 
-    /** Create a new reference to a file under /assets */
+    /**
+     * Create a new reference to a file under /assets
+     */
     public FileUri(AssetManager asset, String path, String display) {
         this.asset = asset;
         filepath = path;
@@ -46,8 +61,9 @@ public class FileUri implements Comparator<FileUri> {
         displayName = displayName.replace(".mid", "");
     }
 
-    /** Create a new reference to a file in internal/external storage.
-     *  The URI should be MediaStore.Audio.Media.EXTERNAL_CONTENT_URI/id
+    /**
+     * Create a new reference to a file in internal/external storage.
+     * The URI should be MediaStore.Audio.Media.EXTERNAL_CONTENT_URI/id
      */
     public FileUri(ContentResolver resolver, Uri uri, String display) {
         this.resolver = resolver;
@@ -58,7 +74,8 @@ public class FileUri implements Comparator<FileUri> {
         displayName = displayName.replace(".mid", "");
     }
 
-    /** Create a new reference to a file in internal/external storage.
+    /**
+     * Create a new reference to a file in internal/external storage.
      */
     public FileUri(String filepath) {
         this.filepath = filepath;
@@ -69,49 +86,55 @@ public class FileUri implements Comparator<FileUri> {
         displayName = displayName.replace(".mid", "");
     }
 
-    /** Return the display name */
+    /**
+     * Return the display name
+     */
     public String toString() {
         return displayName;
     }
 
-    /** Return true if this is a directory */
+    /**
+     * Return true if this is a directory
+     */
     public boolean isDirectory() {
         if (filepath != null && filepath.endsWith("/")) {
             return true;
-        }
-        else {
+        } else {
             return false;
         }
     }
 
-    /** Return the filepath */
+    /**
+     * Return the filepath
+     */
     public String filePath() {
         return filepath;
     }
 
-    /** Compare two files by their display name */
+    /**
+     * Compare two files by their display name
+     */
     public int compare(FileUri f1, FileUri f2) {
         return f1.displayName.compareToIgnoreCase(f2.displayName);
     }
 
-    /** Return the file contents as a byte array.
-     *  If any IO error occurs, return null.
+    /**
+     * Return the file contents as a byte array.
+     * If any IO error occurs, return null.
      */
     public byte[] getData() {
         try {
             byte[] data;
             int totallen, len, offset;
-        
+
             // First, determine the file length
             data = new byte[4096];
             InputStream file;
             if (asset != null) {
                 file = asset.open(filepath);
-            }
-            else if (resolver != null) {
+            } else if (resolver != null) {
                 file = resolver.openInputStream(uri);
-            }
-            else {
+            } else {
                 file = new FileInputStream(filepath);
             }
             totallen = 0;
@@ -121,18 +144,16 @@ public class FileUri implements Comparator<FileUri> {
                 len = file.read(data, 0, 4096);
             }
             file.close();
-        
+
             // Now read in the data
             offset = 0;
             data = new byte[totallen];
 
             if (asset != null) {
                 file = asset.open(filepath);
-            }
-            else if (resolver != null) {
+            } else if (resolver != null) {
                 file = resolver.openInputStream(uri);
-            }
-            else {
+            } else {
                 file = new FileInputStream(filepath);
             }
             while (offset < totallen) {
@@ -143,8 +164,7 @@ public class FileUri implements Comparator<FileUri> {
                 offset += len;
             }
             return data;
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
             return null;
         }
     }

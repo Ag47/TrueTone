@@ -39,28 +39,15 @@ import java.util.HashMap;
  * frames in that size range.
  */
 public class CheapSoundFile {
-    public interface ProgressListener {
-        /**
-         * Will be called by the CheapSoundFile subclass periodically
-         * with values between 0.0 and 1.0.  Return true to continue
-         * loading the file, and false to cancel.
-         */
-        boolean reportProgress(double fractionComplete);
-    }
-
-    public interface Factory {
-        public CheapSoundFile create();
-
-        public String[] getSupportedExtensions();
-    }
-
+    private static final char[] HEX_CHARS = {
+            '0', '1', '2', '3', '4', '5', '6', '7',
+            '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'};
     static Factory[] sSubclassFactories = new Factory[]{
             CheapAAC.getFactory(),
             CheapAMR.getFactory(),
             CheapMP3.getFactory(),
             CheapWAV.getFactory(),
     };
-
     static ArrayList<String> sSupportedExtensions = new ArrayList<String>();
     static HashMap<String, Factory> sExtensionMap =
             new HashMap<String, Factory>();
@@ -72,6 +59,12 @@ public class CheapSoundFile {
                 sExtensionMap.put(extension, f);
             }
         }
+    }
+
+    protected ProgressListener mProgressListener = null;
+    protected File mInputFile = null;
+
+    protected CheapSoundFile() {
     }
 
     /**
@@ -120,10 +113,13 @@ public class CheapSoundFile {
                 new String[sSupportedExtensions.size()]);
     }
 
-    protected ProgressListener mProgressListener = null;
-    protected File mInputFile = null;
-
-    protected CheapSoundFile() {
+    public static String bytesToHex(byte hash[]) {
+        char buf[] = new char[hash.length * 2];
+        for (int i = 0, x = 0; i < hash.length; i++) {
+            buf[x++] = HEX_CHARS[(hash[i] >>> 4) & 0xf];
+            buf[x++] = HEX_CHARS[hash[i] & 0xf];
+        }
+        return new String(buf);
     }
 
     public void ReadFile(File inputFile)
@@ -186,19 +182,6 @@ public class CheapSoundFile {
         return -1;
     }
 
-    private static final char[] HEX_CHARS = {
-            '0', '1', '2', '3', '4', '5', '6', '7',
-            '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'};
-
-    public static String bytesToHex(byte hash[]) {
-        char buf[] = new char[hash.length * 2];
-        for (int i = 0, x = 0; i < hash.length; i++) {
-            buf[x++] = HEX_CHARS[(hash[i] >>> 4) & 0xf];
-            buf[x++] = HEX_CHARS[hash[i] & 0xf];
-        }
-        return new String(buf);
-    }
-
     public String computeMd5OfFirst10Frames()
             throws java.io.FileNotFoundException,
             java.io.IOException,
@@ -232,5 +215,20 @@ public class CheapSoundFile {
 
     public void WriteFile(File outputFile, int startFrame, int numFrames)
             throws java.io.IOException {
+    }
+
+    public interface ProgressListener {
+        /**
+         * Will be called by the CheapSoundFile subclass periodically
+         * with values between 0.0 and 1.0.  Return true to continue
+         * loading the file, and false to cancel.
+         */
+        boolean reportProgress(double fractionComplete);
+    }
+
+    public interface Factory {
+        public CheapSoundFile create();
+
+        public String[] getSupportedExtensions();
     }
 };

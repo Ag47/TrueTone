@@ -101,6 +101,7 @@
     <string name="recording_started">"Enregistrement a commencé"</string>
     <string name="recording_stopped">Enregistrement arrêté</string>
     <string name="recording_track">Piste d enregistrement</string>
+    <string msgid="146198913615257606" name="search_menu_title">"Rechercher"</string>
     <string name="seq_fast">"Rapide"</string>
     <string name="seq_med">"Moyen"</string>
     <string name="seq_slow">"Lent"</string>

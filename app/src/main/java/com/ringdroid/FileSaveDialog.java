@@ -20,7 +20,6 @@ import android.app.Dialog;
 import android.content.Context;
 import android.content.res.Resources;
 import android.os.Message;
-import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemSelectedListener;
@@ -32,7 +31,6 @@ import android.widget.Spinner;
 import com.comp4905.jasonfleischer.midimusic.R;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 
 public class FileSaveDialog extends Dialog {
 
@@ -49,26 +47,19 @@ public class FileSaveDialog extends Dialog {
     private String mOriginalName;
     private ArrayList<String> mTypeArray;
     private int mPreviousSelection;
-
-    /**
-     * Return a human-readable name for a kind (music, alarm, ringtone, ...).
-     * These won't be displayed on-screen (just in logs) so they shouldn't
-     * be translated.
-     */
-    public static String KindToName(int kind) {
-        switch(kind) {
-        default:
-            return "Unknown";
-        case FILE_KIND_MUSIC:
-            return "Music";
-        case FILE_KIND_ALARM:
-            return "Alarm";
-        case FILE_KIND_NOTIFICATION:
-            return "Notification";
-        case FILE_KIND_RINGTONE:
-            return "Ringtone";
+    private View.OnClickListener saveListener = new View.OnClickListener() {
+        public void onClick(View view) {
+            mResponse.obj = mFilename.getText();
+            mResponse.arg1 = mTypeSpinner.getSelectedItemPosition();
+            mResponse.sendToTarget();
+            dismiss();
         }
-    }
+    };
+    private View.OnClickListener cancelListener = new View.OnClickListener() {
+        public void onClick(View view) {
+            dismiss();
+        }
+    };
 
     public FileSaveDialog(Context context,
                           Resources resources,
@@ -87,13 +78,13 @@ public class FileSaveDialog extends Dialog {
         mTypeArray.add(resources.getString(R.string.type_notification));
         mTypeArray.add(resources.getString(R.string.type_ringtone));
 
-        mFilename = (EditText)findViewById(R.id.filename);
+        mFilename = (EditText) findViewById(R.id.filename);
         mOriginalName = originalName;
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(
-            context, android.R.layout.simple_spinner_item, mTypeArray);
+                context, android.R.layout.simple_spinner_item, mTypeArray);
         adapter.setDropDownViewResource(
-            android.R.layout.simple_spinner_dropdown_item);
+                android.R.layout.simple_spinner_dropdown_item);
         mTypeSpinner = (Spinner) findViewById(R.id.ringtone_type);
         mTypeSpinner.setAdapter(adapter);
         mTypeSpinner.setSelection(FILE_KIND_RINGTONE);
@@ -102,28 +93,49 @@ public class FileSaveDialog extends Dialog {
         setFilenameEditBoxFromName(false);
 
         mTypeSpinner.setOnItemSelectedListener(new OnItemSelectedListener() {
-                public void onItemSelected(AdapterView parent,
-                                           View v,
-                                           int position,
-                                           long id) {
-                    setFilenameEditBoxFromName(true);
-                }
-                public void onNothingSelected(AdapterView parent) {
-                }
-            });
+            public void onItemSelected(AdapterView parent,
+                                       View v,
+                                       int position,
+                                       long id) {
+                setFilenameEditBoxFromName(true);
+            }
 
-        Button save = (Button)findViewById(R.id.save);
+            public void onNothingSelected(AdapterView parent) {
+            }
+        });
+
+        Button save = (Button) findViewById(R.id.save);
         save.setOnClickListener(saveListener);
-        Button cancel = (Button)findViewById(R.id.cancel);
+        Button cancel = (Button) findViewById(R.id.cancel);
         cancel.setOnClickListener(cancelListener);
         mResponse = response;
+    }
+
+    /**
+     * Return a human-readable name for a kind (music, alarm, ringtone, ...).
+     * These won't be displayed on-screen (just in logs) so they shouldn't
+     * be translated.
+     */
+    public static String KindToName(int kind) {
+        switch (kind) {
+            default:
+                return "Unknown";
+            case FILE_KIND_MUSIC:
+                return "Music";
+            case FILE_KIND_ALARM:
+                return "Alarm";
+            case FILE_KIND_NOTIFICATION:
+                return "Notification";
+            case FILE_KIND_RINGTONE:
+                return "Ringtone";
+        }
     }
 
     private void setFilenameEditBoxFromName(boolean onlyIfNotEdited) {
         if (onlyIfNotEdited) {
             CharSequence currentText = mFilename.getText();
             String expectedText = mOriginalName + " " +
-                mTypeArray.get(mPreviousSelection);
+                    mTypeArray.get(mPreviousSelection);
 
             if (!expectedText.contentEquals(currentText)) {
                 return;
@@ -135,19 +147,4 @@ public class FileSaveDialog extends Dialog {
         mFilename.setText(mOriginalName + " " + newSuffix);
         mPreviousSelection = mTypeSpinner.getSelectedItemPosition();
     }
-
-    private View.OnClickListener saveListener = new View.OnClickListener() {
-            public void onClick(View view) {
-                mResponse.obj = mFilename.getText();
-                mResponse.arg1 = mTypeSpinner.getSelectedItemPosition();
-                mResponse.sendToTarget();
-                dismiss();
-            }
-        };
-
-    private View.OnClickListener cancelListener = new View.OnClickListener() {
-            public void onClick(View view) {
-                dismiss();
-            }
-        };
 }

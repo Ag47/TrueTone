@@ -14,16 +14,27 @@
 package com.midisheetmusic;
 
 
-/**@class DictInt
- *  The DictInt class is a dictionary mapping integers to integers.
+/**
+ * @class DictInt
+ * The DictInt class is a dictionary mapping integers to integers.
  */
 public class DictInt {
-    private int[] keys;    /** Sorted array of integer keys */
-    private int[] values;  /** Array of integer values */
-    private int size;      /** Number of keys */
+    private int[] keys;
+    /**
+     * Sorted array of integer keys
+     */
+    private int[] values;
+    /**
+     * Array of integer values
+     */
+    private int size;
+    /**
+     * Number of keys
+     */
     private int lastpos;   /** The index from the last "get" method */
 
-    /** Create a new DictInt instance with the given capacity.
+    /**
+     * Create a new DictInt instance with the given capacity.
      * Initialize two int arrays,  one to store the keys and one
      * to store the values.
      */
@@ -35,7 +46,9 @@ public class DictInt {
         values = new int[amount];
     }
 
-    /** Increase the capacity of the key/value arrays  */
+    /**
+     * Increase the capacity of the key/value arrays
+     */
     private void resize() {
         int newcapacity = keys.length * 2;
         int[] newkeys = new int[newcapacity];
@@ -48,7 +61,8 @@ public class DictInt {
         values = newvalues;
     }
 
-    /** Add the given key/value pair to this dictionary.
+    /**
+     * Add the given key/value pair to this dictionary.
      * This assumes the key is not already in the dictionary.
      * If the keys/values arrays are full, then resize them.
      * The keys array must be kept in sorted order, so insert
@@ -59,30 +73,32 @@ public class DictInt {
             resize();
         }
 
-        int pos = size-1;
+        int pos = size - 1;
         while (pos >= 0 && key < keys[pos]) {
-            keys[pos+1] = keys[pos];
-            values[pos+1] = values[pos];
+            keys[pos + 1] = keys[pos];
+            values[pos + 1] = values[pos];
             pos--;
         }
-        keys[pos+1] = key;
-        values[pos+1] = value;
+        keys[pos + 1] = key;
+        values[pos + 1] = value;
         size++;
     }
 
 
-    /** Set the given key to the given value */
+    /**
+     * Set the given key to the given value
+     */
     public void set(int key, int value) {
         if (contains(key)) {
             keys[lastpos] = key;
             values[lastpos] = value;
-        }
-        else {
+        } else {
             add(key, value);
         }
     }
 
-    /** Return true if this dictionary contains the given key.
+    /**
+     * Return true if this dictionary contains the given key.
      * If true, set lastpos = the index position of the key.
      */
     public boolean contains(int key) {
@@ -102,29 +118,33 @@ public class DictInt {
         }
         if (lastpos < size && key == keys[lastpos]) {
             return true;
-        }
-        else {
+        } else {
             return false;
         }
     }
 
 
-    /** Get the value for the given key. */
+    /**
+     * Get the value for the given key.
+     */
     int get(int key) {
         if (contains(key)) {
             return values[lastpos];
-        }
-        else {
+        } else {
             return 0;
         }
     }
 
-    /** Return the number of key/value pairs */
+    /**
+     * Return the number of key/value pairs
+     */
     int count() {
         return size;
     }
 
-    /** Return the key at the given index */
+    /**
+     * Return the key at the given index
+     */
     int getKey(int index) {
         return keys[index];
     }

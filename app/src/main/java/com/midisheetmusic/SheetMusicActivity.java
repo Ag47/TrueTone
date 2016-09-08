@@ -12,31 +12,23 @@
 
 package com.midisheetmusic;
 
-import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
-import android.content.ContentResolver;
-import android.content.ContentValues;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
-import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Point;
 import android.graphics.drawable.BitmapDrawable;
 import android.media.MediaScannerConnection;
-import android.media.Ringtone;
 import android.media.RingtoneManager;
 import android.net.Uri;
-import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
-import android.provider.MediaStore;
-import android.provider.Settings;
 import android.util.Log;
 import android.view.Display;
 import android.view.LayoutInflater;
@@ -45,9 +37,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
-import android.view.View.OnClickListener;
 import android.view.WindowManager;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -66,7 +56,6 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
-import java.util.logging.Handler;
 import java.util.zip.CRC32;
 
 /**
@@ -81,9 +70,12 @@ public class SheetMusicActivity extends Activity {
 
     public static final String MidiDataID = "MidiDataID";
     public static final String MidiTitleID = "MidiTitleID";
-    public static String Path = "Path";
     public static final int settingsRequestCode = 1;
-
+    public static final String ringtoneUriString = "";
+    public static String Path = "Path";
+    public static Uri ringtoneURI;
+    public String tonePath;
+    public String title;
     private MidiPlayer player;   /* The play/stop/rewind toolbar */
     private Piano piano;         /* The piano at the top */
     private SheetMusic sheet;    /* The sheet music */
@@ -91,10 +83,6 @@ public class SheetMusicActivity extends Activity {
     private MidiFile midifile;   /* The midi file to play */
     private MidiOptions options; /* The options for sheet music and sound */
     private long midiCRC;      /* CRC of the midi bytes */
-    public String tonePath;
-    public String title;
-    public static Uri ringtoneURI;
-    public static final String ringtoneUriString = "";
     private Bitmap forSaveQR;
 
     /**

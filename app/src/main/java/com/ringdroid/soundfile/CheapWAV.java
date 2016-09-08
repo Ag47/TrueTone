@@ -19,7 +19,6 @@ package com.ringdroid.soundfile;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
-import java.io.InputStream;
 
 /**
  * CheapWAV represents a standard 16-bit WAV file, splitting it into
@@ -27,17 +26,6 @@ import java.io.InputStream;
  * get an approximation of the waveform contour.
  */
 public class CheapWAV extends CheapSoundFile {
-    public static Factory getFactory() {
-        return new Factory() {
-            public CheapSoundFile create() {
-                return new CheapWAV();
-            }
-            public String[] getSupportedExtensions() {
-                return new String[] { "wav" };
-            }
-        };
-    }
-
     // Member variables containing frame info
     private int mNumFrames;
     private int[] mFrameOffsets;
@@ -49,8 +37,19 @@ public class CheapWAV extends CheapSoundFile {
     private int mChannels;
     // Member variables used during initialization
     private int mOffset;
-
     public CheapWAV() {
+    }
+
+    public static Factory getFactory() {
+        return new Factory() {
+            public CheapSoundFile create() {
+                return new CheapWAV();
+            }
+
+            public String[] getSupportedExtensions() {
+                return new String[]{"wav"};
+            }
+        };
     }
 
     public int getNumFrames() {
@@ -74,7 +73,7 @@ public class CheapWAV extends CheapSoundFile {
     }
 
     public int getFileSizeBytes() {
-        return mFileSize;        
+        return mFileSize;
     }
 
     public int getAvgBitrateKbps() {
@@ -95,9 +94,9 @@ public class CheapWAV extends CheapSoundFile {
 
     public void ReadFile(File inputFile)
             throws java.io.FileNotFoundException,
-                   java.io.IOException {
+            java.io.IOException {
         super.ReadFile(inputFile);
-        mFileSize = (int)mInputFile.length();
+        mFileSize = (int) mInputFile.length();
 
         if (mFileSize < 128) {
             throw new java.io.IOException("File too small to parse");
@@ -108,13 +107,13 @@ public class CheapWAV extends CheapSoundFile {
         stream.read(header, 0, 12);
         mOffset += 12;
         if (header[0] != 'R' ||
-            header[1] != 'I' ||
-            header[2] != 'F' ||
-            header[3] != 'F' ||
-            header[8] != 'W' ||
-            header[9] != 'A' ||
-            header[10] != 'V' ||
-            header[11] != 'E') {
+                header[1] != 'I' ||
+                header[2] != 'F' ||
+                header[3] != 'F' ||
+                header[8] != 'W' ||
+                header[9] != 'A' ||
+                header[10] != 'V' ||
+                header[11] != 'E') {
             throw new java.io.IOException("Not a WAV file");
         }
 
@@ -126,18 +125,18 @@ public class CheapWAV extends CheapSoundFile {
             mOffset += 8;
 
             int chunkLen =
-                ((0xff & chunkHeader[7]) << 24) |
-                ((0xff & chunkHeader[6]) << 16) |
-                ((0xff & chunkHeader[5]) << 8) |
-                ((0xff & chunkHeader[4]));
+                    ((0xff & chunkHeader[7]) << 24) |
+                            ((0xff & chunkHeader[6]) << 16) |
+                            ((0xff & chunkHeader[5]) << 8) |
+                            ((0xff & chunkHeader[4]));
 
             if (chunkHeader[0] == 'f' &&
-                chunkHeader[1] == 'm' &&
-                chunkHeader[2] == 't' &&
-                chunkHeader[3] == ' ') {
+                    chunkHeader[1] == 'm' &&
+                    chunkHeader[2] == 't' &&
+                    chunkHeader[3] == ' ') {
                 if (chunkLen < 16 || chunkLen > 1024) {
                     throw new java.io.IOException(
-                        "WAV file has bad fmt chunk");
+                            "WAV file has bad fmt chunk");
                 }
 
                 byte[] fmt = new byte[chunkLen];
@@ -145,29 +144,29 @@ public class CheapWAV extends CheapSoundFile {
                 mOffset += chunkLen;
 
                 int format =
-                    ((0xff & fmt[1]) << 8) |
-                    ((0xff & fmt[0]));
+                        ((0xff & fmt[1]) << 8) |
+                                ((0xff & fmt[0]));
                 mChannels =
-                    ((0xff & fmt[3]) << 8) |
-                    ((0xff & fmt[2]));
+                        ((0xff & fmt[3]) << 8) |
+                                ((0xff & fmt[2]));
                 mSampleRate =
-                    ((0xff & fmt[7]) << 24) |
-                    ((0xff & fmt[6]) << 16) |
-                    ((0xff & fmt[5]) << 8) |
-                    ((0xff & fmt[4]));
+                        ((0xff & fmt[7]) << 24) |
+                                ((0xff & fmt[6]) << 16) |
+                                ((0xff & fmt[5]) << 8) |
+                                ((0xff & fmt[4]));
 
                 if (format != 1) {
                     throw new java.io.IOException(
-                        "Unsupported WAV file encoding");
+                            "Unsupported WAV file encoding");
                 }
 
             } else if (chunkHeader[0] == 'd' &&
-                       chunkHeader[1] == 'a' &&
-                       chunkHeader[2] == 't' &&
-                       chunkHeader[3] == 'a') {
+                    chunkHeader[1] == 'a' &&
+                    chunkHeader[2] == 't' &&
+                    chunkHeader[3] == 'a') {
                 if (mChannels == 0 || mSampleRate == 0) {
                     throw new java.io.IOException(
-                        "Bad WAV file: data chunk before fmt chunk");
+                            "Bad WAV file: data chunk before fmt chunk");
                 }
 
                 int frameSamples = (mSampleRate * mChannels) / 50;
@@ -208,7 +207,7 @@ public class CheapWAV extends CheapSoundFile {
 
                     if (mProgressListener != null) {
                         boolean keepGoing = mProgressListener.reportProgress(
-                            i * 1.0 / chunkLen);
+                                i * 1.0 / chunkLen);
                         if (!keepGoing) {
                             break;
                         }

@@ -23,70 +23,70 @@ import java.util.regex.Pattern;
  */
 public final class URIParsedResult extends ParsedResult {
 
-  private static final Pattern USER_IN_HOST = Pattern.compile(":/*([^/@]+)@[^/]+");
+    private static final Pattern USER_IN_HOST = Pattern.compile(":/*([^/@]+)@[^/]+");
 
-  private final String uri;
-  private final String title;
+    private final String uri;
+    private final String title;
 
-  public URIParsedResult(String uri, String title) {
-    super(ParsedResultType.URI);
-    this.uri = massageURI(uri);
-    this.title = title;
-  }
-
-  public String getURI() {
-    return uri;
-  }
-
-  public String getTitle() {
-    return title;
-  }
-
-  /**
-   * @return true if the URI contains suspicious patterns that may suggest it intends to
-   *  mislead the user about its true nature. At the moment this looks for the presence
-   *  of user/password syntax in the host/authority portion of a URI which may be used
-   *  in attempts to make the URI's host appear to be other than it is. Example:
-   *  http://yourbank.com@phisher.com  This URI connects to phisher.com but may appear
-   *  to connect to yourbank.com at first glance.
-   */
-  public boolean isPossiblyMaliciousURI() {
-    return USER_IN_HOST.matcher(uri).find();
-  }
-
-  @Override
-  public String getDisplayResult() {
-    StringBuilder result = new StringBuilder(30);
-    maybeAppend(title, result);
-    maybeAppend(uri, result);
-    return result.toString();
-  }
-
-  /**
-   * Transforms a string that represents a URI into something more proper, by adding or canonicalizing
-   * the protocol.
-   */
-  private static String massageURI(String uri) {
-    uri = uri.trim();
-    int protocolEnd = uri.indexOf(':');
-    if (protocolEnd < 0) {
-      // No protocol, assume http
-      uri = "http://" + uri;
-    } else if (isColonFollowedByPortNumber(uri, protocolEnd)) {
-      // Found a colon, but it looks like it is after the host, so the protocol is still missing
-      uri = "http://" + uri;
+    public URIParsedResult(String uri, String title) {
+        super(ParsedResultType.URI);
+        this.uri = massageURI(uri);
+        this.title = title;
     }
-    return uri;
-  }
 
-  private static boolean isColonFollowedByPortNumber(String uri, int protocolEnd) {
-    int start = protocolEnd + 1;
-    int nextSlash = uri.indexOf('/', start);
-    if (nextSlash < 0) {
-      nextSlash = uri.length();
+    /**
+     * Transforms a string that represents a URI into something more proper, by adding or canonicalizing
+     * the protocol.
+     */
+    private static String massageURI(String uri) {
+        uri = uri.trim();
+        int protocolEnd = uri.indexOf(':');
+        if (protocolEnd < 0) {
+            // No protocol, assume http
+            uri = "http://" + uri;
+        } else if (isColonFollowedByPortNumber(uri, protocolEnd)) {
+            // Found a colon, but it looks like it is after the host, so the protocol is still missing
+            uri = "http://" + uri;
+        }
+        return uri;
     }
-    return ResultParser.isSubstringOfDigits(uri, start, nextSlash - start);
-  }
+
+    private static boolean isColonFollowedByPortNumber(String uri, int protocolEnd) {
+        int start = protocolEnd + 1;
+        int nextSlash = uri.indexOf('/', start);
+        if (nextSlash < 0) {
+            nextSlash = uri.length();
+        }
+        return ResultParser.isSubstringOfDigits(uri, start, nextSlash - start);
+    }
+
+    public String getURI() {
+        return uri;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    /**
+     * @return true if the URI contains suspicious patterns that may suggest it intends to
+     * mislead the user about its true nature. At the moment this looks for the presence
+     * of user/password syntax in the host/authority portion of a URI which may be used
+     * in attempts to make the URI's host appear to be other than it is. Example:
+     * http://yourbank.com@phisher.com  This URI connects to phisher.com but may appear
+     * to connect to yourbank.com at first glance.
+     */
+    public boolean isPossiblyMaliciousURI() {
+        return USER_IN_HOST.matcher(uri).find();
+    }
+
+    @Override
+    public String getDisplayResult() {
+        StringBuilder result = new StringBuilder(30);
+        maybeAppend(title, result);
+        maybeAppend(uri, result);
+        return result.toString();
+    }
 
 
 }

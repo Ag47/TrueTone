@@ -34,6 +34,34 @@ import java.io.FileOutputStream;
  * ([ 00 ] * 13) FF FA
  */
 public class CheapMP3 extends CheapSoundFile {
+    static private int BITRATES_MPEG1_L3[] = {
+            0, 32, 40, 48, 56, 64, 80, 96,
+            112, 128, 160, 192, 224, 256, 320, 0};
+    static private int BITRATES_MPEG2_L3[] = {
+            0, 8, 16, 24, 32, 40, 48, 56,
+            64, 80, 96, 112, 128, 144, 160, 0};
+    static private int SAMPLERATES_MPEG1_L3[] = {
+            44100, 48000, 32000, 0};
+    static private int SAMPLERATES_MPEG2_L3[] = {
+            22050, 24000, 16000, 0};
+    // Member variables representing frame data
+    private int mNumFrames;
+    private int[] mFrameOffsets;
+    private int[] mFrameLens;
+    private int[] mFrameGains;
+    private int mFileSize;
+    private int mAvgBitRate;
+    private int mGlobalSampleRate;
+    private int mGlobalChannels;
+    // Member variables used during initialization
+    private int mMaxFrames;
+    private int mBitrateSum;
+    private int mMinGain;
+    private int mMaxGain;
+
+    public CheapMP3() {
+    }
+
     public static Factory getFactory() {
         return new Factory() {
             public CheapSoundFile create() {
@@ -44,25 +72,6 @@ public class CheapMP3 extends CheapSoundFile {
                 return new String[]{"mp3"};
             }
         };
-    }
-
-    // Member variables representing frame data
-    private int mNumFrames;
-    private int[] mFrameOffsets;
-    private int[] mFrameLens;
-    private int[] mFrameGains;
-    private int mFileSize;
-    private int mAvgBitRate;
-    private int mGlobalSampleRate;
-    private int mGlobalChannels;
-
-    // Member variables used during initialization
-    private int mMaxFrames;
-    private int mBitrateSum;
-    private int mMinGain;
-    private int mMaxGain;
-
-    public CheapMP3() {
     }
 
     public int getNumFrames() {
@@ -311,15 +320,4 @@ public class CheapMP3 extends CheapSoundFile {
         in.close();
         out.close();
     }
-
-    static private int BITRATES_MPEG1_L3[] = {
-            0, 32, 40, 48, 56, 64, 80, 96,
-            112, 128, 160, 192, 224, 256, 320, 0};
-    static private int BITRATES_MPEG2_L3[] = {
-            0, 8, 16, 24, 32, 40, 48, 56,
-            64, 80, 96, 112, 128, 144, 160, 0};
-    static private int SAMPLERATES_MPEG1_L3[] = {
-            44100, 48000, 32000, 0};
-    static private int SAMPLERATES_MPEG2_L3[] = {
-            22050, 24000, 16000, 0};
 };

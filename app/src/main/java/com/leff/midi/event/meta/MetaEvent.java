@@ -16,48 +16,43 @@
 
 package com.leff.midi.event.meta;
 
+import com.leff.midi.event.MidiEvent;
+import com.leff.midi.util.VariableLengthInt;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
-import com.leff.midi.event.MidiEvent;
-import com.leff.midi.util.VariableLengthInt;
-
-public abstract class MetaEvent extends MidiEvent
-{
+public abstract class MetaEvent extends MidiEvent {
+    public static final int SEQUENCE_NUMBER = 0;
+    public static final int TEXT_EVENT = 1;
+    public static final int COPYRIGHT_NOTICE = 2;
+    public static final int TRACK_NAME = 3;
+    public static final int INSTRUMENT_NAME = 4;
+    public static final int LYRICS = 5;
+    public static final int MARKER = 6;
+    public static final int CUE_POINT = 7;
+    public static final int MIDI_CHANNEL_PREFIX = 0x20;
+    public static final int END_OF_TRACK = 0x2F;
+    public static final int TEMPO = 0x51;
+    public static final int SMPTE_OFFSET = 0x54;
+    public static final int TIME_SIGNATURE = 0x58;
+    public static final int KEY_SIGNATURE = 0x59;
+    public static final int SEQUENCER_SPECIFIC = 0x7F;
     protected int mType;
     protected VariableLengthInt mLength;
-
-    protected MetaEvent(long tick, long delta, int type, VariableLengthInt length)
-    {
+    protected MetaEvent(long tick, long delta, int type, VariableLengthInt length) {
         super(tick, delta);
 
         mType = type & 0xFF;
         mLength = length;
     }
 
-    protected abstract int getEventSize();
-
-    @Override
-    public void writeToFile(OutputStream out, boolean writeType) throws IOException
-    {
-        writeToFile(out);
-    }
-
-    protected void writeToFile(OutputStream out) throws IOException
-    {
-        super.writeToFile(out, true);
-        out.write(0xFF);
-        out.write(mType);
-    }
-
-    public static MetaEvent parseMetaEvent(long tick, long delta, InputStream in) throws IOException
-    {
+    public static MetaEvent parseMetaEvent(long tick, long delta, InputStream in) throws IOException {
         MetaEventData eventData = new MetaEventData(in);
 
         boolean isText = false;
-        switch(eventData.type)
-        {
+        switch (eventData.type) {
             case SEQUENCE_NUMBER:
             case MIDI_CHANNEL_PREFIX:
             case END_OF_TRACK:
@@ -74,18 +69,16 @@ public abstract class MetaEvent extends MidiEvent
             case MARKER:
             case CUE_POINT:
             case SEQUENCER_SPECIFIC: // Not technically text, but follows same
-                                     // structure
+                // structure
             default: // Also not technically text, but it should follow
                 isText = true;
                 break;
         }
 
-        if(isText)
-        {
+        if (isText) {
             String text = new String(eventData.data);
 
-            switch(eventData.type)
-            {
+            switch (eventData.type) {
                 case TEXT_EVENT:
                     return new Text(tick, delta, text);
                 case COPYRIGHT_NOTICE:
@@ -107,8 +100,7 @@ public abstract class MetaEvent extends MidiEvent
             }
         }
 
-        switch(eventData.type)
-        {
+        switch (eventData.type) {
             case SEQUENCE_NUMBER:
                 return SequenceNumber.parseSequenceNumber(tick, delta, eventData);
             case MIDI_CHANNEL_PREFIX:
@@ -128,37 +120,31 @@ public abstract class MetaEvent extends MidiEvent
         return null;
     }
 
-    protected static class MetaEventData
-    {
+    protected abstract int getEventSize();
+
+    @Override
+    public void writeToFile(OutputStream out, boolean writeType) throws IOException {
+        writeToFile(out);
+    }
+
+    protected void writeToFile(OutputStream out) throws IOException {
+        super.writeToFile(out, true);
+        out.write(0xFF);
+        out.write(mType);
+    }
+
+    protected static class MetaEventData {
         public final int type;
         public final VariableLengthInt length;
         public final byte[] data;
 
-        public MetaEventData(InputStream in) throws IOException
-        {
+        public MetaEventData(InputStream in) throws IOException {
             type = in.read();
             length = new VariableLengthInt(in);
             data = new byte[length.getValue()];
-            if(length.getValue() > 0)
-            {
+            if (length.getValue() > 0) {
                 in.read(data);
             }
         }
     }
-
-    public static final int SEQUENCE_NUMBER = 0;
-    public static final int TEXT_EVENT = 1;
-    public static final int COPYRIGHT_NOTICE = 2;
-    public static final int TRACK_NAME = 3;
-    public static final int INSTRUMENT_NAME = 4;
-    public static final int LYRICS = 5;
-    public static final int MARKER = 6;
-    public static final int CUE_POINT = 7;
-    public static final int MIDI_CHANNEL_PREFIX = 0x20;
-    public static final int END_OF_TRACK = 0x2F;
-    public static final int TEMPO = 0x51;
-    public static final int SMPTE_OFFSET = 0x54;
-    public static final int TIME_SIGNATURE = 0x58;
-    public static final int KEY_SIGNATURE = 0x59;
-    public static final int SEQUENCER_SPECIFIC = 0x7F;
 }

@@ -37,7 +37,6 @@ import android.widget.Toast;
 
 import com.comp4905.jasonfleischer.midimusic.R;
 import com.midisheetmusic.ChooseSongActivity;
-import com.ringdroid.ChooseContactActivity;
 
 /**
  * This example illustrates a common usage of the DrawerLayout widget

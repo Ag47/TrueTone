@@ -18,8 +18,8 @@ package com.ringdroid;
 
 import android.content.SharedPreferences;
 import android.media.AudioManager;
-import android.media.MediaPlayer.OnCompletionListener;
 import android.media.MediaPlayer;
+import android.media.MediaPlayer.OnCompletionListener;
 import android.util.Log;
 
 import java.io.File;
@@ -34,12 +34,12 @@ import java.util.Random;
  * Some phones such as the HTC Hero and Droid Eris do not support
  * MediaPlayer.setDataSource with an offset into the file, which
  * Ringdroid likes to use to more precisely seek in an MP3 file.
- *
+ * <p/>
  * This class creates a temporary MP3 file containing silence,
  * attempts to play only the last fraction of that file and then
  * uses the timing information to determine if this API function
  * works correctly on this particular phone.
- *
+ * <p/>
  * This result is then cached, so the delay only needs to happen once.
  */
 public class SeekTest {
@@ -48,6 +48,28 @@ public class SeekTest {
 
     static long before;
     static long after;
+    static private byte SILENCE_MP3_FRAME[] = {
+            (byte) 0xff, (byte) 0xfb, (byte) 0x10, (byte) 0xc4, (byte) 0x00,
+            (byte) 0x03, (byte) 0x81, (byte) 0xf4, (byte) 0x01, (byte) 0x26,
+            (byte) 0x60, (byte) 0x00, (byte) 0x40, (byte) 0x20, (byte) 0x59,
+            (byte) 0x80, (byte) 0x23, (byte) 0x48, (byte) 0x00, (byte) 0x09,
+            (byte) 0x74, (byte) 0x00, (byte) 0x01, (byte) 0x12, (byte) 0x03,
+            (byte) 0xff, (byte) 0xff, (byte) 0xff, (byte) 0xff, (byte) 0xfe,
+            (byte) 0x9f, (byte) 0x63, (byte) 0xbf, (byte) 0xd1, (byte) 0x7a,
+            (byte) 0x3f, (byte) 0x5d, (byte) 0x01, (byte) 0xff, (byte) 0xff,
+            (byte) 0xff, (byte) 0xff, (byte) 0xfe, (byte) 0x8d, (byte) 0xad,
+            (byte) 0x6c, (byte) 0x31, (byte) 0x42, (byte) 0xc3, (byte) 0x02,
+            (byte) 0xc7, (byte) 0x0c, (byte) 0x09, (byte) 0x86, (byte) 0x83,
+            (byte) 0xa8, (byte) 0x7a, (byte) 0x3a, (byte) 0x68, (byte) 0x4c,
+            (byte) 0x41, (byte) 0x4d, (byte) 0x45, (byte) 0x33, (byte) 0x2e,
+            (byte) 0x39, (byte) 0x38, (byte) 0x2e, (byte) 0x32, (byte) 0x00,
+            (byte) 0x00, (byte) 0x00, (byte) 0x00, (byte) 0x00, (byte) 0x00,
+            (byte) 0x00, (byte) 0x00, (byte) 0x00, (byte) 0x00, (byte) 0x00,
+            (byte) 0x00, (byte) 0x00, (byte) 0x00, (byte) 0x00, (byte) 0x00,
+            (byte) 0x00, (byte) 0x00, (byte) 0x00, (byte) 0x00, (byte) 0x00,
+            (byte) 0x00, (byte) 0x00, (byte) 0x00, (byte) 0x00, (byte) 0x00,
+            (byte) 0x00, (byte) 0x00, (byte) 0x00, (byte) 0x00, (byte) 0x00,
+            (byte) 0x00, (byte) 0x00, (byte) 0x00, (byte) 0x00};
 
     static boolean CanSeekAccurately(SharedPreferences prefs) {
         Log.i("Ringdroid", "Running CanSeekAccurately");
@@ -97,7 +119,8 @@ public class SeekTest {
             Log.i("Ringdroid", "Couldn't write temp silence file");
             try {
                 file.delete();
-            } catch (Exception e2) {}
+            } catch (Exception e2) {
+            }
             return false;
         }
 
@@ -109,18 +132,18 @@ public class SeekTest {
             long start = 70 * SILENCE_MP3_FRAME.length;
             long len = 10 * SILENCE_MP3_FRAME.length;
             player.setDataSource(subsetInputStream.getFD(),
-                                 start,
-                                 len);
+                    start,
+                    len);
             Log.i("Ringdroid", "Preparing");
             player.prepare();
             before = 0;
             after = 0;
             player.setOnCompletionListener(new OnCompletionListener() {
-                    public synchronized void onCompletion(MediaPlayer arg0) {
-                        Log.i("Ringdroid", "Got callback");
-                        after = System.currentTimeMillis();
-                    }
-                });
+                public synchronized void onCompletion(MediaPlayer arg0) {
+                    Log.i("Ringdroid", "Got callback");
+                    after = System.currentTimeMillis();
+                }
+            });
 
             Log.i("Ringdroid", "Starting");
             player.start();
@@ -128,7 +151,7 @@ public class SeekTest {
             for (int i = 0; i < 200 && before == 0; i++) {
                 if (player.getCurrentPosition() > 0) {
                     Log.i("Ringdroid", "Started playing after " + (i * 10) +
-                          " ms");
+                            " ms");
                     before = System.currentTimeMillis();
                 }
                 Thread.sleep(10);
@@ -138,7 +161,8 @@ public class SeekTest {
                 Log.i("Ringdroid", "Fast MP3 seek disabled by default");
                 try {
                     file.delete();
-                } catch (Exception e2) {}
+                } catch (Exception e2) {
+                }
 
                 SharedPreferences.Editor prefsEditor = prefs.edit();
                 prefsEditor.putLong(PREF_SEEK_TEST_DATE, now);
@@ -157,7 +181,7 @@ public class SeekTest {
             Log.i("Ringdroid", "Result: " + before + ", " + after);
 
             if (after > before && after < before + 2000) {
-                long delta = after > before? after - before: -1;
+                long delta = after > before ? after - before : -1;
                 Log.i("Ringdroid", "Fast MP3 seek enabled: " + delta);
                 result = true;
             } else {
@@ -169,7 +193,8 @@ public class SeekTest {
             Log.i("Ringdroid", "Fast MP3 seek disabled by default");
             try {
                 file.delete();
-            } catch (Exception e2) {}
+            } catch (Exception e2) {
+            }
 
             SharedPreferences.Editor prefsEditor = prefs.edit();
             prefsEditor.putLong(PREF_SEEK_TEST_DATE, now);
@@ -186,31 +211,9 @@ public class SeekTest {
 
         try {
             file.delete();
-        } catch (Exception e) {}
+        } catch (Exception e) {
+        }
 
         return result;
     }
-
-    static private byte SILENCE_MP3_FRAME[] = {
-        (byte)0xff, (byte)0xfb, (byte)0x10, (byte)0xc4, (byte)0x00,
-        (byte)0x03, (byte)0x81, (byte)0xf4, (byte)0x01, (byte)0x26,
-        (byte)0x60, (byte)0x00, (byte)0x40, (byte)0x20, (byte)0x59,
-        (byte)0x80, (byte)0x23, (byte)0x48, (byte)0x00, (byte)0x09,
-        (byte)0x74, (byte)0x00, (byte)0x01, (byte)0x12, (byte)0x03,
-        (byte)0xff, (byte)0xff, (byte)0xff, (byte)0xff, (byte)0xfe,
-        (byte)0x9f, (byte)0x63, (byte)0xbf, (byte)0xd1, (byte)0x7a,
-        (byte)0x3f, (byte)0x5d, (byte)0x01, (byte)0xff, (byte)0xff,
-        (byte)0xff, (byte)0xff, (byte)0xfe, (byte)0x8d, (byte)0xad,
-        (byte)0x6c, (byte)0x31, (byte)0x42, (byte)0xc3, (byte)0x02,
-        (byte)0xc7, (byte)0x0c, (byte)0x09, (byte)0x86, (byte)0x83,
-        (byte)0xa8, (byte)0x7a, (byte)0x3a, (byte)0x68, (byte)0x4c,
-        (byte)0x41, (byte)0x4d, (byte)0x45, (byte)0x33, (byte)0x2e,
-        (byte)0x39, (byte)0x38, (byte)0x2e, (byte)0x32, (byte)0x00,
-        (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00,
-        (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00,
-        (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00,
-        (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00,
-        (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00,
-        (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00,
-        (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00 };
 }

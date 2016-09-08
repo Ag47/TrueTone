@@ -1,10 +1,5 @@
 package com.comp4905.jasonfleischer.midimusic.model;
 
-import android.util.Log;
-
-import java.io.Serializable;
-import java.util.ArrayList;
-
 import com.comp4905.jasonfleischer.midimusic.MainActivity;
 import com.comp4905.jasonfleischer.midimusic.R;
 import com.comp4905.jasonfleischer.midimusic.audio.MidiFile;
@@ -12,72 +7,23 @@ import com.comp4905.jasonfleischer.midimusic.audio.SoundManager;
 import com.comp4905.jasonfleischer.midimusic.audio.SoundManager.SoundType;
 import com.comp4905.jasonfleischer.midimusic.fragments.FragMentManager;
 import com.comp4905.jasonfleischer.midimusic.util.HLog;
-import com.comp4905.jasonfleischer.midimusic.views.Key;
+
+import java.io.Serializable;
+import java.util.ArrayList;
 
 public class Note implements Serializable {
 
     private static final long serialVersionUID = -1263171525588010652L;
+    private static final int MIN_MIDI_VALUE = 21;
+    private static final int MAX_MIDI_VALUE = 108;
+    public static int DEFAULT_NOTE_VELOCITY;
     private NoteName name;
     private int octave;
     private int midiValue;
     private int soundID;
     private int chordSoundID;
     private int sequenceSoundID;
-
-    public static int DEFAULT_NOTE_VELOCITY;
-    private static final int MIN_MIDI_VALUE = 21;
-    private static final int MAX_MIDI_VALUE = 108;
-
     private ArrayList<Finger> fingers = new ArrayList<Finger>();
-
-    public static enum NoteName {
-        C("C"), Db("Db/C#"), D("D"), Eb("Eb/D#"), E("E"), F("F"),
-        Gb("Gb/F#"), G("G"), Ab("Ab/G#"), A("A"), Bb("Bb/A#"), B("B");
-
-        private String name;
-
-        NoteName(String n) {
-            name = n;
-        }
-
-        public String toString() {
-            return name;
-        }
-
-        public static NoteName getNameName(String name) {
-            for (NoteName nn : NoteName.values()) {
-                if (nn.name.equals(name))
-                    return nn;
-            }
-            return null;
-
-
-        }
-    }
-
-    public static enum NoteDuration {
-        Sixteenth(4, MainActivity.getInstance().getResources().getString(R.string.note_very_short)),
-        Eighth(8, MainActivity.getInstance().getResources().getString(R.string.note_short)),
-        Quarter(16, MainActivity.getInstance().getResources().getString(R.string.note_med)),
-        Half(32, MainActivity.getInstance().getResources().getString(R.string.note_long)),
-        Whole(64, MainActivity.getInstance().getResources().getString(R.string.note_very_long));
-
-        private int value;
-        private String name;
-
-        NoteDuration(int v, String n) {
-            value = v;
-            name = n;
-        }
-
-        public int getValue() {
-            return value;
-        }
-
-        public String getName() {
-            return name;
-        }
-    }
 
     public Note(int oct, NoteName n, int midiV) {
         if (midiV < MIN_MIDI_VALUE || midiV > MAX_MIDI_VALUE) {
@@ -88,6 +34,10 @@ public class Note implements Serializable {
         midiValue = midiV;
         soundID = -1;
         updateNoteFile();
+    }
+
+    public static int getMidiValueFrom(NoteName noteName, int octave) {
+        return (octave * 12 + noteName.ordinal()) + 12;
     }
 
     public void playNote() {
@@ -135,10 +85,6 @@ public class Note implements Serializable {
         }
     }
 
-    public static int getMidiValueFrom(NoteName noteName, int octave) {
-        return (octave * 12 + noteName.ordinal()) + 12;
-    }
-
     public void updateNoteFile() {
 
         String fileName = "";
@@ -147,7 +93,7 @@ public class Note implements Serializable {
 
                 fileName = midiValue + "_chord.mid";
             /*NDKFunct.writeChordFile(midiValue, MainActivity.config.chordInstrument.getValue(),
-						DEFAULT_NOTE_VELOCITY, MainActivity.config.noteDuration.getValue(),
+                        DEFAULT_NOTE_VELOCITY, MainActivity.config.noteDuration.getValue(),
 						FileManager.getInstance().EXTERNAL_PATH+fileName, MainActivity.config.tempo.getMpqn()
 						,MainActivity.config.chord.getIntervals()); */
                 MidiFile.writeChordFile(midiValue, MainActivity.config.chordInstrument.getValue(),
@@ -224,5 +170,54 @@ public class Note implements Serializable {
 //                this.listener.keyPressed(id, Key.ACTION_KEY_UP);
 //            }
 //        }
+    }
+
+    public static enum NoteName {
+        C("C"), Db("Db/C#"), D("D"), Eb("Eb/D#"), E("E"), F("F"),
+        Gb("Gb/F#"), G("G"), Ab("Ab/G#"), A("A"), Bb("Bb/A#"), B("B");
+
+        private String name;
+
+        NoteName(String n) {
+            name = n;
+        }
+
+        public static NoteName getNameName(String name) {
+            for (NoteName nn : NoteName.values()) {
+                if (nn.name.equals(name))
+                    return nn;
+            }
+            return null;
+
+
+        }
+
+        public String toString() {
+            return name;
+        }
+    }
+
+    public static enum NoteDuration {
+        Sixteenth(4, MainActivity.getInstance().getResources().getString(R.string.note_very_short)),
+        Eighth(8, MainActivity.getInstance().getResources().getString(R.string.note_short)),
+        Quarter(16, MainActivity.getInstance().getResources().getString(R.string.note_med)),
+        Half(32, MainActivity.getInstance().getResources().getString(R.string.note_long)),
+        Whole(64, MainActivity.getInstance().getResources().getString(R.string.note_very_long));
+
+        private int value;
+        private String name;
+
+        NoteDuration(int v, String n) {
+            value = v;
+            name = n;
+        }
+
+        public int getValue() {
+            return value;
+        }
+
+        public String getName() {
+            return name;
+        }
     }
 }

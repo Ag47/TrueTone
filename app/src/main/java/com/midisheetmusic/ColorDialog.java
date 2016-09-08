@@ -44,11 +44,12 @@ import android.view.MotionEvent;
 import android.view.View;
 
 
-/** @class ColorDialog
- *  Display a dialog for choosing a color.
- *  The initial color and a callback are passed as arguments.
- *  When the user selects a color, the dialog is dismissed, and
- *  the callback listener is invoked.
+/**
+ * @class ColorDialog
+ * Display a dialog for choosing a color.
+ * The initial color and a callback are passed as arguments.
+ * When the user selects a color, the dialog is dismissed, and
+ * the callback listener is invoked.
  */
 public class ColorDialog extends Dialog {
 
@@ -79,11 +80,13 @@ public class ColorDialog extends Dialog {
 }
 
 
-/** @class ColorView
- *  Display a circle showing various colors to choose from.
- *  On the top left corner, display a preview of the selected color.
+/**
+ * @class ColorView
+ * Display a circle showing various colors to choose from.
+ * On the top left corner, display a preview of the selected color.
  */
 class ColorView extends View {
+    private static final float PI = 3.1415926f;
     private ColorChangedListener listener;
     private Paint[] colorRings;    /* Rings of color to display */
     private Paint colorPreview;    /* Small circle showing preview of color */
@@ -109,16 +112,16 @@ class ColorView extends View {
             percent = 0;
         if (percent > 1)
             percent = 1;
- 
+
         percent = 1 - percent;
         int[] colors = new int[7];
-        colors[0] = Color.rgb(255, (int)(255 * percent), (int)(255 * percent));
-        colors[1] = Color.rgb(255, (int)(255 * percent), 255);
-        colors[2] = Color.rgb((int)(255 * percent), (int)(255 * percent), 255);
-        colors[3] = Color.rgb((int)(255 * percent), 255, 255);
-        colors[4] = Color.rgb((int)(255 * percent), 255, (int)(255 * percent));
-        colors[5] = Color.rgb(255, 255, (int)(255 * percent));
-        colors[6] = Color.rgb(255, (int)(255 * percent), (int)(255 * percent));
+        colors[0] = Color.rgb(255, (int) (255 * percent), (int) (255 * percent));
+        colors[1] = Color.rgb(255, (int) (255 * percent), 255);
+        colors[2] = Color.rgb((int) (255 * percent), (int) (255 * percent), 255);
+        colors[3] = Color.rgb((int) (255 * percent), 255, 255);
+        colors[4] = Color.rgb((int) (255 * percent), 255, (int) (255 * percent));
+        colors[5] = Color.rgb(255, 255, (int) (255 * percent));
+        colors[6] = Color.rgb(255, (int) (255 * percent), (int) (255 * percent));
         return colors;
     }
 
@@ -128,50 +131,51 @@ class ColorView extends View {
     private void initColorRings() {
         colorRings = new Paint[64];
         for (int i = 0; i < 64; i++) {
-            colorRings[i] = new Paint(Paint.ANTI_ALIAS_FLAG); 
-            Shader s = new SweepGradient(0, 0, colorsForRing(i/64.0f), null);
+            colorRings[i] = new Paint(Paint.ANTI_ALIAS_FLAG);
+            Shader s = new SweepGradient(0, 0, colorsForRing(i / 64.0f), null);
             colorRings[i].setShader(s);
             colorRings[i].setStyle(Paint.Style.STROKE);
-            colorRings[i].setStrokeWidth(circleRadius/64.0f + 0.5f);
+            colorRings[i].setStrokeWidth(circleRadius / 64.0f + 0.5f);
         }
         colorPreview = new Paint(Paint.ANTI_ALIAS_FLAG);
         colorPreview.setColor(selectedColor);
     }
 
-
-    /** Draw a preview of the selected color in the top-left corner.
-     *  Draw the full color circle, by drawing concentric ovals
-     *  with increasing radius, using the colorRing gradients.
+    /**
+     * Draw a preview of the selected color in the top-left corner.
+     * Draw the full color circle, by drawing concentric ovals
+     * with increasing radius, using the colorRing gradients.
      */
     @Override
     protected void onDraw(Canvas canvas) {
-        canvas.drawRoundRect(new RectF(center/10, center/10, center/4, center/4), 5, 5, colorPreview);
- 
+        canvas.drawRoundRect(new RectF(center / 10, center / 10, center / 4, center / 4), 5, 5, colorPreview);
+
         canvas.translate(center, center);
 
         for (int i = 1; i < colorRings.length; i++) {
-            float radius = circleRadius * i * 1.0f/ (colorRings.length-1);
+            float radius = circleRadius * i * 1.0f / (colorRings.length - 1);
             // radius -= colorRings[i].getStrokeWidth()/2.0;
             canvas.drawOval(new RectF(-radius, -radius, radius, radius), colorRings[i]);
         }
     }
 
-
-    /** Set the circle's center, based on the available width/height */
+    /**
+     * Set the circle's center, based on the available width/height
+     */
     @Override
     protected void onMeasure(int widthspec, int heightspec) {
         int specwidth = MeasureSpec.getSize(widthspec);
         int specheight = MeasureSpec.getSize(heightspec);
 
-        center = specwidth/2;
+        center = specwidth / 2;
         if (specheight > 0 && specheight < specwidth) {
-            center = specheight/2;
+            center = specheight / 2;
         }
         if (center <= 0) {
             center = 100;
         }
         circleRadius = center - 10;
-        setMeasuredDimension(center*2, center*2);
+        setMeasuredDimension(center * 2, center * 2);
         initColorRings();
     }
 
@@ -191,12 +195,12 @@ class ColorView extends View {
         }
 
         float p = angleUnit * (colors.length - 1);
-        int i = (int)p;
+        int i = (int) p;
         p -= i;
 
         // now p is just the fractional part [0...1) and i is the index
         int c0 = colors[i];
-        int c1 = colors[i+1];
+        int c1 = colors[i + 1];
         int a = average(Color.alpha(c0), Color.alpha(c1), p);
         int r = average(Color.red(c0), Color.red(c1), p);
         int g = average(Color.green(c0), Color.green(c1), p);
@@ -205,19 +209,17 @@ class ColorView extends View {
         return Color.argb(a, r, g, b);
     }
 
-    private static final float PI = 3.1415926f;
-
-
-    /** When the user clicks on the color wheel, update
-     *  the selected color, and the preview pane.
-     *
-     *  When they click outside the wheel, dismiss the dialog.
+    /**
+     * When the user clicks on the color wheel, update
+     * the selected color, and the preview pane.
+     * <p/>
+     * When they click outside the wheel, dismiss the dialog.
      */
     @Override
     public boolean onTouchEvent(MotionEvent event) {
         float x = event.getX() - center;
         float y = event.getY() - center;
-        float radius = (float)Math.sqrt(x*x + y*y);
+        float radius = (float) Math.sqrt(x * x + y * y);
 
         switch (event.getAction()) {
             case MotionEvent.ACTION_DOWN:
@@ -227,7 +229,7 @@ class ColorView extends View {
                 }
                 float angle = (float) Math.atan2(y, x);
                 // need to turn angle [-PI ... PI] into unit [0....1]
-                float angleUnit = angle/(2*PI);
+                float angleUnit = angle / (2 * PI);
                 if (angleUnit < 0) {
                     angleUnit += 1;
                 }
@@ -238,7 +240,7 @@ class ColorView extends View {
             case MotionEvent.ACTION_UP:
                 if (radius > circleRadius) {
                     listener.colorChanged(colorPreview.getColor());
-                }                        
+                }
                 break;
         }
         return true;

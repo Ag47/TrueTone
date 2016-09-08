@@ -27,20 +27,32 @@ import com.comp4905.jasonfleischer.midimusic.R;
 
 import java.util.List;
 
-/** @class IconArrayAdapter
- *  The ListAdapter for displaying the list of songs,
- *  and for displaying the list of files in a directory.
- *
- *  Similar to the array adapter, but adds an icon
- *  to the left side of each item displayed.
- *  Midi files show a NotePair icon.
+/**
+ * @class IconArrayAdapter
+ * The ListAdapter for displaying the list of songs,
+ * and for displaying the list of files in a directory.
+ * <p/>
+ * Similar to the array adapter, but adds an icon
+ * to the left side of each item displayed.
+ * Midi files show a NotePair icon.
  */
 class IconArrayAdapter<T> extends ArrayAdapter<T> {
-    private LayoutInflater inflater;
     private static Bitmap midiIcon;       /* The midi icon */
     private static Bitmap directoryIcon;  /* The directory icon */
+    private LayoutInflater inflater;
 
-    /** Load the NotePair image into memory. */
+    /**
+     * Create a new IconArrayAdapter. Load the NotePair image
+     */
+    public IconArrayAdapter(Context context, int resourceId, List<T> objects) {
+        super(context, resourceId, objects);
+        LoadImages(context);
+        inflater = LayoutInflater.from(context);
+    }
+
+    /**
+     * Load the NotePair image into memory.
+     */
     public void LoadImages(Context context) {
         if (midiIcon == null) {
             Resources res = context.getResources();
@@ -49,35 +61,28 @@ class IconArrayAdapter<T> extends ArrayAdapter<T> {
         }
     }
 
-    /** Create a new IconArrayAdapter. Load the NotePair image */
-    public IconArrayAdapter(Context context, int resourceId, List<T> objects) {
-        super(context, resourceId, objects);
-        LoadImages(context);
-        inflater = LayoutInflater.from(context); 
-    }
-
-    /** Create a view for displaying a song in the ListView.
-     *  The view consists of a Note Pair icon on the left-side,
-     *  and the name of the song.
+    /**
+     * Create a view for displaying a song in the ListView.
+     * The view consists of a Note Pair icon on the left-side,
+     * and the name of the song.
      */
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         if (convertView == null) {
             convertView = inflater.inflate(R.layout.choose_song_item, null);
-         }
-         TextView text = (TextView)convertView.findViewById(R.id.choose_song_name);
-         ImageView image = (ImageView)convertView.findViewById(R.id.choose_song_icon);
+        }
+        TextView text = (TextView) convertView.findViewById(R.id.choose_song_name);
+        ImageView image = (ImageView) convertView.findViewById(R.id.choose_song_icon);
 
-         FileUri file = (FileUri) this.getItem(position);
-         if (file.isDirectory()) {
-             image.setImageBitmap(directoryIcon);
-             text.setText(file.filePath());
-         }
-         else {
-             image.setImageBitmap(midiIcon);
-             text.setText(file.toString());
-         }
-         return convertView;
+        FileUri file = (FileUri) this.getItem(position);
+        if (file.isDirectory()) {
+            image.setImageBitmap(directoryIcon);
+            text.setText(file.filePath());
+        } else {
+            image.setImageBitmap(midiIcon);
+            text.setText(file.toString());
+        }
+        return convertView;
     }
 }
 

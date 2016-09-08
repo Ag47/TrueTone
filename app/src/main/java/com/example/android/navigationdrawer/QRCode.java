@@ -17,39 +17,31 @@
 package com.example.android.navigationdrawer;
 
 import android.app.Activity;
-import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.graphics.Canvas;
 import android.graphics.Point;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.os.Environment;
 import android.support.v4.app.ActionBarDrawerToggle;
-import android.support.v4.app.DialogFragment;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.Display;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.Window;
 import android.view.WindowManager;
-import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 import com.comp4905.jasonfleischer.midimusic.R;
 import com.google.zxing.BarcodeFormat;
@@ -58,15 +50,11 @@ import com.midisheetmusic.ChooseSongActivity;
 import com.midisheetmusic.FileUri;
 import com.midisheetmusic.MidiFile;
 import com.midisheetmusic.MidiFileReader;
-import com.midisheetmusic.MidiSheetMusicActivity;
-import com.midisheetmusic.SheetMusic;
 import com.midisheetmusic.SheetMusicActivity;
 import com.ringdroid.RingdroidSelectActivity;
 
 import java.io.File;
 import java.io.FileOutputStream;
-import java.util.ArrayList;
-import java.util.List;
 
 //import info.androidhive.loginandregistration.LoginActivity;
 
@@ -98,17 +86,14 @@ import java.util.List;
  * for example enabling or disabling a data overlay on top of the current content.</p>
  */
 public class QRCode extends Activity implements PlanetAdapter.OnItemClickListener {
+    final protected static char[] hexArray = "0123456789ABCDEF".toCharArray();
     private static final String LOG_TAG = "QR";
     private DrawerLayout mDrawerLayout;
     private RecyclerView mDrawerList;
     private ActionBarDrawerToggle mDrawerToggle;
-
     private CharSequence mDrawerTitle;
     private CharSequence mTitle;
     private String[] mPlanetTitles;
-
-    final protected static char[] hexArray = "0123456789ABCDEF".toCharArray();
-
 
     public static String bytesToHex(byte[] bytes) {
         char[] hexChars = new char[bytes.length * 2];
@@ -183,18 +168,6 @@ public class QRCode extends Activity implements PlanetAdapter.OnItemClickListene
 
     }
 
-    private class HandleClick implements OnClickListener {
-        public void onClick(View arg0) {
-            Intent intent = new Intent("com.google.zxing.client.android.SCAN");
-            switch (arg0.getId()) {
-                case R.id.butQR:
-                    intent.putExtra("SCAN_MODE", "QR_CODE_MODE");
-                    break;
-            }
-            startActivityForResult(intent, 0);    //Barcode Scanner to scan for us
-        }
-    }
-
     public void onActivityResult(int requestCode, int resultCode, Intent intent) {
         if (requestCode == 0) {
             if (resultCode == RESULT_OK) {
@@ -251,7 +224,6 @@ public class QRCode extends Activity implements PlanetAdapter.OnItemClickListene
 
 
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -321,7 +293,6 @@ public class QRCode extends Activity implements PlanetAdapter.OnItemClickListene
         }
     }
 
-
     private void selectItem(int position) {
         // update the main content by replacing fragments
         Fragment fragment = PlanetFragment.newInstance(position);
@@ -361,26 +332,6 @@ public class QRCode extends Activity implements PlanetAdapter.OnItemClickListene
         mDrawerToggle.onConfigurationChanged(newConfig);
     }
 
-    /**
-     * Fragment that appears in the "content_frame", shows a planet
-     */
-    public static class PlanetFragment extends Fragment {
-        public static final String ARG_PLANET_NUMBER = "planet_number";
-
-        public PlanetFragment() {
-            // Empty constructor required for fragment subclasses
-        }
-
-        public static Fragment newInstance(int position) {
-            Fragment fragment = new PlanetFragment();
-            Bundle args = new Bundle();
-            args.putInt(PlanetFragment.ARG_PLANET_NUMBER, position);
-            fragment.setArguments(args);
-            return fragment;
-        }
-
-    }
-
     public void onQR(View v) {
         switch (v.getId()) {
             case R.id.button1:
@@ -407,7 +358,6 @@ public class QRCode extends Activity implements PlanetAdapter.OnItemClickListene
                     myImage.setImageBitmap(bitmap);
 
 
-
                     // Get screen size
                     Display display1 = this.getWindowManager().getDefaultDisplay();
                     Point size = new Point();
@@ -422,7 +372,7 @@ public class QRCode extends Activity implements PlanetAdapter.OnItemClickListene
 
 // Scale the image down to fit perfectly into the screen
 // The value (250 in this case) must be adjusted for phone/tables displays
-                    while(bitmapHeight > (screenHeight - 250) || bitmapWidth > (screenWidth - 250)) {
+                    while (bitmapHeight > (screenHeight - 250) || bitmapWidth > (screenWidth - 250)) {
                         bitmapHeight = bitmapHeight / 2;
                         bitmapWidth = bitmapWidth / 2;
                     }
@@ -450,6 +400,38 @@ public class QRCode extends Activity implements PlanetAdapter.OnItemClickListene
                     e.printStackTrace();
                 }
                 break;
+        }
+    }
+
+    /**
+     * Fragment that appears in the "content_frame", shows a planet
+     */
+    public static class PlanetFragment extends Fragment {
+        public static final String ARG_PLANET_NUMBER = "planet_number";
+
+        public PlanetFragment() {
+            // Empty constructor required for fragment subclasses
+        }
+
+        public static Fragment newInstance(int position) {
+            Fragment fragment = new PlanetFragment();
+            Bundle args = new Bundle();
+            args.putInt(PlanetFragment.ARG_PLANET_NUMBER, position);
+            fragment.setArguments(args);
+            return fragment;
+        }
+
+    }
+
+    private class HandleClick implements OnClickListener {
+        public void onClick(View arg0) {
+            Intent intent = new Intent("com.google.zxing.client.android.SCAN");
+            switch (arg0.getId()) {
+                case R.id.butQR:
+                    intent.putExtra("SCAN_MODE", "QR_CODE_MODE");
+                    break;
+            }
+            startActivityForResult(intent, 0);    //Barcode Scanner to scan for us
         }
     }
 }
