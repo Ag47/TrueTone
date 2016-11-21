@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
     abi="arm64-v8a,armeabi-v7a,armeabi"
-    api-level="24"
+    api-level="25"
     density="420dpi"
-    format="7"
-    timestamp="7398330281764"
-    token="3159950963433812791" >
+    format="8"
+    plugin-version="2.2.2"
+    timestamp="1112598827640"
+    token="3159950963433812791"
+    verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
@@ -20,11 +22,15 @@
         name="verifier"
         duration="0" />
 
-    <build timestamp="7054286872810" >
+    <build
+        timestamp="449009428931"
+        verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
     </build>
-    <build timestamp="7398330281764" />
+    <build
+        timestamp="1112598827640"
+        verifier="COLD_SWAP_REQUESTED" />
 
 </instant-run>

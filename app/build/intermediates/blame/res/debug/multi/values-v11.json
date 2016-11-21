@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/res/merged/debug/values-v11/values-v11.xml",
+        "outputFile": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v11/values-v11.xml",
         "map": [
             {
                 "to": {
@@ -52,7 +52,7 @@
                     "endOffset": 638
                 },
                 "from": {
-                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/values-v11/values-v11.xml",
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/values-v11/values-v11.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -73,7 +73,7 @@
                     "endOffset": 1063
                 },
                 "from": {
-                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/values-v11/values-v11.xml",
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/values-v11/values-v11.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -94,7 +94,7 @@
                     "endOffset": 1491
                 },
                 "from": {
-                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/values-v11/values-v11.xml",
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/values-v11/values-v11.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
@@ -115,7 +115,7 @@
                     "endOffset": 1917
                 },
                 "from": {
-                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/values-v11/values-v11.xml",
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/values-v11/values-v11.xml",
                     "position": {
                         "startLine": 20,
                         "startColumn": 4,
@@ -136,7 +136,7 @@
                     "endOffset": 2344
                 },
                 "from": {
-                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/values-v11/values-v11.xml",
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/values-v11/values-v11.xml",
                     "position": {
                         "startLine": 26,
                         "startColumn": 4,
@@ -157,7 +157,7 @@
                     "endOffset": 2769
                 },
                 "from": {
-                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/values-v11/values-v11.xml",
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/values-v11/values-v11.xml",
                     "position": {
                         "startLine": 32,
                         "startColumn": 4,
@@ -177,7 +177,7 @@
                     "endOffset": 2858
                 },
                 "from": {
-                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/values-v11/values-v11.xml",
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/values-v11/values-v11.xml",
                     "position": {
                         "startLine": 38,
                         "startColumn": 4,
@@ -196,7 +196,7 @@
                     "endOffset": 2959
                 },
                 "from": {
-                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/values-v11/values-v11.xml",
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/values-v11/values-v11.xml",
                     "position": {
                         "startLine": 39,
                         "startColumn": 4,
@@ -215,7 +215,7 @@
                     "endOffset": 3062
                 },
                 "from": {
-                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/values-v11/values-v11.xml",
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/values-v11/values-v11.xml",
                     "position": {
                         "startLine": 40,
                         "startColumn": 4,
@@ -235,7 +235,7 @@
                     "endOffset": 3470
                 },
                 "from": {
-                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/values-v11/values-v11.xml",
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/values-v11/values-v11.xml",
                     "position": {
                         "startLine": 41,
                         "startColumn": 4,
@@ -256,7 +256,7 @@
                     "endOffset": 3890
                 },
                 "from": {
-                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/values-v11/values-v11.xml",
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/values-v11/values-v11.xml",
                     "position": {
                         "startLine": 46,
                         "startColumn": 4,
@@ -277,7 +277,7 @@
                     "endOffset": 4312
                 },
                 "from": {
-                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/values-v11/values-v11.xml",
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/values-v11/values-v11.xml",
                     "position": {
                         "startLine": 51,
                         "startColumn": 4,
@@ -298,7 +298,7 @@
                     "endOffset": 4419
                 },
                 "from": {
-                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/values-v11/values-v11.xml",
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/values-v11/values-v11.xml",
                     "position": {
                         "startLine": 56,
                         "startColumn": 4,
@@ -319,7 +319,7 @@
                     "endOffset": 4548
                 },
                 "from": {
-                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/values-v11/values-v11.xml",
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/values-v11/values-v11.xml",
                     "position": {
                         "startLine": 58,
                         "startColumn": 4,
@@ -339,7 +339,7 @@
                     "endOffset": 4619
                 },
                 "from": {
-                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/values-v11/values-v11.xml",
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/values-v11/values-v11.xml",
                     "position": {
                         "startLine": 60,
                         "startColumn": 4,
@@ -358,7 +358,7 @@
                     "endOffset": 4702
                 },
                 "from": {
-                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/values-v11/values-v11.xml",
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/values-v11/values-v11.xml",
                     "position": {
                         "startLine": 61,
                         "startColumn": 4,
@@ -375,17 +375,17 @@
                     "startOffset": 4707,
                     "endLine": 117,
                     "endColumn": 12,
-                    "endOffset": 8636
+                    "endOffset": 8641
                 },
                 "from": {
-                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/values-v11/values-v11.xml",
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/values-v11/values-v11.xml",
                     "position": {
                         "startLine": 62,
                         "startColumn": 4,
                         "startOffset": 4538,
                         "endLine": 114,
                         "endColumn": 12,
-                        "endOffset": 8467
+                        "endOffset": 8472
                     }
                 }
             },
@@ -393,20 +393,20 @@
                 "to": {
                     "startLine": 118,
                     "startColumn": 4,
-                    "startOffset": 8641,
+                    "startOffset": 8646,
                     "endLine": 171,
                     "endColumn": 12,
-                    "endOffset": 12710
+                    "endOffset": 12723
                 },
                 "from": {
-                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/values-v11/values-v11.xml",
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/values-v11/values-v11.xml",
                     "position": {
                         "startLine": 115,
                         "startColumn": 4,
-                        "startOffset": 8472,
+                        "startOffset": 8477,
                         "endLine": 168,
                         "endColumn": 12,
-                        "endOffset": 12541
+                        "endOffset": 12554
                     }
                 }
             },
@@ -414,18 +414,18 @@
                 "to": {
                     "startLine": 172,
                     "startColumn": 4,
-                    "startOffset": 12715,
+                    "startOffset": 12728,
                     "endColumn": 90,
-                    "endOffset": 12801
+                    "endOffset": 12814
                 },
                 "from": {
-                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/values-v11/values-v11.xml",
+                    "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/values-v11/values-v11.xml",
                     "position": {
                         "startLine": 169,
                         "startColumn": 4,
-                        "startOffset": 12546,
+                        "startOffset": 12559,
                         "endColumn": 90,
-                        "endOffset": 12632
+                        "endOffset": 12645
                     }
                 }
             },
@@ -433,9 +433,9 @@
                 "to": {
                     "startLine": 173,
                     "startColumn": 4,
-                    "startOffset": 12806,
+                    "startOffset": 12819,
                     "endColumn": 64,
-                    "endOffset": 12866
+                    "endOffset": 12879
                 },
                 "from": {
                     "file": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/res/values-v11/template-styles.xml",
