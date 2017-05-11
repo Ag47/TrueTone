@@ -1,7 +1,7 @@
-#Mon Nov 21 21:19:20 HKT 2016
-base.0=/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_e57285325e983dc9fa8ea20e66c0e45221b87ad6
+#Thu May 11 22:05:34 HKT 2017
+base.0=/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_e57285325e983dc9fa8ea20e66c0e45221b87ad6
 renamed.1=classes2.dex
 renamed.0=classes.dex
-file.1=/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_d34bb7af4a310445a44d6004d764fcb0b8a0415a/classes.dex
-base.1=/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_d34bb7af4a310445a44d6004d764fcb0b8a0415a
-file.0=/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_e57285325e983dc9fa8ea20e66c0e45221b87ad6/classes.dex
+file.1=/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_d34bb7af4a310445a44d6004d764fcb0b8a0415a/classes.dex
+base.1=/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_d34bb7af4a310445a44d6004d764fcb0b8a0415a
+file.0=/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_e57285325e983dc9fa8ea20e66c0e45221b87ad6/classes.dex

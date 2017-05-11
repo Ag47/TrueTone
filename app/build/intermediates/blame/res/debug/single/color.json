@@ -1,78 +1,82 @@
 [
     {
+        "merged": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/res/merged/debug/color/abc_btn_colored_text_material.xml",
+        "source": "/Users/SILVER/.android/build-cache/e94aa53d1da2b77ddb3927713f7e8d47a3fcda71/output/res/color/abc_btn_colored_text_material.xml"
+    },
+    {
         "merged": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/res/merged/debug/color/abc_btn_colored_borderless_text_material.xml",
-        "source": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_btn_colored_borderless_text_material.xml"
+        "source": "/Users/SILVER/.android/build-cache/e94aa53d1da2b77ddb3927713f7e8d47a3fcda71/output/res/color/abc_btn_colored_borderless_text_material.xml"
     },
     {
         "merged": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/res/merged/debug/color/abc_tint_switch_track.xml",
-        "source": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_tint_switch_track.xml"
+        "source": "/Users/SILVER/.android/build-cache/e94aa53d1da2b77ddb3927713f7e8d47a3fcda71/output/res/color/abc_tint_switch_track.xml"
     },
     {
         "merged": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/res/merged/debug/color/abc_tint_edittext.xml",
-        "source": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_tint_edittext.xml"
+        "source": "/Users/SILVER/.android/build-cache/e94aa53d1da2b77ddb3927713f7e8d47a3fcda71/output/res/color/abc_tint_edittext.xml"
     },
     {
         "merged": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_dark.xml",
-        "source": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_primary_text_disable_only_material_dark.xml"
+        "source": "/Users/SILVER/.android/build-cache/e94aa53d1da2b77ddb3927713f7e8d47a3fcda71/output/res/color/abc_primary_text_disable_only_material_dark.xml"
     },
     {
         "merged": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/res/merged/debug/color/abc_hint_foreground_material_light.xml",
-        "source": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_hint_foreground_material_light.xml"
+        "source": "/Users/SILVER/.android/build-cache/e94aa53d1da2b77ddb3927713f7e8d47a3fcda71/output/res/color/abc_hint_foreground_material_light.xml"
     },
     {
         "merged": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/res/merged/debug/color/abc_hint_foreground_material_dark.xml",
-        "source": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_hint_foreground_material_dark.xml"
+        "source": "/Users/SILVER/.android/build-cache/e94aa53d1da2b77ddb3927713f7e8d47a3fcda71/output/res/color/abc_hint_foreground_material_dark.xml"
     },
     {
         "merged": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/res/merged/debug/color/abc_tint_btn_checkable.xml",
-        "source": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_tint_btn_checkable.xml"
+        "source": "/Users/SILVER/.android/build-cache/e94aa53d1da2b77ddb3927713f7e8d47a3fcda71/output/res/color/abc_tint_btn_checkable.xml"
     },
     {
         "merged": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/res/merged/debug/color/abc_tint_switch_thumb.xml",
-        "source": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_tint_switch_thumb.xml"
+        "source": "/Users/SILVER/.android/build-cache/e94aa53d1da2b77ddb3927713f7e8d47a3fcda71/output/res/color/abc_tint_switch_thumb.xml"
     },
     {
         "merged": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/res/merged/debug/color/abc_tint_seek_thumb.xml",
-        "source": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_tint_seek_thumb.xml"
+        "source": "/Users/SILVER/.android/build-cache/e94aa53d1da2b77ddb3927713f7e8d47a3fcda71/output/res/color/abc_tint_seek_thumb.xml"
     },
     {
         "merged": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_light.xml",
-        "source": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_primary_text_disable_only_material_light.xml"
+        "source": "/Users/SILVER/.android/build-cache/e94aa53d1da2b77ddb3927713f7e8d47a3fcda71/output/res/color/abc_primary_text_disable_only_material_light.xml"
     },
     {
         "merged": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/res/merged/debug/color/abc_search_url_text.xml",
-        "source": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_search_url_text.xml"
+        "source": "/Users/SILVER/.android/build-cache/e94aa53d1da2b77ddb3927713f7e8d47a3fcda71/output/res/color/abc_search_url_text.xml"
     },
     {
         "merged": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/res/merged/debug/color/abc_primary_text_material_light.xml",
-        "source": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_primary_text_material_light.xml"
+        "source": "/Users/SILVER/.android/build-cache/e94aa53d1da2b77ddb3927713f7e8d47a3fcda71/output/res/color/abc_primary_text_material_light.xml"
     },
     {
         "merged": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/res/merged/debug/color/abc_secondary_text_material_light.xml",
-        "source": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_secondary_text_material_light.xml"
+        "source": "/Users/SILVER/.android/build-cache/e94aa53d1da2b77ddb3927713f7e8d47a3fcda71/output/res/color/abc_secondary_text_material_light.xml"
     },
     {
         "merged": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/res/merged/debug/color/switch_thumb_material_light.xml",
-        "source": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/switch_thumb_material_light.xml"
+        "source": "/Users/SILVER/.android/build-cache/e94aa53d1da2b77ddb3927713f7e8d47a3fcda71/output/res/color/switch_thumb_material_light.xml"
     },
     {
         "merged": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/res/merged/debug/color/abc_secondary_text_material_dark.xml",
-        "source": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_secondary_text_material_dark.xml"
+        "source": "/Users/SILVER/.android/build-cache/e94aa53d1da2b77ddb3927713f7e8d47a3fcda71/output/res/color/abc_secondary_text_material_dark.xml"
     },
     {
         "merged": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/res/merged/debug/color/abc_primary_text_material_dark.xml",
-        "source": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_primary_text_material_dark.xml"
+        "source": "/Users/SILVER/.android/build-cache/e94aa53d1da2b77ddb3927713f7e8d47a3fcda71/output/res/color/abc_primary_text_material_dark.xml"
     },
     {
         "merged": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/res/merged/debug/color/switch_thumb_material_dark.xml",
-        "source": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/switch_thumb_material_dark.xml"
+        "source": "/Users/SILVER/.android/build-cache/e94aa53d1da2b77ddb3927713f7e8d47a3fcda71/output/res/color/switch_thumb_material_dark.xml"
     },
     {
         "merged": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/res/merged/debug/color/abc_tint_default.xml",
-        "source": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_tint_default.xml"
+        "source": "/Users/SILVER/.android/build-cache/e94aa53d1da2b77ddb3927713f7e8d47a3fcda71/output/res/color/abc_tint_default.xml"
     },
     {
         "merged": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/res/merged/debug/color/abc_tint_spinner.xml",
-        "source": "/Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_tint_spinner.xml"
+        "source": "/Users/SILVER/.android/build-cache/e94aa53d1da2b77ddb3927713f7e8d47a3fcda71/output/res/color/abc_tint_spinner.xml"
     }
 ]

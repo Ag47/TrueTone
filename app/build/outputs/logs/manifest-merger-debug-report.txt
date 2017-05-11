@@ -101,17 +101,17 @@ ADDED from /Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone
 		ADDED from /Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/AndroidManifest.xml:33:19-67
 application
 ADDED from /Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/AndroidManifest.xml:36:5-142:19
-MERGED from [com.android.support:support-v13:25.0.1] /Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/support-v13/25.0.1/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-v4:25.0.1] /Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.1/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:25.0.1] /Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-media-compat:25.0.1] /Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-utils:25.0.1] /Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-ui:25.0.1] /Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-fragment:25.0.1] /Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:appcompat-v7:25.0.1] /Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-vector-drawable:25.0.1] /Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.1/AndroidManifest.xml:23:5-20
-MERGED from [com.android.support:animated-vector-drawable:25.0.1] /Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.1/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:cardview-v7:25.0.1] /Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/25.0.1/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v13:25.3.1] /Users/SILVER/.android/build-cache/633910ca693d6f185b61e2571fe957f673a23957/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/SILVER/.android/build-cache/e94aa53d1da2b77ddb3927713f7e8d47a3fcda71/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-v4:25.3.1] /Users/SILVER/.android/build-cache/a3897b94b0921f8b2e1c4b2ca97cc59e4db83af3/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/SILVER/.android/build-cache/18bbac733fe6aebebfffea767e7e89061320f90e/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/SILVER/.android/build-cache/1df71c963571d3493838a69b2d95e0f8cc378220/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/SILVER/.android/build-cache/840946a67ebec1575df2b98dc6bf43081ca73778/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/SILVER/.android/build-cache/1659b741c5c86f8b7f29459cf62ee0063a8b38a9/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/SILVER/.android/build-cache/b1405c4c9c648c90a29ec3480a10d0ee74442204/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/SILVER/.android/build-cache/aa36c856c3b61be9dba93359daa1e1182b5c53d3/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.1] /Users/SILVER/.android/build-cache/11019902d6e189a87ee916978df937dca9e77f77/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:cardview-v7:25.3.1] /Users/SILVER/.android/build-cache/f0c91bb121174d5e3f6d02e691f48a20d6773d6d/output/AndroidManifest.xml:26:5-20
 	android:screenOrientation
 		ADDED from /Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/AndroidManifest.xml:40:9-46
 	android:label
@@ -294,23 +294,40 @@ ADDED from /Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone
 		ADDED from /Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/AndroidManifest.xml:137:13-73
 uses-sdk
 INJECTED from /Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.android.support:support-v13:25.0.1] /Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/support-v13/25.0.1/AndroidManifest.xml:21:5-23:55
-MERGED from [com.android.support:support-v4:25.0.1] /Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.1/AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-compat:25.0.1] /Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-media-compat:25.0.1] /Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-core-utils:25.0.1] /Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-core-ui:25.0.1] /Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-fragment:25.0.1] /Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:appcompat-v7:25.0.1] /Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:support-vector-drawable:25.0.1] /Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.1/AndroidManifest.xml:21:5-43
-MERGED from [com.android.support:animated-vector-drawable:25.0.1] /Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.1/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:25.0.1] /Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.0.1/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:cardview-v7:25.0.1] /Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/25.0.1/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v13:25.3.1] /Users/SILVER/.android/build-cache/633910ca693d6f185b61e2571fe957f673a23957/output/AndroidManifest.xml:21:5-23:55
+MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/SILVER/.android/build-cache/e94aa53d1da2b77ddb3927713f7e8d47a3fcda71/output/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-v4:25.3.1] /Users/SILVER/.android/build-cache/a3897b94b0921f8b2e1c4b2ca97cc59e4db83af3/output/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/SILVER/.android/build-cache/18bbac733fe6aebebfffea767e7e89061320f90e/output/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/SILVER/.android/build-cache/1df71c963571d3493838a69b2d95e0f8cc378220/output/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/SILVER/.android/build-cache/840946a67ebec1575df2b98dc6bf43081ca73778/output/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/SILVER/.android/build-cache/1659b741c5c86f8b7f29459cf62ee0063a8b38a9/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/SILVER/.android/build-cache/b1405c4c9c648c90a29ec3480a10d0ee74442204/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:25.3.1] /Users/SILVER/.android/build-cache/d231eb5cd68522063ff5bd9d6976f67b7b9357d2/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/SILVER/.android/build-cache/aa36c856c3b61be9dba93359daa1e1182b5c53d3/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.3.1] /Users/SILVER/.android/build-cache/11019902d6e189a87ee916978df937dca9e77f77/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:cardview-v7:25.3.1] /Users/SILVER/.android/build-cache/f0c91bb121174d5e3f6d02e691f48a20d6773d6d/output/AndroidManifest.xml:20:5-43
 	tools:overrideLibrary
-		ADDED from [com.android.support:support-v13:25.0.1] /Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/build/intermediates/exploded-aar/com.android.support/support-v13/25.0.1/AndroidManifest.xml:23:9-52
+		ADDED from [com.android.support:support-v13:25.3.1] /Users/SILVER/.android/build-cache/633910ca693d6f185b61e2571fe957f673a23957/output/AndroidManifest.xml:23:9-52
 	android:targetSdkVersion
 		INJECTED from /Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
 		INJECTED from /Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/SILVER/Documents/CCCU/Year2/SemesterB/AST20613CSD/FYP/TrueTone/app/src/main/AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:support-v13:25.3.1] /Users/SILVER/.android/build-cache/633910ca693d6f185b61e2571fe957f673a23957/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/SILVER/.android/build-cache/e94aa53d1da2b77ddb3927713f7e8d47a3fcda71/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-v4:25.3.1] /Users/SILVER/.android/build-cache/a3897b94b0921f8b2e1c4b2ca97cc59e4db83af3/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/SILVER/.android/build-cache/18bbac733fe6aebebfffea767e7e89061320f90e/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/SILVER/.android/build-cache/1df71c963571d3493838a69b2d95e0f8cc378220/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/SILVER/.android/build-cache/840946a67ebec1575df2b98dc6bf43081ca73778/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/SILVER/.android/build-cache/1659b741c5c86f8b7f29459cf62ee0063a8b38a9/output/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/SILVER/.android/build-cache/b1405c4c9c648c90a29ec3480a10d0ee74442204/output/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:recyclerview-v7:25.3.1] /Users/SILVER/.android/build-cache/d231eb5cd68522063ff5bd9d6976f67b7b9357d2/output/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/SILVER/.android/build-cache/aa36c856c3b61be9dba93359daa1e1182b5c53d3/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.1] /Users/SILVER/.android/build-cache/11019902d6e189a87ee916978df937dca9e77f77/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:cardview-v7:25.3.1] /Users/SILVER/.android/build-cache/f0c91bb121174d5e3f6d02e691f48a20d6773d6d/output/AndroidManifest.xml:22:5-24:34
+	android:value
+		ADDED from [com.android.support:support-v13:25.3.1] /Users/SILVER/.android/build-cache/633910ca693d6f185b61e2571fe957f673a23957/output/AndroidManifest.xml:27:9-31
+	android:name
+		ADDED from [com.android.support:support-v13:25.3.1] /Users/SILVER/.android/build-cache/633910ca693d6f185b61e2571fe957f673a23957/output/AndroidManifest.xml:26:9-47
